@@ -1,0 +1,207 @@
+{
+  "sports": [
+    {
+      "id": "300",
+      "leagues": [
+        {
+          "abbreviation": "TOP14",
+          "id": "8005",
+          "name": "French Top 14",
+          "season": {
+            "displayName": "2026",
+            "year": 2026
+          },
+          "shortName": "TOP14",
+          "slug": "270559",
+          "teams": [
+            {
+              "team": {
+                "abbreviation": "BAY",
+                "color": "6699CC",
+                "displayName": "Bayonne",
+                "id": "25912",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Bayonne",
+                "shortDisplayName": "Bayonne",
+                "slug": "bayonne"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "UNI",
+                "color": "000099",
+                "displayName": "Bordeaux Begles",
+                "id": "143737",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "slug": "bordeaux-begles"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "CAS",
+                "color": "000066",
+                "displayName": "Castres Olympique",
+                "id": "25916",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Castres Olympique",
+                "shortDisplayName": "Castres Olympique",
+                "slug": "castres-olympique"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "ASM",
+                "color": "FFCC00",
+                "displayName": "Clermont Auvergne",
+                "id": "25917",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Clermont Auvergne",
+                "shortDisplayName": "Clermont Auvergne",
+                "slug": "clermont-auvergne"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "STA",
+                "color": "FFCC00",
+                "displayName": "La Rochelle",
+                "id": "119318",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "slug": "la-rochelle"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "LYO",
+                "color": "CC0000",
+                "displayName": "Lyon",
+                "id": "143736",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Lyon",
+                "shortDisplayName": "Lyon",
+                "slug": "lyon"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "MON",
+                "color": "0000FF",
+                "displayName": "Montpellier Herault",
+                "id": "25918",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Montpellier Herault",
+                "shortDisplayName": "Montpellier Herault",
+                "slug": "montpellier-herault"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "OYO",
+                "color": "CC0000",
+                "displayName": "Oyonnax",
+                "id": "190153",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Oyonnax",
+                "shortDisplayName": "Oyonnax",
+                "slug": "oyonnax"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "SEC",
+                "color": "FF0001",
+                "displayName": "Pau",
+                "id": "270567",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Pau",
+                "shortDisplayName": "Pau",
+                "slug": "pau"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "USA",
+                "color": "FF6600",
+                "displayName": "Perpignan",
+                "id": "25920",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Perpignan",
+                "shortDisplayName": "Perpignan",
+                "slug": "perpignan"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "RAC",
+                "color": "3399FF",
+                "displayName": "Racing 92",
+                "id": "99855",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "slug": "racing-92"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "STA",
+                "color": "CC0066",
+                "displayName": "Stade Francais Paris",
+                "id": "25921",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "slug": "stade-francais-paris"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "STA",
+                "color": "000000",
+                "displayName": "Stade Toulousain",
+                "id": "25922",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "slug": "stade-toulousain"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "RC",
+                "color": "CC0000",
+                "displayName": "Toulon",
+                "id": "25986",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Toulon",
+                "shortDisplayName": "Toulon",
+                "slug": "toulon"
+              }
+            }
+          ],
+          "year": 2026
+        }
+      ],
+      "name": "Rugby",
+      "slug": "rugby"
+    }
+  ]
+}

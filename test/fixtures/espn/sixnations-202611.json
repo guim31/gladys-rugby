@@ -1,0 +1,35 @@
+{
+  "leagues": [
+    {
+      "id": "8323",
+      "name": "Six Nations",
+      "abbreviation": "Six Nations",
+      "midsizeName": "180659",
+      "slug": "180659",
+      "season": {
+        "year": 2026,
+        "startDate": "2026-01-31T05:00Z",
+        "endDate": "2026-03-17T03:59Z",
+        "displayName": "2026",
+        "type": {
+          "id": "1",
+          "type": 1,
+          "name": "2026 Six Nations",
+          "abbreviation": "2026 Six Nations"
+        }
+      },
+      "isClubCompetition": true,
+      "calendarType": "day",
+      "calendarIsWhitelist": true,
+      "calendarStartDate": "2026-01-31T05:00Z",
+      "calendarEndDate": "2026-03-17T03:59Z"
+    }
+  ],
+  "events": [],
+  "provider": {
+    "id": "100",
+    "name": "Draft Kings",
+    "displayName": "Draft Kings",
+    "priority": 1
+  }
+}

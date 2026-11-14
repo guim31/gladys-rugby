@@ -1,8 +1,8 @@
 {
-  "name": "gladys-integration-template-js",
+  "name": "gladys-rugby",
   "version": "1.0.0",
   "private": true,
-  "description": "Official starter template to build an external integration for Gladys Assistant with the JavaScript SDK.",
+  "description": "Rugby for Gladys Assistant: your teams' next match, live score, results and rank, from ESPN.",
   "type": "module",
   "main": "index.js",
   "scripts": {

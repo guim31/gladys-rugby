@@ -1,0 +1,35 @@
+{
+  "leagues": [
+    {
+      "id": "8329",
+      "name": "European Rugby Champions Cup",
+      "abbreviation": "European Rugby Champions Cup",
+      "midsizeName": "271937",
+      "slug": "271937",
+      "season": {
+        "year": 2027,
+        "startDate": "2026-12-06T05:00Z",
+        "endDate": "2027-05-26T03:59Z",
+        "displayName": "2026-27",
+        "type": {
+          "id": "1",
+          "type": 1,
+          "name": "2023/24 European Rugby Champions Cup",
+          "abbreviation": "2023/24 European Rugby Champions Cup"
+        }
+      },
+      "isClubCompetition": false,
+      "calendarType": "day",
+      "calendarIsWhitelist": true,
+      "calendarStartDate": "2026-12-06T05:00Z",
+      "calendarEndDate": "2027-05-26T03:59Z"
+    }
+  ],
+  "events": [],
+  "provider": {
+    "id": "100",
+    "name": "Draft Kings",
+    "displayName": "Draft Kings",
+    "priority": 1
+  }
+}

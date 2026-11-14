@@ -1,0 +1,336 @@
+{
+  "sports": [
+    {
+      "id": "300",
+      "leagues": [
+        {
+          "abbreviation": "European Rugby Champions Cup",
+          "id": "8329",
+          "name": "European Rugby Champions Cup",
+          "season": {
+            "displayName": "2026-27",
+            "year": 2027
+          },
+          "shortName": "European Rugby Champions Cup",
+          "slug": "271937",
+          "teams": [
+            {
+              "team": {
+                "abbreviation": "BAT",
+                "color": "000099",
+                "displayName": "Bath Rugby",
+                "id": "25898",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Bath Rugby",
+                "shortDisplayName": "Bath Rugby",
+                "slug": "bath-rugby"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "BAY",
+                "color": "6699CC",
+                "displayName": "Bayonne",
+                "id": "25912",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Bayonne",
+                "shortDisplayName": "Bayonne",
+                "slug": "bayonne"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "UNI",
+                "color": "000099",
+                "displayName": "Bordeaux Begles",
+                "id": "143737",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "slug": "bordeaux-begles"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "BRI",
+                "displayName": "Bristol Rugby",
+                "id": "25899",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Bristol Rugby",
+                "shortDisplayName": "Bristol Rugby",
+                "slug": "bristol-rugby"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "BUL",
+                "color": "003366",
+                "displayName": "Bulls",
+                "id": "25953",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Bulls",
+                "shortDisplayName": "Bulls",
+                "slug": "bulls"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "CAR",
+                "color": "0000FF",
+                "displayName": "Cardiff Blues",
+                "id": "25965",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Cardiff Blues",
+                "shortDisplayName": "Cardiff Blues",
+                "slug": "cardiff-blues"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "CON",
+                "color": "006633",
+                "displayName": "Connacht",
+                "id": "25923",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Connacht",
+                "shortDisplayName": "Connacht",
+                "slug": "connacht"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "EXE",
+                "color": "999999",
+                "displayName": "Exeter Chiefs",
+                "id": "116227",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Exeter Chiefs",
+                "shortDisplayName": "Exeter Chiefs",
+                "slug": "exeter-chiefs"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "GLA",
+                "color": "000033",
+                "displayName": "Glasgow Warriors",
+                "id": "25952",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Glasgow Warriors",
+                "shortDisplayName": "Glasgow Warriors",
+                "slug": "glasgow-warriors"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "HAR",
+                "color": "CCCCCC",
+                "displayName": "Harlequins",
+                "id": "25901",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Harlequins",
+                "shortDisplayName": "Harlequins",
+                "slug": "harlequins"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "STA",
+                "color": "FFCC00",
+                "displayName": "La Rochelle",
+                "id": "119318",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "slug": "la-rochelle"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "LEI",
+                "color": "006633",
+                "displayName": "Leicester Tigers",
+                "id": "25903",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Leicester Tigers",
+                "shortDisplayName": "Leicester Tigers",
+                "slug": "leicester-tigers"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "LEI",
+                "color": "0000FF",
+                "displayName": "Leinster",
+                "id": "25924",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Leinster",
+                "shortDisplayName": "Leinster",
+                "slug": "leinster"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "LYO",
+                "color": "CC0000",
+                "displayName": "Lyon",
+                "id": "143736",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Lyon",
+                "shortDisplayName": "Lyon",
+                "slug": "lyon"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "MUN",
+                "color": "FF0000",
+                "displayName": "Munster",
+                "id": "25925",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Munster",
+                "shortDisplayName": "Munster",
+                "slug": "munster"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "NOR",
+                "color": "006633",
+                "displayName": "Northampton Saints",
+                "id": "25907",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Northampton Saints",
+                "shortDisplayName": "Northampton Saints",
+                "slug": "northampton-saints"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "RAC",
+                "color": "3399FF",
+                "displayName": "Racing 92",
+                "id": "99855",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "slug": "racing-92"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "SAL",
+                "color": "003366",
+                "displayName": "Sale Sharks",
+                "id": "25908",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Sale Sharks",
+                "shortDisplayName": "Sale Sharks",
+                "slug": "sale-sharks"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "SAR",
+                "color": "CC0000",
+                "displayName": "Saracens",
+                "id": "25909",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Saracens",
+                "shortDisplayName": "Saracens",
+                "slug": "saracens"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "STA",
+                "color": "CC0066",
+                "displayName": "Stade Francais Paris",
+                "id": "25921",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "slug": "stade-francais-paris"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "STA",
+                "color": "000000",
+                "displayName": "Stade Toulousain",
+                "id": "25922",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "slug": "stade-toulousain"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "STO",
+                "color": "003366",
+                "displayName": "Stormers",
+                "id": "25962",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Stormers",
+                "shortDisplayName": "Stormers",
+                "slug": "stormers"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "RC",
+                "color": "CC0000",
+                "displayName": "Toulon",
+                "id": "25986",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Toulon",
+                "shortDisplayName": "Toulon",
+                "slug": "toulon"
+              }
+            },
+            {
+              "team": {
+                "abbreviation": "ULS",
+                "color": "000000",
+                "displayName": "Ulster",
+                "id": "25926",
+                "isActive": true,
+                "isAllStar": false,
+                "name": "Ulster",
+                "shortDisplayName": "Ulster",
+                "slug": "ulster"
+              }
+            }
+          ],
+          "year": 2027
+        }
+      ],
+      "name": "Rugby",
+      "slug": "rugby"
+    }
+  ]
+}

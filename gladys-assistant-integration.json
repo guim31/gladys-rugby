@@ -1,177 +1,816 @@
 {
   "manifest_version": 1,
   "type": "device",
-  "name": "Demo Devices Template",
+  "name": "Rugby",
   "description": {
-    "en": "Starter template showing sensors, a switch, a dimmable light and a smart plug.",
-    "fr": "Template de démarrage : capteurs, interrupteur, lampe variable et prise connectée."
+    "en": "Your rugby teams: next match, live score, results and rank (Top 14, Six Nations, Champions Cup…).",
+    "fr": "Vos équipes de rugby : prochain match, score en direct, résultats, classement (Top 14, Six Nations)",
+    "de": "Deine Rugby-Teams: nächstes Spiel, Live-Stand, Ergebnisse und Platz (Top 14, Six Nations…).",
+    "es": "Sus equipos de rugby: próximo partido, marcador en directo, resultados y clasificación (Top 14…)."
   },
   "version": "1.0.0",
-  "docker_image": "ghcr.io/gladysassistant/integration-template-js:1.0.0",
+  "docker_image": "ghcr.io/guim31/gladys-rugby:1.0.0",
   "gladys_version": ">=5.1.0",
-  "cover_image": "https://raw.githubusercontent.com/GladysAssistant/integration-template-js/master/cover.png",
-  "categories": ["lighting", "security", "environment"],
-  "transports": ["local", "cloud"],
+  "cover_image": "https://raw.githubusercontent.com/guim31/gladys-rugby/main/cover.png",
+  "categories": ["leisure"],
+  "transports": ["cloud"],
   "config_schema": [
     {
       "key": "intro",
       "type": "section",
-      "label": { "en": "Getting started", "fr": "Pour commencer" },
-      "description": {
-        "en": "The demo weather station reads real data from the free Open-Meteo API: pick the coordinates to observe. No account, no API key.",
-        "fr": "La station météo de démonstration lit de vraies données via l'API gratuite Open-Meteo : choisissez les coordonnées à observer. Pas de compte, pas de clé d'API."
+      "label": {
+        "en": "How it works",
+        "fr": "Fonctionnement",
+        "de": "So funktioniert es",
+        "es": "Funcionamiento"
       },
-      "links": [
+      "description": {
+        "en": "Matches, scores and standings come from ESPN's public data, without account or key. Tick your competitions and save, then add your teams in the Discover tab: one device per team.",
+        "fr": "Les matchs, scores et classements viennent des données publiques d'ESPN, sans compte ni clé. Cochez vos compétitions et enregistrez, puis ajoutez vos équipes dans l'onglet Découverte : un appareil par équipe.",
+        "de": "Spiele, Punktestände und Tabellen kommen aus den öffentlichen Daten von ESPN, ohne Konto und Schlüssel. Kreuze deine Wettbewerbe an und speichere, dann füge deine Teams im Tab „Entdecken“ hinzu: ein Gerät pro Team.",
+        "es": "Los partidos, marcadores y clasificaciones vienen de los datos públicos de ESPN, sin cuenta ni clave. Marque sus competiciones y guarde, luego añada sus equipos en la pestaña Descubrir: un dispositivo por equipo."
+      }
+    },
+    {
+      "key": "competitions",
+      "type": "multi_select",
+      "label": {
+        "en": "Competitions",
+        "fr": "Compétitions",
+        "de": "Wettbewerbe",
+        "es": "Competiciones"
+      },
+      "description": {
+        "en": "Their teams are offered in the Discover tab, and their matches are read for the teams you follow. The rank comes from the first one in this list.",
+        "fr": "Leurs équipes sont proposées dans l'onglet Découverte, et leurs matchs sont lus pour les équipes suivies. Le classement vient de la première de cette liste.",
+        "de": "Deren Teams erscheinen im Tab „Entdecken“, und deren Spiele werden für deine Teams gelesen. Der Tabellenplatz kommt vom ersten Wettbewerb dieser Liste.",
+        "es": "Sus equipos aparecen en la pestaña Descubrir y sus partidos se leen para los equipos seguidos. La clasificación viene de la primera de esta lista."
+      },
+      "required": false,
+      "default": ["top14", "champions_cup", "six_nations", "nations_championship"],
+      "options": [
         {
-          "url": "https://open-meteo.com/en/docs",
-          "label": { "en": "Open-Meteo documentation", "fr": "Documentation Open-Meteo" }
+          "value": "top14",
+          "label": {
+            "en": "Top 14",
+            "fr": "Top 14",
+            "de": "Top 14",
+            "es": "Top 14"
+          }
+        },
+        {
+          "value": "premiership",
+          "label": {
+            "en": "Premiership (England)",
+            "fr": "Premiership (Angleterre)",
+            "de": "Premiership (England)",
+            "es": "Premiership (Inglaterra)"
+          }
+        },
+        {
+          "value": "urc",
+          "label": {
+            "en": "United Rugby Championship",
+            "fr": "United Rugby Championship",
+            "de": "United Rugby Championship",
+            "es": "United Rugby Championship"
+          }
+        },
+        {
+          "value": "super_rugby",
+          "label": {
+            "en": "Super Rugby Pacific",
+            "fr": "Super Rugby Pacific",
+            "de": "Super Rugby Pacific",
+            "es": "Super Rugby Pacific"
+          }
+        },
+        {
+          "value": "champions_cup",
+          "label": {
+            "en": "Champions Cup",
+            "fr": "Champions Cup",
+            "de": "Champions Cup",
+            "es": "Champions Cup"
+          }
+        },
+        {
+          "value": "challenge_cup",
+          "label": {
+            "en": "Challenge Cup",
+            "fr": "Challenge Cup",
+            "de": "Challenge Cup",
+            "es": "Challenge Cup"
+          }
+        },
+        {
+          "value": "six_nations",
+          "label": {
+            "en": "Six Nations",
+            "fr": "Tournoi des Six Nations",
+            "de": "Six Nations",
+            "es": "Seis Naciones"
+          }
+        },
+        {
+          "value": "rugby_championship",
+          "label": {
+            "en": "Rugby Championship",
+            "fr": "Rugby Championship",
+            "de": "Rugby Championship",
+            "es": "Rugby Championship"
+          }
+        },
+        {
+          "value": "nations_championship",
+          "label": {
+            "en": "Nations Championship (autumn tests)",
+            "fr": "Nations Championship (tests d'automne)",
+            "de": "Nations Championship (Herbst-Testspiele)",
+            "es": "Nations Championship (test de otoño)"
+          }
+        },
+        {
+          "value": "test_matches",
+          "label": {
+            "en": "Other test matches",
+            "fr": "Autres test-matchs",
+            "de": "Andere Testspiele",
+            "es": "Otros test matches"
+          }
+        },
+        {
+          "value": "world_cup",
+          "label": {
+            "en": "Rugby World Cup",
+            "fr": "Coupe du monde de rugby",
+            "de": "Rugby-Weltmeisterschaft",
+            "es": "Copa del Mundo de Rugby"
+          }
         }
       ]
     },
     {
-      "key": "latitude",
-      "type": "number",
-      "label": { "en": "Latitude", "fr": "Latitude" },
-      "description": {
-        "en": "Latitude used for the demo weather sensor.",
-        "fr": "Latitude utilisée par le capteur météo de démonstration."
-      },
-      "placeholder": { "en": "e.g. 48.8566", "fr": "ex. 48.8566" },
-      "required": true,
-      "default": 48.8566,
-      "min": -90,
-      "max": 90
-    },
-    {
-      "key": "longitude",
-      "type": "number",
-      "label": { "en": "Longitude", "fr": "Longitude" },
-      "description": {
-        "en": "Longitude used for the demo weather sensor.",
-        "fr": "Longitude utilisée par le capteur météo de démonstration."
-      },
-      "placeholder": { "en": "e.g. 2.3522", "fr": "ex. 2.3522" },
-      "required": true,
-      "default": 2.3522,
-      "min": -180,
-      "max": 180
-    },
-    {
-      "key": "unit",
+      "key": "language",
       "type": "select",
-      "label": { "en": "Temperature unit", "fr": "Unité de température" },
-      "required": false,
-      "default": "celsius",
-      "options": [
-        { "value": "celsius", "label": { "en": "Celsius", "fr": "Celsius" } },
-        { "value": "fahrenheit", "label": { "en": "Fahrenheit", "fr": "Fahrenheit" } }
-      ]
-    },
-    {
-      "key": "poll_frequency",
-      "type": "number",
-      "label": { "en": "Refresh interval (s)", "fr": "Intervalle de rafraîchissement (s)" },
+      "label": {
+        "en": "Language of the texts",
+        "fr": "Langue des textes",
+        "de": "Sprache der Texte",
+        "es": "Idioma de los textos"
+      },
       "description": {
-        "en": "How often sensors are polled, in seconds (one minute minimum).",
-        "fr": "Fréquence d'interrogation des capteurs, en secondes (une minute minimum)."
+        "en": "Feature names, states and the sentences of the scenes. Names are set when a team is added.",
+        "fr": "Noms des fonctionnalités, états et phrases des scènes. Les noms sont fixés à l'ajout d'une équipe.",
+        "de": "Namen der Funktionen, Zustände und Sätze der Szenen. Die Namen werden beim Hinzufügen eines Teams festgelegt.",
+        "es": "Nombres de las funciones, estados y frases de las escenas. Los nombres se fijan al añadir un equipo."
       },
       "required": false,
-      "default": 300,
-      "min": 60,
-      "max": 3600
+      "default": "fr",
+      "options": [
+        {
+          "value": "en",
+          "label": {
+            "en": "English",
+            "fr": "Anglais",
+            "de": "Englisch",
+            "es": "Inglés"
+          }
+        },
+        {
+          "value": "fr",
+          "label": {
+            "en": "French",
+            "fr": "Français",
+            "de": "Französisch",
+            "es": "Francés"
+          }
+        },
+        {
+          "value": "de",
+          "label": {
+            "en": "German",
+            "fr": "Allemand",
+            "de": "Deutsch",
+            "es": "Alemán"
+          }
+        },
+        {
+          "value": "es",
+          "label": {
+            "en": "Spanish",
+            "fr": "Espagnol",
+            "de": "Spanisch",
+            "es": "Español"
+          }
+        }
+      ]
     }
   ],
   "actions": [
     {
-      "key": "test_weather",
-      "label": { "en": "Test the weather provider", "fr": "Tester le fournisseur météo" },
-      "timeout_seconds": 30
-    },
-    {
-      "key": "identify",
-      "label": { "en": "Identify a device", "fr": "Identifier un appareil" },
-      "fields": [
-        {
-          "key": "device",
-          "type": "select",
-          "source": "devices",
-          "label": { "en": "Device", "fr": "Appareil" },
-          "required": true
-        }
-      ]
+      "key": "check",
+      "label": {
+        "en": "Check",
+        "fr": "Vérifier",
+        "de": "Prüfen",
+        "es": "Comprobar"
+      },
+      "description": {
+        "en": "Reads ESPN again now and shows the competitions read and your teams.",
+        "fr": "Relit ESPN maintenant et affiche les compétitions lues et vos équipes.",
+        "de": "Liest ESPN jetzt neu und zeigt die gelesenen Wettbewerbe und deine Teams.",
+        "es": "Vuelve a leer ESPN ahora y muestra las competiciones leídas y sus equipos."
+      },
+      "timeout_seconds": 120
     }
   ],
   "scene_triggers": [
     {
-      "key": "motion_detected",
-      "label": { "en": "Motion detected", "fr": "Mouvement détecté" },
+      "key": "match_starting",
+      "label": {
+        "en": "Match starting soon",
+        "fr": "Match qui va commencer",
+        "de": "Spiel beginnt bald",
+        "es": "Partido a punto de empezar"
+      },
       "description": {
-        "en": "A demo motion sensor saw a person or an animal move.",
-        "fr": "Un détecteur de démonstration a vu bouger une personne ou un animal."
+        "en": "Fires before the scheduled kick-off of a followed team, at the lead time chosen.",
+        "fr": "Se déclenche avant le coup d'envoi prévu d'une équipe suivie, à l'avance choisie.",
+        "de": "Löst vor dem geplanten Anstoß eines verfolgten Teams aus, mit der gewählten Vorlaufzeit.",
+        "es": "Se activa antes del saque inicial previsto de un equipo seguido, con la antelación elegida."
       },
       "fields": [
         {
           "key": "device",
           "type": "select",
           "source": "devices",
-          "label": { "en": "Sensor", "fr": "Détecteur" }
+          "label": {
+            "en": "Team",
+            "fr": "Équipe",
+            "de": "Team",
+            "es": "Equipo"
+          },
+          "description": {
+            "en": "Empty: every followed team.",
+            "fr": "Vide : toutes les équipes suivies.",
+            "de": "Leer: alle verfolgten Teams.",
+            "es": "Vacío: todos los equipos seguidos."
+          }
         },
         {
-          "key": "target",
-          "type": "multi_select",
-          "label": { "en": "What moved", "fr": "Ce qui a bougé" },
+          "key": "minutes_before",
+          "type": "select",
+          "label": {
+            "en": "When",
+            "fr": "Quand",
+            "de": "Wann",
+            "es": "Cuándo"
+          },
+          "required": true,
+          "default": "30",
           "options": [
-            { "value": "person", "label": { "en": "Person", "fr": "Personne" } },
-            { "value": "animal", "label": { "en": "Animal", "fr": "Animal" } }
+            {
+              "value": "15",
+              "label": {
+                "en": "15 minutes before",
+                "fr": "15 minutes avant",
+                "de": "15 Minuten vorher",
+                "es": "15 minutos antes"
+              }
+            },
+            {
+              "value": "30",
+              "label": {
+                "en": "30 minutes before",
+                "fr": "30 minutes avant",
+                "de": "30 Minuten vorher",
+                "es": "30 minutos antes"
+              }
+            },
+            {
+              "value": "60",
+              "label": {
+                "en": "60 minutes before",
+                "fr": "60 minutes avant",
+                "de": "60 Minuten vorher",
+                "es": "60 minutos antes"
+              }
+            },
+            {
+              "value": "120",
+              "label": {
+                "en": "120 minutes before",
+                "fr": "120 minutes avant",
+                "de": "120 Minuten vorher",
+                "es": "120 minutos antes"
+              }
+            }
           ]
         }
       ],
       "variables": [
         {
-          "key": "target",
+          "key": "team",
           "type": "string",
-          "label": { "en": "What moved", "fr": "Ce qui a bougé" }
+          "label": {
+            "en": "Team",
+            "fr": "Équipe",
+            "de": "Team",
+            "es": "Equipo"
+          }
+        },
+        {
+          "key": "opponent",
+          "type": "string",
+          "label": {
+            "en": "Opponent",
+            "fr": "Adversaire",
+            "de": "Gegner",
+            "es": "Rival"
+          }
+        },
+        {
+          "key": "competition",
+          "type": "string",
+          "label": {
+            "en": "Competition",
+            "fr": "Compétition",
+            "de": "Wettbewerb",
+            "es": "Competición"
+          }
+        },
+        {
+          "key": "home",
+          "type": "boolean",
+          "label": {
+            "en": "Home match",
+            "fr": "Match à domicile",
+            "de": "Heimspiel",
+            "es": "Partido en casa"
+          }
+        },
+        {
+          "key": "kickoff_time",
+          "type": "string",
+          "label": {
+            "en": "Kick-off time",
+            "fr": "Heure du coup d'envoi",
+            "de": "Anstoßzeit",
+            "es": "Hora del saque inicial"
+          }
+        },
+        {
+          "key": "venue",
+          "type": "string",
+          "label": {
+            "en": "Venue",
+            "fr": "Lieu",
+            "de": "Spielort",
+            "es": "Estadio"
+          }
+        },
+        {
+          "key": "sentence",
+          "type": "string",
+          "label": {
+            "en": "Sentence ready to send",
+            "fr": "Phrase prête à envoyer",
+            "de": "Fertiger Satz zum Senden",
+            "es": "Frase lista para enviar"
+          }
+        }
+      ]
+    },
+    {
+      "key": "kickoff",
+      "label": {
+        "en": "Kick-off",
+        "fr": "Coup d'envoi",
+        "de": "Anstoß",
+        "es": "Saque inicial"
+      },
+      "description": {
+        "en": "Fires when ESPN reports that a match of a followed team has started (within about a minute).",
+        "fr": "Se déclenche quand ESPN indique qu'un match d'une équipe suivie a commencé (à une minute près).",
+        "de": "Löst aus, wenn ESPN meldet, dass ein Spiel eines verfolgten Teams begonnen hat (auf etwa eine Minute).",
+        "es": "Se activa cuando ESPN indica que un partido de un equipo seguido ha empezado (con un minuto de margen)."
+      },
+      "fields": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Team",
+            "fr": "Équipe",
+            "de": "Team",
+            "es": "Equipo"
+          },
+          "description": {
+            "en": "Empty: every followed team.",
+            "fr": "Vide : toutes les équipes suivies.",
+            "de": "Leer: alle verfolgten Teams.",
+            "es": "Vacío: todos los equipos seguidos."
+          }
+        }
+      ],
+      "variables": [
+        {
+          "key": "team",
+          "type": "string",
+          "label": {
+            "en": "Team",
+            "fr": "Équipe",
+            "de": "Team",
+            "es": "Equipo"
+          }
+        },
+        {
+          "key": "opponent",
+          "type": "string",
+          "label": {
+            "en": "Opponent",
+            "fr": "Adversaire",
+            "de": "Gegner",
+            "es": "Rival"
+          }
+        },
+        {
+          "key": "competition",
+          "type": "string",
+          "label": {
+            "en": "Competition",
+            "fr": "Compétition",
+            "de": "Wettbewerb",
+            "es": "Competición"
+          }
+        },
+        {
+          "key": "home",
+          "type": "boolean",
+          "label": {
+            "en": "Home match",
+            "fr": "Match à domicile",
+            "de": "Heimspiel",
+            "es": "Partido en casa"
+          }
+        },
+        {
+          "key": "kickoff_time",
+          "type": "string",
+          "label": {
+            "en": "Kick-off time",
+            "fr": "Heure du coup d'envoi",
+            "de": "Anstoßzeit",
+            "es": "Hora del saque inicial"
+          }
+        },
+        {
+          "key": "venue",
+          "type": "string",
+          "label": {
+            "en": "Venue",
+            "fr": "Lieu",
+            "de": "Spielort",
+            "es": "Estadio"
+          }
+        },
+        {
+          "key": "sentence",
+          "type": "string",
+          "label": {
+            "en": "Sentence ready to send",
+            "fr": "Phrase prête à envoyer",
+            "de": "Fertiger Satz zum Senden",
+            "es": "Frase lista para enviar"
+          }
+        }
+      ]
+    },
+    {
+      "key": "match_finished",
+      "label": {
+        "en": "Match finished",
+        "fr": "Match terminé",
+        "de": "Spiel beendet",
+        "es": "Partido terminado"
+      },
+      "description": {
+        "en": "Fires when a match of a followed team is over, with its result: pick \"Win\" to celebrate.",
+        "fr": "Se déclenche à la fin d'un match d'une équipe suivie, avec le résultat : choisissez « Victoire » pour fêter ça.",
+        "de": "Löst aus, wenn ein Spiel eines verfolgten Teams vorbei ist, mit dem Ergebnis: wähle „Sieg“ zum Feiern.",
+        "es": "Se activa al final de un partido de un equipo seguido, con el resultado: elija «Victoria» para celebrarlo."
+      },
+      "fields": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Team",
+            "fr": "Équipe",
+            "de": "Team",
+            "es": "Equipo"
+          },
+          "description": {
+            "en": "Empty: every followed team.",
+            "fr": "Vide : toutes les équipes suivies.",
+            "de": "Leer: alle verfolgten Teams.",
+            "es": "Vacío: todos los equipos seguidos."
+          }
+        },
+        {
+          "key": "result",
+          "type": "multi_select",
+          "label": {
+            "en": "Result",
+            "fr": "Résultat",
+            "de": "Ergebnis",
+            "es": "Resultado"
+          },
+          "description": {
+            "en": "Empty: any result.",
+            "fr": "Vide : tout résultat.",
+            "de": "Leer: jedes Ergebnis.",
+            "es": "Vacío: cualquier resultado."
+          },
+          "options": [
+            {
+              "value": "win",
+              "label": {
+                "en": "Win",
+                "fr": "Victoire",
+                "de": "Sieg",
+                "es": "Victoria"
+              }
+            },
+            {
+              "value": "draw",
+              "label": {
+                "en": "Draw",
+                "fr": "Match nul",
+                "de": "Unentschieden",
+                "es": "Empate"
+              }
+            },
+            {
+              "value": "loss",
+              "label": {
+                "en": "Loss",
+                "fr": "Défaite",
+                "de": "Niederlage",
+                "es": "Derrota"
+              }
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "key": "team",
+          "type": "string",
+          "label": {
+            "en": "Team",
+            "fr": "Équipe",
+            "de": "Team",
+            "es": "Equipo"
+          }
+        },
+        {
+          "key": "opponent",
+          "type": "string",
+          "label": {
+            "en": "Opponent",
+            "fr": "Adversaire",
+            "de": "Gegner",
+            "es": "Rival"
+          }
+        },
+        {
+          "key": "competition",
+          "type": "string",
+          "label": {
+            "en": "Competition",
+            "fr": "Compétition",
+            "de": "Wettbewerb",
+            "es": "Competición"
+          }
+        },
+        {
+          "key": "home",
+          "type": "boolean",
+          "label": {
+            "en": "Home match",
+            "fr": "Match à domicile",
+            "de": "Heimspiel",
+            "es": "Partido en casa"
+          }
+        },
+        {
+          "key": "kickoff_time",
+          "type": "string",
+          "label": {
+            "en": "Kick-off time",
+            "fr": "Heure du coup d'envoi",
+            "de": "Anstoßzeit",
+            "es": "Hora del saque inicial"
+          }
+        },
+        {
+          "key": "venue",
+          "type": "string",
+          "label": {
+            "en": "Venue",
+            "fr": "Lieu",
+            "de": "Spielort",
+            "es": "Estadio"
+          }
+        },
+        {
+          "key": "sentence",
+          "type": "string",
+          "label": {
+            "en": "Sentence ready to send",
+            "fr": "Phrase prête à envoyer",
+            "de": "Fertiger Satz zum Senden",
+            "es": "Frase lista para enviar"
+          }
+        },
+        {
+          "key": "team_score",
+          "type": "number",
+          "label": {
+            "en": "Team score",
+            "fr": "Score de l'équipe",
+            "de": "Punkte des Teams",
+            "es": "Puntos del equipo"
+          }
+        },
+        {
+          "key": "opponent_score",
+          "type": "number",
+          "label": {
+            "en": "Opponent score",
+            "fr": "Score adverse",
+            "de": "Punkte des Gegners",
+            "es": "Puntos del rival"
+          }
+        },
+        {
+          "key": "result",
+          "type": "string",
+          "label": {
+            "en": "Result (win, draw, loss)",
+            "fr": "Résultat (win, draw, loss)",
+            "de": "Ergebnis (win, draw, loss)",
+            "es": "Resultado (win, draw, loss)"
+          }
         }
       ]
     }
   ],
   "scene_actions": [
     {
-      "key": "identify_device",
-      "label": { "en": "Identify a device", "fr": "Identifier un appareil" },
-      "description": {
-        "en": "Make a device signal itself (the demo light blinks).",
-        "fr": "Fait se signaler un appareil (la lampe de démonstration clignote)."
+      "key": "read_team",
+      "label": {
+        "en": "Read a team's news",
+        "fr": "Lire l'actualité d'une équipe",
+        "de": "Neuigkeiten eines Teams lesen",
+        "es": "Leer las novedades de un equipo"
       },
-      "timeout_seconds": 15,
+      "description": {
+        "en": "Sentences ready to send or say: live score, next match in your local time, last result.",
+        "fr": "Des phrases prêtes à envoyer ou à dire : score en direct, prochain match à l'heure locale, dernier résultat.",
+        "de": "Fertige Sätze zum Senden oder Vorlesen: Live-Stand, nächstes Spiel in Ortszeit, letztes Ergebnis.",
+        "es": "Frases listas para enviar o decir: marcador en directo, próximo partido en hora local, último resultado."
+      },
+      "timeout_seconds": 10,
       "fields": [
         {
           "key": "device",
           "type": "select",
           "source": "devices",
-          "label": { "en": "Device", "fr": "Appareil" },
+          "label": {
+            "en": "Team",
+            "fr": "Équipe",
+            "de": "Team",
+            "es": "Equipo"
+          },
           "required": true
         }
       ],
       "outputs": [
         {
-          "key": "signalled",
+          "key": "sentence",
+          "type": "string",
+          "label": {
+            "en": "Summary",
+            "fr": "Résumé",
+            "de": "Zusammenfassung",
+            "es": "Resumen"
+          }
+        },
+        {
+          "key": "next_match",
+          "type": "string",
+          "label": {
+            "en": "Next match",
+            "fr": "Prochain match",
+            "de": "Nächstes Spiel",
+            "es": "Próximo partido"
+          }
+        },
+        {
+          "key": "last_result",
+          "type": "string",
+          "label": {
+            "en": "Last result",
+            "fr": "Dernier résultat",
+            "de": "Letztes Ergebnis",
+            "es": "Último resultado"
+          }
+        },
+        {
+          "key": "live",
           "type": "boolean",
-          "label": { "en": "Device signalled", "fr": "Appareil signalé" }
+          "label": {
+            "en": "Match in progress",
+            "fr": "Match en cours",
+            "de": "Spiel läuft",
+            "es": "Partido en juego"
+          }
+        },
+        {
+          "key": "days_until_match",
+          "type": "number",
+          "label": {
+            "en": "Days until the match (-1: none)",
+            "fr": "Jours avant le match (-1 : aucun)",
+            "de": "Tage bis zum Spiel (-1: keins)",
+            "es": "Días hasta el partido (-1: ninguno)"
+          }
         }
       ]
     }
   ],
   "widgets": [
     {
-      "key": "demo_status",
-      "label": { "en": "Demo status", "fr": "État de la démo" },
-      "description": {
-        "en": "Live temperature and plug power, plug connection and observed location.",
-        "fr": "Température et puissance en direct, connexion de la prise, position observée."
+      "key": "rugby_team",
+      "label": {
+        "en": "Rugby team",
+        "fr": "Équipe de rugby",
+        "de": "Rugby-Team",
+        "es": "Equipo de rugby"
       },
-      "icon": "activity",
-      "action_timeout_seconds": 15
+      "description": {
+        "en": "Live score, countdown to the next match, rank, next matches and last result of a team.",
+        "fr": "Score en direct, compte à rebours, classement, prochains matchs et dernier résultat d'une équipe.",
+        "de": "Live-Stand, Countdown zum nächsten Spiel, Platz, nächste Spiele und letztes Ergebnis eines Teams.",
+        "es": "Marcador en directo, cuenta atrás, clasificación, próximos partidos y último resultado de un equipo."
+      },
+      "icon": "shield",
+      "settings": [
+        {
+          "key": "device",
+          "type": "select",
+          "source": "devices",
+          "label": {
+            "en": "Team",
+            "fr": "Équipe",
+            "de": "Team",
+            "es": "Equipo"
+          },
+          "description": {
+            "en": "Empty: the first followed team.",
+            "fr": "Vide : la première équipe suivie.",
+            "de": "Leer: das erste verfolgte Team.",
+            "es": "Vacío: el primer equipo seguido."
+          }
+        },
+        {
+          "key": "show_upcoming",
+          "type": "boolean",
+          "label": {
+            "en": "Show the next matches",
+            "fr": "Afficher les prochains matchs",
+            "de": "Nächste Spiele anzeigen",
+            "es": "Mostrar los próximos partidos"
+          },
+          "default": true
+        },
+        {
+          "key": "show_last",
+          "type": "boolean",
+          "label": {
+            "en": "Show the last result",
+            "fr": "Afficher le dernier résultat",
+            "de": "Letztes Ergebnis anzeigen",
+            "es": "Mostrar el último resultado"
+          },
+          "default": true
+        }
+      ]
     }
   ]
 }

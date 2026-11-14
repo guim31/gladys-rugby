@@ -16,8 +16,8 @@ its only runtime dependency. It started from the official JavaScript template.
 ```bash
 npm install
 npm test                                  # node --test, the built-in runner
-node --test test/devices.test.js          # one file
-node --test --test-name-pattern "plug"    # tests whose name matches
+node --test test/service.test.js          # one file
+node --test --test-name-pattern "widget"  # tests whose name matches
 npm run lint                              # ESLint
 npm run format:check                      # Prettier, as the CI runs it
 npm run format                            # Prettier, fix in place
@@ -31,16 +31,23 @@ pushing.
 ## Architecture
 
 ```
-index.js                          SDK wiring only: handlers registered before connect()
-src/devices/index.js              registry of the device blueprints + dispatch helpers
-src/devices/<type>.js             one device type per file (buildDevice, onPoll, onSetValue...)
+index.js                          SDK wiring only: src/app.js registers the handlers before connect()
+src/app.js                        every SDK handler -> the service, the "check" action report
+src/service.js                    RugbyService: the minute clock, readings + cache, live reading, states, triggers, status
+src/espn.js                       ESPN client (one request at a time, spaced) and parsers
+src/competitions.js               the competitions offered (keys forever) and their ESPN league ids
+src/matches.js                    pure functions of (data, now): live, next, last match, rank of a team
+src/device.js                     one device per team: FEATURES (keys forever) and buildStates
+src/widgets.js                    dashboard widget "Rugby team", key "rugby_team" (manifest `widgets`)
 src/scenes.js                     scene action handlers (manifest `scene_actions`)
-src/widgets.js                    dashboard widget handlers (manifest `widgets`)
+src/i18n.js                       every text of the code, in en/fr/de/es
+src/time.js                       instants in the time zone of Gladys (TZ)
 src/config.js                     DEFAULT_CONFIG (mirrors the manifest defaults) + normalization
-src/weather.js                    example driver (Open-Meteo)
+src/store.js, src/failures.js     JSON files in /data; repeated failures logged once
 gladys-assistant-integration.json manifest: name, config_schema, actions, image...
-docs/en.md, docs/fr.md            user documentation, re-hosted by Gladys (mandatory)
+docs/{en,fr,de,es}.md             user documentation, re-hosted by Gladys (en and fr mandatory)
 test/                             node --test, against the SDK's fake Gladys (integration-sdk/testing)
+test/helpers/world.js             the integration on a test clock, ESPN replayed from fixtures
 .github/scripts/release.mjs       release helpers (manifest bump, changelog), tested in test/
 ```
 
@@ -70,8 +77,9 @@ test/                             node --test, against the SDK's fake Gladys (in
   `type: "provider"`: 5.1.0). `test/manifest.test.js` ties the manifest to the
   code (defaults, action, scene and widget handlers): change both sides
   together.
-- **User-facing text** is bilingual (English and French): action messages,
-  manifest texts, and `docs/en.md` / `docs/fr.md`, kept in sync.
+- **User-facing text** exists in English, French, German and Spanish: action
+  messages, manifest texts, widget content, feature names, and the four
+  `docs/*.md`, kept in sync (`test/i18n.test.js`).
 - **Style.** Prettier formats, ESLint catches mistakes. Comments explain why,
   in English. Tests never touch the network.
 
@@ -251,3 +259,39 @@ long, et sur un « Sie »/« Ihr… » de politesse en allemand. Le store exige 
 - Docs `en`, `fr`, `de`, `es` avec les mêmes sections.
 - Chauffe, ouverture, sécurité : ne rien rendre pilotable « comme un thermostat » ou par un assistant
   vocal quand une erreur serait dangereuse (leçon d'OctoPrint).
+
+## Rugby (propre à ce dépôt)
+
+- **Source** : API JSON publique d'ESPN (`site.api.espn.com/apis`), sans clé, **non officielle et non documentée**.
+  Vérifié le 14/11/2026 : `scoreboard?dates=YYYYMM` (un mois) et `?dates=YYYYMMDD` (un jour) répondent ; une
+  plage `YYYYMMDD-YYYYMMDD` donne 400, `teams/<id>/schedule` donne 500 pour le rugby. Les jours sont ceux de
+  **l'heure de New York** (un coup d'envoi à 00:00Z est rangé la veille) : `espnDay` et `calendarMonths`.
+- **Classements** : `apis/v2/sports/rugby/<ligue>/standings` **sans `?season=`** renvoie une saison ancienne
+  (2023 pour le Top 14) : passer l'année `season.year` des matchs (2027 pour 2026-27), pas celle de
+  `leagues[0].season` du scoreboard (restée à 2026). Coupes en poules : `children` = poules, rang dans la poule.
+- **Identifiants d'équipe partagés** entre compétitions (Stade Toulousain = 25922 en Top 14 et en Champions
+  Cup) : l'appareil `team:<id>` réunit tous les matchs ; le rang vient de la première compétition de la liste de
+  config qui classe l'équipe (ordre de `COMPETITIONS` : championnats avant coupes).
+- Ids de ligue vérifiés : voir `src/competitions.js`. **Pro D2 absente** de la liste des ligues ESPN (25 ligues
+  rugby au 14/11/2026) : non proposée. Six Nations 2027 pas encore publié en novembre.
+- Heure non fixée : `timeValid: false` ou `STATUS_TBD`, coup d'envoi à 00:00Z → `timed: false`, pas de
+  « match qui va commencer » ni de lecture en direct. `status.type.state` : `pre` / `in` / `post` ;
+  un match reporté est `post` non `completed` (ou `STATUS_POSTPONED`).
+- **Lecture en direct** : le scoreboard du jour, chaque minute, de 5 min avant le coup d'envoi d'un match
+  d'une équipe **ajoutée** jusqu'à `post` (4 h au plus) ; une seule requête par (compétition, jour).
+- **Déclencheurs « coup d'envoi » / « match terminé »** : transition d'état vue par l'intégration
+  (`seen` dans `/data/triggers.json`, par équipe et match) ; un match vu pour la première fois n'annonce rien
+  (installation, équipe ajoutée), ni une transition vue plus de 2 h (coup d'envoi) / 12 h (fin) après le
+  coup d'envoi. Événement porté par l'appareil (`device` = external_id) : filtre « Équipe » vide = toutes.
+  L'état vu ne recule jamais (un document en cache qui redit `pre` après `in`), chaque événement porte un drapeau
+  `kickoff`/`finished` posé seulement quand Gladys l'a accepté : renvoyé à la lecture suivante sinon.
+- Résultats : les matchs terminés antérieurs aux mois lus sont gardés 6 mois (dernier résultat entre deux
+  saisons). Une compétition décochée est retirée du cache (pas d'affichage périmé). Une erreur HTTP sur un
+  document (refusé 10 min, sans freiner les autres ni la lecture en direct) n'arrête pas les autres ; réseau ou 429
+  arrête le tour. Un match reporté (`post` non `completed`) redevient « à venir » ; un coup d'envoi déplacé repart de zéro. Le statut ne passe « injoignable » qu'après
+  deux tours ratés (ou sans aucune donnée). Classements en erreur : on garde les précédents, nouvel essai 10 min.
+- **Calendrier Gladys** : impossible ici, le type `calendar` est un autre type d'intégration (consentement par
+  utilisateur) ; une intégration n'a qu'un type.
+- Noms ESPN en anglais sans accents (« Stade Francais Paris ») ; les sélections nationales sont traduites
+  (`NATIONS` dans `src/i18n.js`). La chaîne TV (`broadcast`) est presque toujours vide pour le rugby européen.
+- Widget : titre + direct + compte à rebours + rang + liste + statut = 6 composants au plus.

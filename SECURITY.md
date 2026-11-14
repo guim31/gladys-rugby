@@ -30,6 +30,10 @@ Gladys before reporting a problem.
 
 In scope: the code of this repository and the Docker image it publishes.
 
+The integration stores no secret: it needs no account and no key. `/data` holds a cache of public ESPN
+answers (teams, matches, standings) and the last state seen of each followed match. It only makes HTTPS
+requests to `site.api.espn.com`, and opens no port.
+
 Out of scope: Gladys Assistant itself (see its
 [security policy](https://github.com/GladysAssistant/Gladys/security/policy)),
-and the third-party services and devices the integration talks to.
+and the third-party services the integration talks to (ESPN).
