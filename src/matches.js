@@ -50,8 +50,13 @@ export function isCalledOff(match) {
   return CALLED_OFF.test(match.status) || (match.state === 'post' && !match.completed);
 }
 
-export function liveMatch(matches) {
-  return matches.find((match) => match.state === 'in') ?? null;
+/**
+ * The match being played. One still "being played" in the cache long after
+ * its kick-off (ESPN or the network failed around full time) is not shown as
+ * live until the next reading says how it ended.
+ */
+export function liveMatch(matches, now) {
+  return matches.find((match) => match.state === 'in' && now <= match.start + LIVE_WINDOW) ?? null;
 }
 
 /** The next match to be played (not the live one, not one called off). */

@@ -70,7 +70,7 @@ export function buildContent(service, { settings = {}, language } = {}) {
   }
 
   const matches = teamMatches(data, teamId);
-  const live = liveMatch(matches);
+  const live = liveMatch(matches, now);
   if (live) {
     const { team: side, opponent } = sides(live, teamId);
     components.push({

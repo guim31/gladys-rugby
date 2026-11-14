@@ -283,6 +283,12 @@ long, et sur un « Sie »/« Ihr… » de politesse en allemand. Le store exige 
   (`seen` dans `/data/triggers.json`, par équipe et match) ; un match vu pour la première fois n'annonce rien
   (installation, équipe ajoutée), ni une transition vue plus de 2 h (coup d'envoi) / 12 h (fin) après le
   coup d'envoi. Événement porté par l'appareil (`device` = external_id) : filtre « Équipe » vide = toutes.
+  L'état vu ne recule jamais (un document en cache qui redit `pre` après `in`), chaque événement porte un drapeau
+  `kickoff`/`finished` posé seulement quand Gladys l'a accepté : renvoyé à la lecture suivante sinon.
+- Résultats : les matchs terminés antérieurs aux mois lus sont gardés 6 mois (dernier résultat entre deux
+  saisons). Une compétition décochée est retirée du cache (pas d'affichage périmé). Une erreur HTTP sur un
+  document n'arrête pas les autres ; réseau ou 429 arrête le tour. Le statut ne passe « injoignable » qu'après
+  deux tours ratés (ou sans aucune donnée). Classements en erreur : on garde les précédents, nouvel essai 10 min.
 - **Calendrier Gladys** : impossible ici, le type `calendar` est un autre type d'intégration (consentement par
   utilisateur) ; une intégration n'a qu'un type.
 - Noms ESPN en anglais sans accents (« Stade Francais Paris ») ; les sélections nationales sont traduites

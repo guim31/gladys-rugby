@@ -205,3 +205,76 @@ test('a team added: its states are published at once, the widget refreshed', asy
   assert.equal(world.state('next_match'), 'Lyon – Stade Toulousain (Top 14)');
   assert.ok(world.gladys.fake.widgetRefreshes.includes('rugby_team'));
 });
+
+test('a standings route answering 500 keeps the rank held', async (t) => {
+  const api = fakeEspn();
+  const world = await createWorld({ api, at: '2026-11-28T17:00:00Z' });
+  t.after(() => world.app.stop());
+  assert.equal(world.state('rank'), 1);
+  api.errors.push({ path: /standings/, status: 500 });
+  await world.runUntil('2026-11-28T23:30:00Z');
+  assert.equal(world.service.data.standings.top14.rows.length, 14);
+  assert.equal(world.gladys.fake.connectionStatus.connected, true);
+});
+
+test('one competition answering 500 does not hold the others back', async (t) => {
+  const api = fakeEspn();
+  api.errors.push({ path: /271937\/scoreboard/, status: 500 });
+  const world = await createWorld({ api });
+  t.after(() => world.app.stop());
+  assert.ok(world.api.calls.some((path) => path.includes('180659/scoreboard')));
+  assert.equal(world.state('rank'), 1);
+  assert.equal(world.service.apiError, 'ESPN answered HTTP 500');
+});
+
+test('a stale "to come" after the kick-off fires nothing twice; a refused event is sent again', async (t) => {
+  const api = fakeEspn();
+  const world = await createWorld({ api, at: '2026-11-28T19:00:00Z' });
+  t.after(() => world.app.stop());
+  const kickoffs = () => world.gladys.fake.sceneEvents.filter((e) => e.key === 'kickoff').length;
+  await world.runUntil('2026-11-28T20:00:00Z');
+  // Gladys is restarting when ESPN says the match started.
+  const refuse = t.mock.method(world.gladys, 'publishSceneEvent', async () => {
+    throw new Error('Gladys is restarting');
+  });
+  api.patch(LYON_TOULOUSE, (game) => play(game, { state: 'in', home: 0, away: 0 }));
+  await world.runUntil('2026-11-28T20:03:00Z');
+  refuse.mock.restore();
+  await world.runUntil('2026-11-28T20:05:00Z');
+  assert.equal(kickoffs(), 1, 'sent once Gladys is back');
+  // A cached document says "to come" again, then "being played".
+  api.patch(LYON_TOULOUSE, () => {});
+  await world.runUntil('2026-11-28T20:07:00Z');
+  api.patch(LYON_TOULOUSE, (game) => play(game, { state: 'in', home: 3, away: 0 }));
+  await world.runUntil('2026-11-28T20:10:00Z');
+  assert.equal(kickoffs(), 1);
+  assert.equal(world.state('match_live'), 1);
+});
+
+test('a match left "being played" in the cache is not live forever', async (t) => {
+  const api = fakeEspn();
+  api.patch(LYON_TOULOUSE, (game) => play(game, { state: 'in', home: 3, away: 0 }));
+  const world = await createWorld({ api, at: '2026-11-28T20:30:00Z' });
+  t.after(() => world.app.stop());
+  assert.equal(world.state('match_live'), 1);
+  api.fail = true;
+  await world.runUntil('2026-11-29T00:30:00Z');
+  assert.equal(world.state('match_live'), 0);
+});
+
+test('the last result survives the months read; an unticked competition is dropped', async (t) => {
+  const store = createMemoryStore();
+  const first = await createWorld({ store });
+  await first.app.stop();
+  // Two months later, the November match is out of the months read.
+  const world = await createWorld({ store, at: '2027-01-20T10:00:00Z' });
+  t.after(() => world.app.stop());
+  assert.ok(world.api.calls.some((path) => path.endsWith('dates=202612')));
+  assert.ok(!world.api.calls.some((path) => path.endsWith('dates=202611')));
+  assert.ok(world.state('last_result'));
+  assert.ok(world.service.data.calendar.top14.matches.some((match) => match.id === '604423'));
+
+  await world.gladys.fake.configUpdated({ competitions: ['six_nations'] });
+  assert.equal(world.service.data.calendar.top14, undefined);
+  assert.equal(world.state('next_match'), 'Aucun match prévu');
+});

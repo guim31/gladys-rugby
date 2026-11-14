@@ -55,6 +55,8 @@ const CATCH_UP = 10 * MINUTE;
 // integration stopped for days does not fire old matches when it restarts).
 const ANNOUNCE_WITHIN = { kickoff: 2 * HOUR, finished: 12 * HOUR };
 const SEEN_KEPT = 30 * DAY;
+const STATE_ORDER = { pre: 0, in: 1, finished: 2, post: 2 };
+const KEEP_RESULTS = 183 * DAY;
 // ESPN files a match under its date in US Eastern time (a 00:00Z kick-off is
 // on the previous day).
 const ESPN_TIME_ZONE = 'America/New_York';
@@ -98,8 +100,13 @@ export class RugbyService {
     this.data = { teams: {}, calendar: {}, standings: {} };
     this.liveFetchedAt = {};
     this.apiError = null;
+    this.failedRefreshes = 0;
     this.lastAttempt = 0;
+    this.standingsFailedAt = {};
     this.seen = {};
+    // "Match starting" events sent while a later one of the same minute was
+    // refused: not sent twice when the interval is checked again.
+    this.startingSent = new Set();
     this.lastCheck = 0;
     this.lastForce = 0;
     this.statusKey = null;
@@ -142,6 +149,7 @@ export class RugbyService {
     return this.serial(async () => {
       const added = config.competitions.some((key) => !this.config?.competitions.includes(key));
       this.config = config;
+      this.dropUnticked();
       if (added) {
         await this.refresh();
       }
@@ -305,6 +313,22 @@ export class RugbyService {
         this.data[kind] = entries;
       }
     }
+    this.dropUnticked();
+  }
+
+  /**
+   * Matches and standings of an unticked competition are no longer read: they
+   * are dropped rather than shown stale (a ticked-again competition is read
+   * again at once). The teams stay, for the names of the followed ones.
+   */
+  dropUnticked() {
+    for (const kind of ['calendar', 'standings']) {
+      for (const key of Object.keys(this.data[kind])) {
+        if (!this.config.competitions.includes(key)) {
+          delete this.data[kind][key];
+        }
+      }
+    }
   }
 
   saveCache() {
@@ -350,6 +374,9 @@ export class RugbyService {
       const seasons = matches.filter(isFinished).map((match) => match.season);
       const season = seasons.length > 0 ? Math.max(...seasons.filter(Number.isInteger)) : null;
       if (played.length === 0 || !Number.isInteger(season)) {
+        continue;
+      }
+      if (!force && now - (this.standingsFailedAt[key] ?? 0) < RETRY_AFTER) {
         continue;
       }
       const held = this.data.standings[key];
@@ -405,21 +432,42 @@ export class RugbyService {
     }
     this.lastAttempt = now;
     let read = 0;
-    try {
-      for (const task of tasks) {
-        await this.read(task, now);
+    let error = null;
+    // One failing document does not hold the others back; an unreachable or
+    // rate-limiting ESPN stops the round (no point in hammering it).
+    const attempt = async (fn) => {
+      try {
+        await fn();
         read += 1;
+        return true;
+      } catch (err) {
+        error ??= err;
+        return Boolean(err.status) && err.status !== 429;
       }
-      // After the matches: the season and the ended matches decide.
+    };
+    let go = true;
+    for (const task of tasks) {
+      go = await attempt(() => this.read(task, now));
+      if (!go) {
+        break;
+      }
+    }
+    // After the matches: the season and the ended matches decide.
+    if (go) {
       for (const { key, season } of this.standingsDue(now, force)) {
-        await this.readStandings(key, season, now);
-        read += 1;
+        if (!(await attempt(() => this.readStandings(key, season, now)))) {
+          break;
+        }
       }
+    }
+    if (error) {
+      this.apiError = error.message;
+      this.failedRefreshes += 1;
+      this.failures.failed('api', `Could not read ESPN: ${error.message}`);
+    } else {
       this.apiError = null;
+      this.failedRefreshes = 0;
       this.failures.succeeded('api', 'ESPN read again');
-    } catch (err) {
-      this.apiError = err.message;
-      this.failures.failed('api', `Could not read ESPN: ${err.message}`);
     }
     if (read > 0) {
       this.saveCache();
@@ -437,8 +485,18 @@ export class RugbyService {
       return;
     }
     if (task.kind === 'calendar') {
-      const byId = new Map();
-      for (const month of calendarMonths(now)) {
+      // Finished matches before the months read are kept half a year: the
+      // last result of a team between two seasons (the Six Nations in April).
+      const months = calendarMonths(now);
+      const from = Date.UTC(Number(months[0].slice(0, 4)), Number(months[0].slice(4)) - 1, 1);
+      const byId = new Map(
+        (this.data.calendar[task.key]?.matches ?? [])
+          .filter(
+            (match) => isFinished(match) && match.start < from && now - match.start < KEEP_RESULTS,
+          )
+          .map((match) => [match.id, match]),
+      );
+      for (const month of months) {
         const body = await this.api.get(PATHS.scoreboard(league, month));
         for (const match of parseScoreboard(body, task.key)) {
           byId.set(match.id, match);
@@ -475,7 +533,9 @@ export class RugbyService {
       if (!err.status || err.status === 429) {
         throw err;
       }
-      this.data.standings[key] = { fetched_at: now, season, rows: [] };
+      // An answer ESPN cannot give (a 4xx, a 500 on a route it does not
+      // serve) keeps the standings held, and is tried again later.
+      this.standingsFailedAt[key] = now;
       this.failures.failed(`standings:${key}`, `No standings for ${key}: ${err.message}`);
     }
   }
@@ -526,7 +586,9 @@ export class RugbyService {
     if (this.config.competitions.length === 0) {
       found.push('noCompetition');
     }
-    if (this.apiError) {
+    // One failed reading with data held is a hiccup, not an outage.
+    const held = Object.keys(this.data.calendar).length > 0;
+    if (this.apiError && (this.failedRefreshes >= 2 || !held)) {
       found.push('unreachable');
     }
     return found;
@@ -560,15 +622,17 @@ export class RugbyService {
   widgetSignature() {
     const now = this.now();
     const parts = [];
+    let soon = false;
     for (const teamId of this.followedTeams()) {
       for (const match of teamMatches(this.data, teamId)) {
         if (match.start > now - DAY && match.start < now + 2 * DAY) {
           parts.push(match.id, match.state, match.home.score, match.away.score);
+          soon ||= match.start > now && match.start < now + DAY;
         }
       }
     }
-    // The countdown shows hours, minutes under a day.
-    parts.push(Math.floor(now / HOUR));
+    // The countdown shows hours, and minutes under a day.
+    parts.push(Math.floor(now / (soon ? 5 * MINUTE : HOUR)));
     return parts.join('|');
   }
 
@@ -615,53 +679,48 @@ export class RugbyService {
 
   /**
    * "Kick-off" and "match finished": what ESPN says of a followed team's
-   * match, compared with what it said before. A match seen for the first
-   * time is only noted (a fresh install announces nothing).
+   * match, compared with what it said before. Per match and team, `seen`
+   * holds the furthest state reached (a stale document saying "to come"
+   * again never goes back), whether it was seen "to come" or "being played",
+   * and which events were sent: each fires once, and is tried again at the
+   * next reading while Gladys refuses it. A match seen for the first time
+   * already started or over is only noted (a fresh install, a team added).
    */
   async detectTransitions(now, { announce = true } = {}) {
-    const language = this.config.language;
-    const sentences = SENTENCES[language];
-    const events = [];
+    const sentences = SENTENCES[this.config.language];
     const seenNow = {};
+    const due = [];
     for (const teamId of this.followedTeams()) {
       for (const match of teamMatches(this.data, teamId)) {
-        const state = isFinished(match) ? 'finished' : match.state;
         const id = `${teamId}:${match.id}`;
-        const before = this.seen[id]?.state;
-        seenNow[id] = { state, start: match.start };
-        if (!announce || !before || before === state) {
+        const state = isFinished(match) ? 'finished' : match.state;
+        const before = this.seen[id];
+        const entry = before
+          ? { ...before, start: match.start }
+          : { state, start: match.start, sawPre: state === 'pre', sawLive: state === 'in' };
+        if (before && STATE_ORDER[state] > STATE_ORDER[before.state]) {
+          entry.state = state;
+        }
+        entry.sawLive ||= entry.state === 'in';
+        seenNow[id] = entry;
+        if (!announce) {
           continue;
         }
-        if (before === 'pre' && state === 'in' && now - match.start <= ANNOUNCE_WITHIN.kickoff) {
-          const data = this.eventData(match, teamId);
-          events.push({
-            key: TRIGGERS.KICKOFF,
-            data: { ...data, sentence: sentences.kickoff(data.words) },
-          });
+        const age = now - match.start;
+        if (entry.state === 'in' && entry.sawPre && !entry.kickoff) {
+          if (age <= ANNOUNCE_WITHIN.kickoff) {
+            due.push({ id, flag: 'kickoff', key: TRIGGERS.KICKOFF, match, teamId });
+          } else {
+            entry.kickoff = true;
+          }
         }
-        if (
-          (before === 'pre' || before === 'in') &&
-          state === 'finished' &&
-          now - match.start <= ANNOUNCE_WITHIN.finished
-        ) {
-          const result = resultOf(match, teamId);
-          if (result) {
-            const data = this.eventData(match, teamId);
-            events.push({
-              key: TRIGGERS.MATCH_FINISHED,
-              data: {
-                ...data,
-                result,
-                sentence: sentences.last({
-                  team: data.team,
-                  opponent: data.opponent,
-                  teamScore: data.team_score,
-                  opponentScore: data.opponent_score,
-                  result,
-                  competition: data.competition,
-                }),
-              },
-            });
+        if (entry.state === 'finished' && (entry.sawPre || entry.sawLive) && !entry.finished) {
+          // A kick-off missed meanwhile is not announced after the end.
+          entry.kickoff = true;
+          if (age <= ANNOUNCE_WITHIN.finished && resultOf(match, teamId)) {
+            due.push({ id, flag: 'finished', key: TRIGGERS.MATCH_FINISHED, match, teamId });
+          } else {
+            entry.finished = true;
           }
         }
       }
@@ -674,11 +733,26 @@ export class RugbyService {
       }
     }
     this.seen = seenNow;
-    this.saveTriggers();
-    for (const event of events) {
-      delete event.data.words;
-      await this.fireEvent(event.key, event.data);
+    for (const { id, flag, key, match, teamId } of due) {
+      const { words, ...data } = this.eventData(match, teamId);
+      if (key === TRIGGERS.KICKOFF) {
+        data.sentence = sentences.kickoff(words);
+      } else {
+        data.result = resultOf(match, teamId);
+        data.sentence = sentences.last({
+          team: data.team,
+          opponent: data.opponent,
+          teamScore: data.team_score,
+          opponentScore: data.opponent_score,
+          result: data.result,
+          competition: data.competition,
+        });
+      }
+      if (await this.fireEvent(key, data)) {
+        this.seen[id][flag] = true;
+      }
     }
+    this.saveTriggers();
   }
 
   /** "Match starting": every (match, lead time) reached since the last check. */
@@ -698,10 +772,12 @@ export class RugbyService {
         }
         for (const lead of LEAD_MINUTES) {
           const at = match.start - lead * MINUTE;
-          if (at > from && at <= now) {
+          const sent = `${teamId}:${match.id}:${lead}`;
+          if (at > from && at <= now && !this.startingSent.has(sent)) {
             const { words, ...data } = this.eventData(match, teamId);
             events.push({
               at,
+              sent,
               data: {
                 ...data,
                 minutes_before: String(lead),
@@ -713,13 +789,19 @@ export class RugbyService {
       }
     }
     events.sort((a, b) => a.at - b.at);
+    let refused = false;
     for (const event of events) {
       if (!(await this.fireEvent(TRIGGERS.MATCH_STARTING, event.data))) {
         // Gladys is unavailable: try again from this event at the next tick,
         // for 10 minutes at most.
         this.lastCheck = Math.max(event.at - 1, now - CATCH_UP);
+        refused = true;
         break;
       }
+      this.startingSent.add(event.sent);
+    }
+    if (!refused) {
+      this.startingSent.clear();
     }
     this.saveTriggers();
   }

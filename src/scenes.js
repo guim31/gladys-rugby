@@ -45,7 +45,7 @@ export function teamSummary(service, teamId, language = service.config.language)
   const lastSentence = last
     ? sentences.last({ ...score(last), result: resultOf(last, teamId) })
     : sentences.noLast(name);
-  const live = liveMatch(matches);
+  const live = liveMatch(matches, now);
   return {
     next: nextSentence,
     last: lastSentence,

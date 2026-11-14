@@ -145,7 +145,7 @@ export function buildStates(gladys, config, data, teamId, { now, timeZone }) {
 
   const matches = teamMatches(data, teamId);
   if (Object.keys(data.calendar ?? {}).length > 0) {
-    const live = liveMatch(matches);
+    const live = liveMatch(matches, now);
     const next = nextMatch(matches, now);
     const today = localDate(now, timeZone);
     if (next) {

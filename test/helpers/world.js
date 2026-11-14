@@ -77,6 +77,8 @@ export function fakeEspn({ fail = false, status = 200 } = {}) {
   };
   const api = {
     calls: [],
+    // [{ path: RegExp, status }]: those requests answer that HTTP status.
+    errors: [],
     fail,
     status,
     patch(eventId, fn) {
@@ -88,6 +90,10 @@ export function fakeEspn({ fail = false, status = 200 } = {}) {
       api.calls.push(path);
       if (api.fail) {
         throw new Error('getaddrinfo ENOTFOUND site.api.espn.com');
+      }
+      const broken = api.errors.find((error) => error.path.test(path));
+      if (broken) {
+        return { ok: false, status: broken.status, json: async () => ({}) };
       }
       const body = answer(path);
       if (!body) {
