@@ -232,6 +232,10 @@ test('one competition answering 500 does not hold the others back', async (t) =>
   const again = world.api.calls.slice(calls);
   assert.ok(again.some((path) => path.includes('271937/scoreboard')));
   assert.ok(!again.some((path) => path.includes('270559')));
+  // Refused for good: the others keep their pace, the status stays connected.
+  await world.runUntil('2026-11-14T11:30:00Z');
+  assert.equal(world.gladys.fake.connectionStatus.connected, true);
+  assert.equal(world.service.apiError, null);
 });
 
 test('a stale "to come" after the kick-off fires nothing twice; a refused event is sent again', async (t) => {

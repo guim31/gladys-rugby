@@ -473,13 +473,14 @@ export class RugbyService {
         }
       }
     }
-    // Unreachable, or every document refused: ESPN is down for us.
-    const error = outage?.message ?? (refused > 0 && read === 0 ? 'every request refused' : null);
+    // Only an unreachable or rate-limiting ESPN is an outage: a refused
+    // document is logged on its own and tried again later.
+    const error = outage?.message ?? null;
     if (error) {
       this.apiError = error;
       this.failedRefreshes += 1;
       this.failures.failed('api', `Could not read ESPN: ${error}`);
-    } else if (read > 0) {
+    } else if (read > 0 || refused > 0) {
       this.apiError = null;
       this.failedRefreshes = 0;
       this.failures.succeeded('api', 'ESPN read again');
@@ -711,7 +712,10 @@ export class RugbyService {
         // Postponed or abandoned ("over", not completed) is "to come" again:
         // ESPN keeps the id when it reschedules, and the replay is announced.
         const state = isFinished(match) ? 'finished' : match.state === 'in' ? 'in' : 'pre';
-        const moved = this.seen[id] && this.seen[id].start !== match.start;
+        // A kick-off moved before it happened starts afresh (a new date);
+        // one corrected while being played keeps what was seen.
+        const moved =
+          this.seen[id] && this.seen[id].start !== match.start && this.seen[id].state === 'pre';
         const before = moved ? null : this.seen[id];
         const entry = before
           ? { ...before, start: match.start }
