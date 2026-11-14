@@ -1,0 +1,2238 @@
+{
+  "leagues": [
+    {
+      "id": "8005",
+      "name": "French Top 14",
+      "abbreviation": "TOP14",
+      "midsizeName": "270559",
+      "slug": "270559",
+      "season": {
+        "year": 2026,
+        "startDate": "2026-11-07T15:30Z",
+        "endDate": "2026-07-02T03:59Z",
+        "displayName": "2026",
+        "type": {
+          "id": "1",
+          "type": 1,
+          "name": "Top 14",
+          "abbreviation": "Top 14"
+        }
+      },
+      "isClubCompetition": false,
+      "calendarType": "day",
+      "calendarIsWhitelist": true,
+      "calendarStartDate": "2026-11-07T15:30Z",
+      "calendarEndDate": "2026-07-02T03:59Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "604437",
+      "date": "2026-12-05T13:30Z",
+      "name": "Stade Toulousain vs Racing 92",
+      "shortName": "STA VS RAC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604437",
+          "date": "2026-12-05T13:30Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16510",
+            "fullName": "Stade Ernest-Wallon",
+            "address": {
+              "city": "Toulouse",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25922",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25922",
+                "name": "Stade Toulousain",
+                "abbreviation": "STA",
+                "displayName": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "color": "000000",
+                "isActive": true,
+                "venue": {
+                  "id": "16510"
+                }
+              },
+              "score": "0",
+              "form": "WLWWW"
+            },
+            {
+              "id": "99855",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "99855",
+                "name": "Racing 92",
+                "abbreviation": "RAC",
+                "displayName": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "color": "3399FF",
+                "isActive": true,
+                "venue": {
+                  "id": "289546"
+                }
+              },
+              "score": "0",
+              "form": "WLLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 5th at 8:30 AM EST",
+              "shortDetail": "12/5 - 8:30 AM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-05T13:30Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 5th at 8:30 AM EST",
+          "shortDetail": "12/5 - 8:30 AM EST"
+        }
+      }
+    },
+    {
+      "id": "604431",
+      "date": "2026-12-05T15:35Z",
+      "name": "Perpignan vs Clermont Auvergne",
+      "shortName": "USA VS ASM",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604431",
+          "date": "2026-12-05T15:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16610",
+            "fullName": "Stade Aime Giral",
+            "address": {
+              "city": "Perpignan",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25920",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25920",
+                "name": "Perpignan",
+                "abbreviation": "USA",
+                "displayName": "Perpignan",
+                "shortDisplayName": "Perpignan",
+                "color": "FF6600",
+                "isActive": true,
+                "venue": {
+                  "id": "16610"
+                }
+              },
+              "score": "0",
+              "form": "LLLLW"
+            },
+            {
+              "id": "25917",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25917",
+                "name": "Clermont Auvergne",
+                "abbreviation": "ASM",
+                "displayName": "Clermont Auvergne",
+                "shortDisplayName": "Clermont Auvergne",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16262"
+                }
+              },
+              "score": "0",
+              "form": "LWLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 5th at 10:35 AM EST",
+              "shortDetail": "12/5 - 10:35 AM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-05T15:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 5th at 10:35 AM EST",
+          "shortDetail": "12/5 - 10:35 AM EST"
+        }
+      }
+    },
+    {
+      "id": "604432",
+      "date": "2026-12-05T15:35Z",
+      "name": "Vannes vs Bayonne",
+      "shortName": "VAN VS BAY",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604432",
+          "date": "2026-12-05T15:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "158767",
+            "fullName": "Stade de la Rabine",
+            "address": {
+              "city": "Vannes",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "289337",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "289337",
+                "name": "Vannes",
+                "abbreviation": "VAN",
+                "displayName": "Vannes",
+                "shortDisplayName": "Vannes",
+                "isActive": true,
+                "venue": {
+                  "id": "158767"
+                }
+              },
+              "score": "0",
+              "form": "WLWLL"
+            },
+            {
+              "id": "25912",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25912",
+                "name": "Bayonne",
+                "abbreviation": "BAY",
+                "displayName": "Bayonne",
+                "shortDisplayName": "Bayonne",
+                "color": "6699CC",
+                "isActive": true,
+                "venue": {
+                  "id": "88018"
+                }
+              },
+              "score": "0",
+              "form": "LLLWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 5th at 10:35 AM EST",
+              "shortDetail": "12/5 - 10:35 AM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-05T15:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 5th at 10:35 AM EST",
+          "shortDetail": "12/5 - 10:35 AM EST"
+        }
+      }
+    },
+    {
+      "id": "604433",
+      "date": "2026-12-05T15:35Z",
+      "name": "Castres Olympique vs Lyon",
+      "shortName": "CAS VS LYO",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604433",
+          "date": "2026-12-05T15:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "80052",
+            "fullName": "Stade Pierre Fabre",
+            "address": {
+              "city": "Castres",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25916",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25916",
+                "name": "Castres Olympique",
+                "abbreviation": "CAS",
+                "displayName": "Castres Olympique",
+                "shortDisplayName": "Castres Olympique",
+                "color": "000066",
+                "isActive": true,
+                "venue": {
+                  "id": "80052"
+                }
+              },
+              "score": "0",
+              "form": "LLWWL"
+            },
+            {
+              "id": "143736",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "143736",
+                "name": "Lyon",
+                "abbreviation": "LYO",
+                "displayName": "Lyon",
+                "shortDisplayName": "Lyon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16220"
+                }
+              },
+              "score": "0",
+              "form": "LWWLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 5th at 10:35 AM EST",
+              "shortDetail": "12/5 - 10:35 AM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-05T15:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 5th at 10:35 AM EST",
+          "shortDetail": "12/5 - 10:35 AM EST"
+        }
+      }
+    },
+    {
+      "id": "604434",
+      "date": "2026-12-05T15:35Z",
+      "name": "Montpellier Herault vs La Rochelle",
+      "shortName": "MON VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604434",
+          "date": "2026-12-05T15:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "26065",
+            "fullName": "Septeo Stadium",
+            "address": {
+              "city": "Montpellier",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25918",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25918",
+                "name": "Montpellier Herault",
+                "abbreviation": "MON",
+                "displayName": "Montpellier Herault",
+                "shortDisplayName": "Montpellier Herault",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "26065"
+                }
+              },
+              "score": "0",
+              "form": "WWWWL"
+            },
+            {
+              "id": "119318",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "119318",
+                "name": "La Rochelle",
+                "abbreviation": "STA",
+                "displayName": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16394"
+                }
+              },
+              "score": "0",
+              "form": "WLLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 5th at 10:35 AM EST",
+              "shortDetail": "12/5 - 10:35 AM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-05T15:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 5th at 10:35 AM EST",
+          "shortDetail": "12/5 - 10:35 AM EST"
+        }
+      }
+    },
+    {
+      "id": "604435",
+      "date": "2026-12-05T20:00Z",
+      "name": "Pau vs Stade Francais Paris",
+      "shortName": "SEC VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604435",
+          "date": "2026-12-05T20:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "271945",
+            "fullName": "Stade du Hameau",
+            "address": {
+              "city": "Pau",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "270567",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "270567",
+                "name": "Pau",
+                "abbreviation": "SEC",
+                "displayName": "Pau",
+                "shortDisplayName": "Pau",
+                "color": "FF0001",
+                "isActive": true,
+                "venue": {
+                  "id": "271945"
+                }
+              },
+              "score": "0",
+              "form": "WWLWW"
+            },
+            {
+              "id": "25921",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25921",
+                "name": "Stade Francais Paris",
+                "abbreviation": "STA",
+                "displayName": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "color": "CC0066",
+                "isActive": true,
+                "venue": {
+                  "id": "26063"
+                }
+              },
+              "score": "0",
+              "form": "LWLLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 5th at 3:00 PM EST",
+              "shortDetail": "12/5 - 3:00 PM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-05T20:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 5th at 3:00 PM EST",
+          "shortDetail": "12/5 - 3:00 PM EST"
+        }
+      }
+    },
+    {
+      "id": "604436",
+      "date": "2026-12-06T20:05Z",
+      "name": "Toulon vs Bordeaux Begles",
+      "shortName": "RC VS UNI",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604436",
+          "date": "2026-12-06T20:05Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "80047",
+            "fullName": "Stade Mayol",
+            "address": {
+              "city": "Toulon",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25986",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25986",
+                "name": "Toulon",
+                "abbreviation": "RC",
+                "displayName": "Toulon",
+                "shortDisplayName": "Toulon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "80047"
+                }
+              },
+              "score": "0",
+              "form": "WWWWW"
+            },
+            {
+              "id": "143737",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "143737",
+                "name": "Bordeaux Begles",
+                "abbreviation": "UNI",
+                "displayName": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "color": "000099",
+                "isActive": true,
+                "venue": {
+                  "id": "16681"
+                }
+              },
+              "score": "0",
+              "form": "LWWTW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sun, December 6th at 3:05 PM EST",
+              "shortDetail": "12/6 - 3:05 PM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-06T20:05Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sun, December 6th at 3:05 PM EST",
+          "shortDetail": "12/6 - 3:05 PM EST"
+        }
+      }
+    },
+    {
+      "id": "604438",
+      "date": "2026-12-19T00:00Z",
+      "name": "Bayonne vs Perpignan",
+      "shortName": "BAY VS USA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604438",
+          "date": "2026-12-19T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "88018",
+            "fullName": "Stade Jean Dauger",
+            "address": {
+              "city": "Bayonne",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25912",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25912",
+                "name": "Bayonne",
+                "abbreviation": "BAY",
+                "displayName": "Bayonne",
+                "shortDisplayName": "Bayonne",
+                "color": "6699CC",
+                "isActive": true,
+                "venue": {
+                  "id": "88018"
+                }
+              },
+              "score": "0",
+              "form": "LLLWL"
+            },
+            {
+              "id": "25920",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25920",
+                "name": "Perpignan",
+                "abbreviation": "USA",
+                "displayName": "Perpignan",
+                "shortDisplayName": "Perpignan",
+                "color": "FF6600",
+                "isActive": true,
+                "venue": {
+                  "id": "16610"
+                }
+              },
+              "score": "0",
+              "form": "LLLLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/18 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-19T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/18 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604439",
+      "date": "2026-12-19T00:00Z",
+      "name": "Bordeaux Begles vs Pau",
+      "shortName": "UNI VS SEC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604439",
+          "date": "2026-12-19T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16681",
+            "fullName": "Stade Chaban-Delmas",
+            "address": {
+              "city": "Bordeaux",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "143737",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "143737",
+                "name": "Bordeaux Begles",
+                "abbreviation": "UNI",
+                "displayName": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "color": "000099",
+                "isActive": true,
+                "venue": {
+                  "id": "16681"
+                }
+              },
+              "score": "0",
+              "form": "LWWTW"
+            },
+            {
+              "id": "270567",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "270567",
+                "name": "Pau",
+                "abbreviation": "SEC",
+                "displayName": "Pau",
+                "shortDisplayName": "Pau",
+                "color": "FF0001",
+                "isActive": true,
+                "venue": {
+                  "id": "271945"
+                }
+              },
+              "score": "0",
+              "form": "WWLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/18 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-19T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/18 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604440",
+      "date": "2026-12-19T00:00Z",
+      "name": "Clermont Auvergne vs Montpellier Herault",
+      "shortName": "ASM VS MON",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604440",
+          "date": "2026-12-19T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16262",
+            "fullName": "Stade Marcel Michelin",
+            "address": {
+              "city": "Clermont-Ferrand",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25917",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25917",
+                "name": "Clermont Auvergne",
+                "abbreviation": "ASM",
+                "displayName": "Clermont Auvergne",
+                "shortDisplayName": "Clermont Auvergne",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16262"
+                }
+              },
+              "score": "0",
+              "form": "LWLLL"
+            },
+            {
+              "id": "25918",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25918",
+                "name": "Montpellier Herault",
+                "abbreviation": "MON",
+                "displayName": "Montpellier Herault",
+                "shortDisplayName": "Montpellier Herault",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "26065"
+                }
+              },
+              "score": "0",
+              "form": "WWWWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/18 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-19T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/18 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604441",
+      "date": "2026-12-19T00:00Z",
+      "name": "La Rochelle vs Castres Olympique",
+      "shortName": "STA VS CAS",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604441",
+          "date": "2026-12-19T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16394",
+            "fullName": "Stade Marcel-Deflandre",
+            "address": {
+              "city": "La Rochelle",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "119318",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "119318",
+                "name": "La Rochelle",
+                "abbreviation": "STA",
+                "displayName": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16394"
+                }
+              },
+              "score": "0",
+              "form": "WLLWW"
+            },
+            {
+              "id": "25916",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25916",
+                "name": "Castres Olympique",
+                "abbreviation": "CAS",
+                "displayName": "Castres Olympique",
+                "shortDisplayName": "Castres Olympique",
+                "color": "000066",
+                "isActive": true,
+                "venue": {
+                  "id": "80052"
+                }
+              },
+              "score": "0",
+              "form": "LLWWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/18 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-19T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/18 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604442",
+      "date": "2026-12-19T00:00Z",
+      "name": "Lyon vs Toulon",
+      "shortName": "LYO VS RC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604442",
+          "date": "2026-12-19T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16220",
+            "fullName": "Matmut Stadium de Gerland",
+            "address": {
+              "city": "Lyon",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "143736",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "143736",
+                "name": "Lyon",
+                "abbreviation": "LYO",
+                "displayName": "Lyon",
+                "shortDisplayName": "Lyon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16220"
+                }
+              },
+              "score": "0",
+              "form": "LWWLL"
+            },
+            {
+              "id": "25986",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25986",
+                "name": "Toulon",
+                "abbreviation": "RC",
+                "displayName": "Toulon",
+                "shortDisplayName": "Toulon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "80047"
+                }
+              },
+              "score": "0",
+              "form": "WWWWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/18 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-19T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/18 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604444",
+      "date": "2026-12-19T00:00Z",
+      "name": "Racing 92 vs Vannes",
+      "shortName": "RAC VS VAN",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604444",
+          "date": "2026-12-19T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "289546",
+            "fullName": "Paris La Defense Arena",
+            "address": {
+              "city": "Nanterre",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "99855",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "99855",
+                "name": "Racing 92",
+                "abbreviation": "RAC",
+                "displayName": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "color": "3399FF",
+                "isActive": true,
+                "venue": {
+                  "id": "289546"
+                }
+              },
+              "score": "0",
+              "form": "WLLLL"
+            },
+            {
+              "id": "289337",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "289337",
+                "name": "Vannes",
+                "abbreviation": "VAN",
+                "displayName": "Vannes",
+                "shortDisplayName": "Vannes",
+                "isActive": true,
+                "venue": {
+                  "id": "158767"
+                }
+              },
+              "score": "0",
+              "form": "WLWLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/18 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-19T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/18 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604443",
+      "date": "2026-12-19T20:00Z",
+      "name": "Stade Francais Paris vs Stade Toulousain",
+      "shortName": "STA VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604443",
+          "date": "2026-12-19T20:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16701",
+            "fullName": "Stade de France",
+            "address": {
+              "city": "Saint-Denis",
+              "state": "Reunion"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25921",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25921",
+                "name": "Stade Francais Paris",
+                "abbreviation": "STA",
+                "displayName": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "color": "CC0066",
+                "isActive": true,
+                "venue": {
+                  "id": "26063"
+                }
+              },
+              "score": "0",
+              "form": "LWLLW"
+            },
+            {
+              "id": "25922",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25922",
+                "name": "Stade Toulousain",
+                "abbreviation": "STA",
+                "displayName": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "color": "000000",
+                "isActive": true,
+                "venue": {
+                  "id": "16510"
+                }
+              },
+              "score": "0",
+              "form": "WLWWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 19th at 3:00 PM EST",
+              "shortDetail": "12/19 - 3:00 PM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-19T20:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 19th at 3:00 PM EST",
+          "shortDetail": "12/19 - 3:00 PM EST"
+        }
+      }
+    },
+    {
+      "id": "604445",
+      "date": "2026-12-26T00:00Z",
+      "name": "Perpignan vs Lyon",
+      "shortName": "USA VS LYO",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604445",
+          "date": "2026-12-26T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16610",
+            "fullName": "Stade Aime Giral",
+            "address": {
+              "city": "Perpignan",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25920",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25920",
+                "name": "Perpignan",
+                "abbreviation": "USA",
+                "displayName": "Perpignan",
+                "shortDisplayName": "Perpignan",
+                "color": "FF6600",
+                "isActive": true,
+                "venue": {
+                  "id": "16610"
+                }
+              },
+              "score": "0",
+              "form": "LLLLW"
+            },
+            {
+              "id": "143736",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "143736",
+                "name": "Lyon",
+                "abbreviation": "LYO",
+                "displayName": "Lyon",
+                "shortDisplayName": "Lyon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16220"
+                }
+              },
+              "score": "0",
+              "form": "LWWLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/25 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-26T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/25 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604446",
+      "date": "2026-12-26T00:00Z",
+      "name": "Vannes vs La Rochelle",
+      "shortName": "VAN VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604446",
+          "date": "2026-12-26T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "158767",
+            "fullName": "Stade de la Rabine",
+            "address": {
+              "city": "Vannes",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "289337",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "289337",
+                "name": "Vannes",
+                "abbreviation": "VAN",
+                "displayName": "Vannes",
+                "shortDisplayName": "Vannes",
+                "isActive": true,
+                "venue": {
+                  "id": "158767"
+                }
+              },
+              "score": "0",
+              "form": "WLWLL"
+            },
+            {
+              "id": "119318",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "119318",
+                "name": "La Rochelle",
+                "abbreviation": "STA",
+                "displayName": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16394"
+                }
+              },
+              "score": "0",
+              "form": "WLLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/25 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-26T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/25 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604447",
+      "date": "2026-12-26T00:00Z",
+      "name": "Castres Olympique vs Bordeaux Begles",
+      "shortName": "CAS VS UNI",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604447",
+          "date": "2026-12-26T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "80052",
+            "fullName": "Stade Pierre Fabre",
+            "address": {
+              "city": "Castres",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25916",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25916",
+                "name": "Castres Olympique",
+                "abbreviation": "CAS",
+                "displayName": "Castres Olympique",
+                "shortDisplayName": "Castres Olympique",
+                "color": "000066",
+                "isActive": true,
+                "venue": {
+                  "id": "80052"
+                }
+              },
+              "score": "0",
+              "form": "LLWWL"
+            },
+            {
+              "id": "143737",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "143737",
+                "name": "Bordeaux Begles",
+                "abbreviation": "UNI",
+                "displayName": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "color": "000099",
+                "isActive": true,
+                "venue": {
+                  "id": "16681"
+                }
+              },
+              "score": "0",
+              "form": "LWWTW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/25 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-26T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/25 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604448",
+      "date": "2026-12-26T00:00Z",
+      "name": "Montpellier Herault vs Bayonne",
+      "shortName": "MON VS BAY",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604448",
+          "date": "2026-12-26T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "26065",
+            "fullName": "Septeo Stadium",
+            "address": {
+              "city": "Montpellier",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25918",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25918",
+                "name": "Montpellier Herault",
+                "abbreviation": "MON",
+                "displayName": "Montpellier Herault",
+                "shortDisplayName": "Montpellier Herault",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "26065"
+                }
+              },
+              "score": "0",
+              "form": "WWWWL"
+            },
+            {
+              "id": "25912",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25912",
+                "name": "Bayonne",
+                "abbreviation": "BAY",
+                "displayName": "Bayonne",
+                "shortDisplayName": "Bayonne",
+                "color": "6699CC",
+                "isActive": true,
+                "venue": {
+                  "id": "88018"
+                }
+              },
+              "score": "0",
+              "form": "LLLWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/25 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-26T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/25 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604449",
+      "date": "2026-12-26T00:00Z",
+      "name": "Pau vs Clermont Auvergne",
+      "shortName": "SEC VS ASM",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604449",
+          "date": "2026-12-26T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "271945",
+            "fullName": "Stade du Hameau",
+            "address": {
+              "city": "Pau",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "270567",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "270567",
+                "name": "Pau",
+                "abbreviation": "SEC",
+                "displayName": "Pau",
+                "shortDisplayName": "Pau",
+                "color": "FF0001",
+                "isActive": true,
+                "venue": {
+                  "id": "271945"
+                }
+              },
+              "score": "0",
+              "form": "WWLWW"
+            },
+            {
+              "id": "25917",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25917",
+                "name": "Clermont Auvergne",
+                "abbreviation": "ASM",
+                "displayName": "Clermont Auvergne",
+                "shortDisplayName": "Clermont Auvergne",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16262"
+                }
+              },
+              "score": "0",
+              "form": "LWLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/25 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-26T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/25 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604450",
+      "date": "2026-12-26T00:00Z",
+      "name": "Racing 92 vs Stade Francais Paris",
+      "shortName": "RAC VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604450",
+          "date": "2026-12-26T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "289546",
+            "fullName": "Paris La Defense Arena",
+            "address": {
+              "city": "Nanterre",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "99855",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "99855",
+                "name": "Racing 92",
+                "abbreviation": "RAC",
+                "displayName": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "color": "3399FF",
+                "isActive": true,
+                "venue": {
+                  "id": "289546"
+                }
+              },
+              "score": "0",
+              "form": "WLLLL"
+            },
+            {
+              "id": "25921",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25921",
+                "name": "Stade Francais Paris",
+                "abbreviation": "STA",
+                "displayName": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "color": "CC0066",
+                "isActive": true,
+                "venue": {
+                  "id": "26063"
+                }
+              },
+              "score": "0",
+              "form": "LWLLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/25 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-26T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/25 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604451",
+      "date": "2026-12-26T00:00Z",
+      "name": "Stade Toulousain vs Toulon",
+      "shortName": "STA VS RC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604451",
+          "date": "2026-12-26T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16510",
+            "fullName": "Stade Ernest-Wallon",
+            "address": {
+              "city": "Toulouse",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25922",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25922",
+                "name": "Stade Toulousain",
+                "abbreviation": "STA",
+                "displayName": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "color": "000000",
+                "isActive": true,
+                "venue": {
+                  "id": "16510"
+                }
+              },
+              "score": "0",
+              "form": "WLWWW"
+            },
+            {
+              "id": "25986",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25986",
+                "name": "Toulon",
+                "abbreviation": "RC",
+                "displayName": "Toulon",
+                "shortDisplayName": "Toulon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "80047"
+                }
+              },
+              "score": "0",
+              "form": "WWWWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "12/25 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-26T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "12/25 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    }
+  ],
+  "provider": {
+    "id": "100",
+    "name": "Draft Kings",
+    "displayName": "Draft Kings",
+    "priority": 1
+  }
+}

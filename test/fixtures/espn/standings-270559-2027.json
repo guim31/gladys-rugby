@@ -1,0 +1,1465 @@
+{
+  "id": "270559",
+  "name": "French Top 14",
+  "abbreviation": "TOP14",
+  "children": [
+    {
+      "id": "1",
+      "name": "Top 14",
+      "abbreviation": "2023/24",
+      "shortName": "Top 14",
+      "standings": {
+        "id": "0",
+        "name": "overall",
+        "displayName": "Standings",
+        "season": 2027,
+        "seasonType": 1,
+        "seasonDisplayName": "2027",
+        "entries": [
+          {
+            "team": {
+              "id": "25922",
+              "name": "Stade Toulousain",
+              "abbreviation": "STA",
+              "displayName": "Stade Toulousain",
+              "shortDisplayName": "Stade Toulousain",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 2.0,
+                "displayValue": "2"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": 68.0,
+                "displayValue": "+68"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 32.0,
+                "displayValue": "32"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 7.0,
+                "displayValue": "7"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 1.0,
+                "displayValue": "1"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "270567",
+              "name": "Pau",
+              "abbreviation": "SEC",
+              "displayName": "Pau",
+              "shortDisplayName": "Pau",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 2.0,
+                "displayValue": "2"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": 94.0,
+                "displayValue": "+94"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 31.0,
+                "displayValue": "31"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 7.0,
+                "displayValue": "7"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 2.0,
+                "displayValue": "2"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "25918",
+              "name": "Montpellier Herault",
+              "abbreviation": "MON",
+              "displayName": "Montpellier Herault",
+              "shortDisplayName": "Montpellier Herault",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 3.0,
+                "displayValue": "3"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": 105.0,
+                "displayValue": "+105"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 27.0,
+                "displayValue": "27"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 6.0,
+                "displayValue": "6"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 3.0,
+                "displayValue": "3"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "143737",
+              "name": "Bordeaux Begles",
+              "abbreviation": "UNI",
+              "displayName": "Bordeaux Begles",
+              "shortDisplayName": "Bordeaux Begles",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 3.0,
+                "displayValue": "3"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": 66.0,
+                "displayValue": "+66"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 27.0,
+                "displayValue": "27"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 6.0,
+                "displayValue": "6"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 4.0,
+                "displayValue": "4"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "25986",
+              "name": "Toulon",
+              "abbreviation": "RC",
+              "displayName": "Toulon",
+              "shortDisplayName": "Toulon",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 4.0,
+                "displayValue": "4"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": 42.0,
+                "displayValue": "+42"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 26.0,
+                "displayValue": "26"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 5.0,
+                "displayValue": "5"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "143736",
+              "name": "Lyon",
+              "abbreviation": "LYO",
+              "displayName": "Lyon",
+              "shortDisplayName": "Lyon",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 4.0,
+                "displayValue": "4"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": 16.0,
+                "displayValue": "+16"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 24.0,
+                "displayValue": "24"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 6.0,
+                "displayValue": "6"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "119318",
+              "name": "La Rochelle",
+              "abbreviation": "STA",
+              "displayName": "La Rochelle",
+              "shortDisplayName": "La Rochelle",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 4.0,
+                "displayValue": "4"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -12.0,
+                "displayValue": "-12"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 22.0,
+                "displayValue": "22"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 7.0,
+                "displayValue": "7"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "25912",
+              "name": "Bayonne",
+              "abbreviation": "BAY",
+              "displayName": "Bayonne",
+              "shortDisplayName": "Bayonne",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -37.0,
+                "displayValue": "-37"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 20.0,
+                "displayValue": "20"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 4.0,
+                "displayValue": "4"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 8.0,
+                "displayValue": "8"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "25921",
+              "name": "Stade Francais Paris",
+              "abbreviation": "STA",
+              "displayName": "Stade Francais Paris",
+              "shortDisplayName": "Stade Francais Paris",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -20.0,
+                "displayValue": "-20"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 19.0,
+                "displayValue": "19"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 4.0,
+                "displayValue": "4"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 9.0,
+                "displayValue": "9"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "25917",
+              "name": "Clermont Auvergne",
+              "abbreviation": "ASM",
+              "displayName": "Clermont Auvergne",
+              "shortDisplayName": "Clermont Auvergne",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 6.0,
+                "displayValue": "6"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -33.0,
+                "displayValue": "-33"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 16.0,
+                "displayValue": "16"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 3.0,
+                "displayValue": "3"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 10.0,
+                "displayValue": "10"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "99855",
+              "name": "Racing 92",
+              "abbreviation": "RAC",
+              "displayName": "Racing 92",
+              "shortDisplayName": "Racing 92",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 6.0,
+                "displayValue": "6"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -61.0,
+                "displayValue": "-61"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 15.0,
+                "displayValue": "15"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 3.0,
+                "displayValue": "3"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 11.0,
+                "displayValue": "11"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "25920",
+              "name": "Perpignan",
+              "abbreviation": "USA",
+              "displayName": "Perpignan",
+              "shortDisplayName": "Perpignan",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 6.0,
+                "displayValue": "6"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -76.0,
+                "displayValue": "-76"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 15.0,
+                "displayValue": "15"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 3.0,
+                "displayValue": "3"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 12.0,
+                "displayValue": "12"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "25916",
+              "name": "Castres Olympique",
+              "abbreviation": "CAS",
+              "displayName": "Castres Olympique",
+              "shortDisplayName": "Castres Olympique",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 6.0,
+                "displayValue": "6"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -80.0,
+                "displayValue": "-80"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 14.0,
+                "displayValue": "14"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 3.0,
+                "displayValue": "3"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 13.0,
+                "displayValue": "13"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "289337",
+              "name": "Vannes",
+              "abbreviation": "VAN",
+              "displayName": "Vannes",
+              "shortDisplayName": "Vannes",
+              "isActive": true,
+              "isNational": false
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 7.0,
+                "displayValue": "7"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -72.0,
+                "displayValue": "-72"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 2.0,
+                "displayValue": "2"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 14.0,
+                "displayValue": "14"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "season": {
+    "year": 2027,
+    "startDate": "2027-06-14T15:50Z",
+    "endDate": "2027-07-02T03:59Z",
+    "displayName": "2027"
+  },
+  "seasons": [
+    {
+      "year": 2027,
+      "startDate": "2027-06-14T15:50Z",
+      "endDate": "2027-07-02T03:59Z",
+      "displayName": "2027",
+      "types": [
+        {
+          "id": "1",
+          "name": "Top 14",
+          "abbreviation": "Top 14",
+          "startDate": "2027-06-14T15:50Z",
+          "endDate": "2027-07-02T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2027"
+    },
+    {
+      "year": 2023,
+      "startDate": "2022-09-01T04:00Z",
+      "endDate": "2023-07-02T03:59Z",
+      "displayName": "2022-23",
+      "types": [
+        {
+          "id": "1",
+          "name": "2022/23 Top 14",
+          "abbreviation": "2022/23 Top 14",
+          "startDate": "2022-09-01T04:00Z",
+          "endDate": "2023-07-02T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2022-23"
+    },
+    {
+      "year": 2022,
+      "startDate": "2021-09-03T04:00Z",
+      "endDate": "2022-07-02T03:59Z",
+      "displayName": "2021-22",
+      "types": [
+        {
+          "id": "1",
+          "name": "2021/22 Top 14",
+          "abbreviation": "2021/22 Top 14",
+          "startDate": "2021-09-03T04:00Z",
+          "endDate": "2022-07-02T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2021-22"
+    },
+    {
+      "year": 2021,
+      "startDate": "2020-08-24T04:00Z",
+      "endDate": "2021-06-17T03:59Z",
+      "displayName": "2020-21",
+      "types": [
+        {
+          "id": "1",
+          "name": "2020/21 Top 14 Orange",
+          "abbreviation": "2020/21 Top 14 Orange",
+          "startDate": "2020-08-24T04:00Z",
+          "endDate": "2021-06-17T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2020-21"
+    },
+    {
+      "year": 2020,
+      "startDate": "2019-08-24T04:00Z",
+      "endDate": "2020-06-17T03:59Z",
+      "displayName": "2019-20",
+      "types": [
+        {
+          "id": "1",
+          "name": "2019/20 Top 14 Orange",
+          "abbreviation": "2019/20 Top 14 Orange",
+          "startDate": "2019-08-24T04:00Z",
+          "endDate": "2020-06-17T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2019-20"
+    },
+    {
+      "year": 2019,
+      "startDate": "2018-08-24T04:00Z",
+      "endDate": "2019-06-17T03:59Z",
+      "displayName": "2018-19",
+      "types": [
+        {
+          "id": "1",
+          "name": "2018/19 Top 14 Orange",
+          "abbreviation": "2018/19 Top 14 Orange",
+          "startDate": "2018-08-24T04:00Z",
+          "endDate": "2019-06-17T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2018-19"
+    },
+    {
+      "year": 2018,
+      "startDate": "2017-08-17T04:00Z",
+      "endDate": "2018-06-25T03:59Z",
+      "displayName": "2017-18",
+      "types": [
+        {
+          "id": "1",
+          "name": "2017/18 Top 14 Orange",
+          "abbreviation": "2017/18 Top 14 Orange",
+          "startDate": "2017-08-17T04:00Z",
+          "endDate": "2018-06-25T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2017-18"
+    },
+    {
+      "year": 2017,
+      "startDate": "2016-08-17T04:00Z",
+      "endDate": "2017-06-25T03:59Z",
+      "displayName": "2016-17",
+      "types": [
+        {
+          "id": "1",
+          "name": "2016/17 Top 14 Orange",
+          "abbreviation": "2016/17 Top 14 Orange",
+          "startDate": "2016-08-17T04:00Z",
+          "endDate": "2017-06-25T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2016-17"
+    },
+    {
+      "year": 2016,
+      "startDate": "2015-08-17T04:00Z",
+      "endDate": "2016-06-25T03:59Z",
+      "displayName": "2015-16",
+      "types": [
+        {
+          "id": "1",
+          "name": "2015/16 Top 14 Orange",
+          "abbreviation": "2015/16 Top 14 Orange",
+          "startDate": "2015-08-17T04:00Z",
+          "endDate": "2016-06-25T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2015-16"
+    },
+    {
+      "year": 2015,
+      "startDate": "2014-08-15T04:00Z",
+      "endDate": "2015-08-17T03:59Z",
+      "displayName": "2014-15",
+      "types": [
+        {
+          "id": "1",
+          "name": "2014/15 Top 14 Orange",
+          "abbreviation": "2014/15 Top 14 Orange",
+          "startDate": "2014-08-15T04:00Z",
+          "endDate": "2015-08-17T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2014-15"
+    },
+    {
+      "year": 2014,
+      "startDate": "2013-08-16T04:00Z",
+      "endDate": "2014-08-15T03:59Z",
+      "displayName": "2013-14",
+      "types": [
+        {
+          "id": "1",
+          "name": "2013/14 Top 14 Orange",
+          "abbreviation": "2013/14 Top 14 Orange",
+          "startDate": "2013-08-16T04:00Z",
+          "endDate": "2014-08-15T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2013-14"
+    },
+    {
+      "year": 2013,
+      "startDate": "2012-08-17T04:00Z",
+      "endDate": "2013-08-16T03:59Z",
+      "displayName": "2012-13",
+      "types": [
+        {
+          "id": "1",
+          "name": "2012/13 Top 14 Orange",
+          "abbreviation": "2012/13 Top 14 Orange",
+          "startDate": "2012-08-17T04:00Z",
+          "endDate": "2013-08-16T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2012-13"
+    },
+    {
+      "year": 2012,
+      "startDate": "2011-08-26T04:00Z",
+      "endDate": "2012-08-17T03:59Z",
+      "displayName": "2011-12",
+      "types": [
+        {
+          "id": "1",
+          "name": "2011/12 Top 14 Orange",
+          "abbreviation": "2011/12 Top 14 Orange",
+          "startDate": "2011-08-26T04:00Z",
+          "endDate": "2012-08-17T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2011-12"
+    },
+    {
+      "year": 2011,
+      "startDate": "2010-08-13T04:00Z",
+      "endDate": "2011-08-26T03:59Z",
+      "displayName": "2010-11",
+      "types": [
+        {
+          "id": "1",
+          "name": "2010/11 Top 14 Orange",
+          "abbreviation": "2010/11 Top 14 Orange",
+          "startDate": "2010-08-13T04:00Z",
+          "endDate": "2011-08-26T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2010-11"
+    },
+    {
+      "year": 2010,
+      "startDate": "2009-08-14T04:00Z",
+      "endDate": "2010-08-13T03:59Z",
+      "displayName": "2009-10",
+      "types": [
+        {
+          "id": "1",
+          "name": "2009/10 French Top 14",
+          "abbreviation": "2009/10 French Top 14",
+          "startDate": "2009-08-14T04:00Z",
+          "endDate": "2010-08-13T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2009-10"
+    },
+    {
+      "year": 2009,
+      "startDate": "2008-08-26T04:00Z",
+      "endDate": "2009-08-14T03:59Z",
+      "displayName": "2008-09",
+      "types": [
+        {
+          "id": "1",
+          "name": "2008/09 French Top 14",
+          "abbreviation": "2008/09 French Top 14",
+          "startDate": "2008-08-26T04:00Z",
+          "endDate": "2009-08-14T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2008-09"
+    }
+  ]
+}

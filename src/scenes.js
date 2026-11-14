@@ -1,41 +1,74 @@
 // -----------------------------------------------------------------------------
-// Scene actions (SDK v0.14+, Gladys 5.1+).
-//
-// A scene action is an OPERATION a scene author places in a scene, with
-// parameters and a result: "identify this device", "take a snapshot", "clean
-// these rooms". Each one is declared in the manifest `scene_actions` field
-// (key, label, `fields` in the config_schema grammar, scalar `outputs`) and
-// handled here, keyed by that same `key`; index.js registers every entry with
-// `gladys.onSceneAction(key, ...)`.
-//
-// Scene TRIGGERS are the other direction ("this happened"): they are fired by
-// the device that observes the event, see src/devices/motionSensor.js.
-//
-// The rules that matter:
-//   - `fields` arrive RESOLVED: scene variables substituted, defaults applied,
-//     validated by the core; a `"source": "devices"` field is the chosen
-//     device external_id;
-//   - resolve an object of the declared `outputs` (scalars only), readable by
-//     the following actions of the scene, or `undefined` for none. Keys not
-//     declared in the manifest are dropped by the core;
-//   - throwing fails THIS action only: the scene logs it and continues. A
-//     scene action is never a condition: return an output and let the scene
-//     author gate on it;
-//   - never fire a scene event as a consequence of a received action: a scene
-//     bound to that event would loop through the integration.
+// Scene actions (manifest `scene_actions`): sentences ready to send in a
+// message or to say aloud, in the language of the configuration (a scene
+// action does not get the user's language), and a few values for conditions.
 // -----------------------------------------------------------------------------
 
-import { createLogger } from '@gladysassistant/integration-sdk';
-import { signalDevice } from './devices/index.js';
+import { describeMatch, teamIdOf } from './device.js';
+import { SENTENCES, teamName } from './i18n.js';
+import { lastMatch, liveMatch, nextMatch, resultOf, sides, teamMatches } from './matches.js';
+import { formatDay, formatTime } from './time.js';
 
-const logger = createLogger({ name: 'scenes' });
+/** The sentences of a team: next match, last result, live score. */
+export function teamSummary(service, teamId, language = service.config.language) {
+  const now = service.now();
+  const { timeZone } = service;
+  const sentences = SENTENCES[language];
+  const matches = teamMatches(service.data, teamId);
+  const team = service.findTeam(teamId);
+  const name = team ? teamName(team, language) : teamId;
+
+  const next = nextMatch(matches, now);
+  let nextSentence = sentences.noNext(name);
+  let days = -1;
+  if (next) {
+    const words = describeMatch(next, teamId, language, timeZone, now);
+    days = words.days;
+    nextSentence = sentences.next({
+      ...words,
+      day: formatDay(next.start, language, timeZone, 'long'),
+      time: next.timed ? formatTime(next.start, language, timeZone) : '',
+    });
+  }
+
+  const score = (match) => {
+    const { team: side, opponent } = sides(match, teamId);
+    return {
+      team: name,
+      opponent: teamName(opponent, language),
+      teamScore: side.score ?? 0,
+      opponentScore: opponent.score ?? 0,
+      competition: describeMatch(match, teamId, language, timeZone, now).competition,
+    };
+  };
+  const last = lastMatch(matches);
+  const lastSentence = last
+    ? sentences.last({ ...score(last), result: resultOf(last, teamId) })
+    : sentences.noLast(name);
+  const live = liveMatch(matches);
+  return {
+    next: nextSentence,
+    last: lastSentence,
+    live: live ? sentences.live(score(live)) : '',
+    days,
+  };
+}
 
 export const SCENE_ACTIONS = {
-  // The ack is awaited under the action's `timeout_seconds` (15 s in the
-  // manifest), counted from the moment the scene reaches the action.
-  async identify_device(gladys, { fields, config }) {
-    logger.info(`Scene action identify_device <- ${fields.device}`);
-    const signalled = await signalDevice(gladys, fields.device, config);
-    return { signalled };
+  read_team: async (service, { fields = {} }) => {
+    const teamId = teamIdOf(service.gladys, fields.device) ?? service.followedTeams()[0];
+    if (!teamId) {
+      throw new Error('No team followed: add one in the Discover tab of the Rugby integration');
+    }
+    const summary = teamSummary(service, teamId);
+    return {
+      sentence: [summary.live, summary.live ? '' : summary.next, summary.last]
+        .filter(Boolean)
+        .join(' '),
+      next_match: summary.next,
+      last_result: summary.last,
+      live: Boolean(summary.live),
+      days_until_match: summary.days,
+    };
   },
 };

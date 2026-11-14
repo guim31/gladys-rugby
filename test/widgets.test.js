@@ -1,77 +1,94 @@
+// -----------------------------------------------------------------------------
+// The "Rugby team" widget: content within the core vocabulary and budget
+// (validateWidgetContent of the SDK), localized by the language of the viewer,
+// titled with the name given in Gladys.
+// -----------------------------------------------------------------------------
+
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { validateWidgetContent } from '@gladysassistant/integration-sdk';
-import { createFakeGladys } from '@gladysassistant/integration-sdk/testing';
-import { buildDiscoveredDevices } from '../src/devices/index.js';
-import { simulateLanSession } from '../src/devices/plug.js';
-import { DEMO_STATUS_WIDGET, WIDGETS, refreshWidgets } from '../src/widgets.js';
-import { normalizeConfig } from '../src/config.js';
+import { LYON_TOULOUSE, SCOTLAND, TOULOUSE, createWorld, fakeEspn, play } from './helpers/world.js';
 
-const gladys = createFakeGladys();
-const config = normalizeConfig();
-const demoStatus = WIDGETS[DEMO_STATUS_WIDGET];
+async function content(world, request) {
+  const ack = await world.gladys.fake.widgetGet('rugby_team', request);
+  assert.equal(ack.success, true, ack.error);
+  return ack.data.content;
+}
 
-// What the SDK passes to onWidgetGet, plus the config index.js adds.
-const getContent = (cfg = config) =>
-  demoStatus.get(gladys, { settings: {}, language: 'en', units: 'metric', config: cfg });
+const byType = (widget, type) => widget.components.filter((component) => component.type === type);
 
-test('the demo_status content is rendered exactly as sent', async () => {
-  // [] = nothing the core would drop, truncate or trim to the content budget.
-  assert.deepEqual(validateWidgetContent(await getContent()), []);
-});
+function withinBudget(widget, label) {
+  assert.deepEqual(validateWidgetContent(widget), [], label);
+  assert.ok(widget.components.length <= 8, label);
+  assert.ok(byType(widget, 'text').length <= 2, label);
+}
 
-test('the degraded plug connection content is valid too', async () => {
-  simulateLanSession(false);
-  try {
-    const content = await getContent();
-    assert.deepEqual(validateWidgetContent(content), []);
-    const status = content.components.find((component) => component.type === 'status');
-    assert.ok(
-      status.items.some((item) => item.color === 'warning'),
-      'degraded shows a warning',
-    );
-  } finally {
-    simulateLanSession(true);
+test('countdown, rank, next matches and last result, in four languages', async (t) => {
+  const world = await createWorld({ follow: [TOULOUSE, SCOTLAND] });
+  t.after(() => world.app.stop());
+  for (const language of ['en', 'fr', 'de', 'es']) {
+    withinBudget(await content(world, { settings: {}, language }), language);
   }
-});
-
-test('the live tiles reference features the integration publishes', async () => {
-  const featureIds = new Set(
-    buildDiscoveredDevices(gladys, config).flatMap((device) =>
-      device.features.map((feature) => feature.external_id),
-    ),
+  const fr = await content(world, { settings: {}, language: 'fr' });
+  assert.equal(byType(fr, 'text')[0].text, 'Rugby · team 25922', 'the name given in Gladys');
+  assert.deepEqual(
+    byType(fr, 'value').map((tile) => [tile.label, tile.value]),
+    [
+      ['Prochain match', '14 j 10 h'],
+      ['Classement', '1er'],
+    ],
   );
-  const liveTiles = (await getContent()).components.filter((c) => c.device_feature);
-  assert.ok(liveTiles.length > 0, 'the template demonstrates a device-bound tile');
-  for (const tile of liveTiles) {
-    assert.ok(featureIds.has(tile.device_feature), `unknown feature ${tile.device_feature}`);
-  }
-});
+  assert.deepEqual(
+    byType(fr, 'card-list')[0].items.map((item) => [item.title, item.subtitle]),
+    [
+      ['Lyon – Stade Toulousain (Top 14)', 'sam. 28 nov. · 21:00'],
+      ['Stade Toulousain – Racing 92 (Top 14)', 'sam. 5 déc. · 14:30'],
+      ['Lions – Stade Toulousain (Champions Cup)', 'sam. 12 déc. · 14:00'],
+    ],
+  );
+  assert.deepEqual(byType(fr, 'status')[0].items, [
+    { label: 'Dernier match', value: 'Victoire 28-18 · Clermont Auvergne', color: 'success' },
+  ]);
 
-test('every button action of the content is handled and answers a short toast', async () => {
-  const buttons = (await getContent()).components.filter((c) => c.type === 'button' && c.action);
-  assert.ok(buttons.length > 0, 'the template demonstrates a widget action');
-  for (const { action } of buttons) {
-    const message = await demoStatus.action(gladys, {
-      actionKey: action.key,
-      params: action.params ?? {},
-      settings: {},
-      config,
-    });
-    assert.ok(message.en, 'the toast carries at least the mandatory `en` text');
-    assert.ok(message.en.length <= 200, 'toasts are capped at 200 characters');
-  }
-});
-
-test('an unknown widget action fails, so the user sees the error', async () => {
-  await assert.rejects(
-    demoStatus.action(gladys, { actionKey: 'unknown', params: {}, settings: {}, config }),
-    /Unknown widget action/,
+  // Optional blocks can be hidden; another followed team can be chosen.
+  const bare = await content(world, {
+    settings: { show_upcoming: false, show_last: false },
+    language: 'en',
+  });
+  assert.deepEqual(byType(bare, 'card-list'), []);
+  assert.deepEqual(byType(bare, 'status'), []);
+  const scotland = await content(world, {
+    settings: { device: 'ext:rugby:team:2' },
+    language: 'en',
+  });
+  withinBudget(scotland, 'scotland');
+  assert.deepEqual(
+    byType(scotland, 'value').map((tile) => tile.value),
+    ['None yet'],
   );
 });
 
-test('refreshWidgets nudges every widget', () => {
-  const fresh = createFakeGladys();
-  refreshWidgets(fresh);
-  assert.deepEqual(fresh.fake.widgetRefreshes, Object.keys(WIDGETS));
+test('during a match: the live score first', async (t) => {
+  const api = fakeEspn();
+  api.patch(LYON_TOULOUSE, (game) => play(game, { state: 'in', home: 6, away: 13 }));
+  const world = await createWorld({ api, at: '2026-11-28T20:30:00Z' });
+  t.after(() => world.app.stop());
+  const widget = await content(world, { settings: {}, language: 'fr' });
+  withinBudget(widget, 'live');
+  assert.deepEqual(byType(widget, 'value')[0], {
+    type: 'value',
+    label: 'En direct · Lyon',
+    value: '13 – 6',
+    icon: 'activity',
+    color: 'success',
+  });
+  assert.equal(widget.ttl_seconds, 120);
+});
+
+test('no team followed: says how to add one', async (t) => {
+  const world = await createWorld({ follow: [] });
+  t.after(() => world.app.stop());
+  const widget = await content(world, { settings: {}, language: 'de' });
+  withinBudget(widget, 'none');
+  assert.match(byType(widget, 'text')[0].text, /Entdecken/);
 });

@@ -1,0 +1,1504 @@
+{
+  "leagues": [
+    {
+      "id": "8005",
+      "name": "French Top 14",
+      "abbreviation": "TOP14",
+      "midsizeName": "270559",
+      "slug": "270559",
+      "season": {
+        "year": 2026,
+        "startDate": "2026-11-07T15:30Z",
+        "endDate": "2026-07-02T03:59Z",
+        "displayName": "2026",
+        "type": {
+          "id": "1",
+          "type": 1,
+          "name": "Top 14",
+          "abbreviation": "Top 14"
+        }
+      },
+      "isClubCompetition": false,
+      "calendarType": "day",
+      "calendarIsWhitelist": true,
+      "calendarStartDate": "2026-11-07T15:30Z",
+      "calendarEndDate": "2026-07-02T03:59Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "604473",
+      "date": "2027-02-20T00:00Z",
+      "name": "Bayonne vs La Rochelle",
+      "shortName": "BAY VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604473",
+          "date": "2027-02-20T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "88018",
+            "fullName": "Stade Jean Dauger",
+            "address": {
+              "city": "Bayonne",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25912",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25912",
+                "name": "Bayonne",
+                "abbreviation": "BAY",
+                "displayName": "Bayonne",
+                "shortDisplayName": "Bayonne",
+                "color": "6699CC",
+                "isActive": true,
+                "venue": {
+                  "id": "88018"
+                }
+              },
+              "score": "0",
+              "form": "LLLWL"
+            },
+            {
+              "id": "119318",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "119318",
+                "name": "La Rochelle",
+                "abbreviation": "STA",
+                "displayName": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16394"
+                }
+              },
+              "score": "0",
+              "form": "WLLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/19 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-20T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/19 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604474",
+      "date": "2027-02-20T00:00Z",
+      "name": "Perpignan vs Pau",
+      "shortName": "USA VS SEC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604474",
+          "date": "2027-02-20T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16610",
+            "fullName": "Stade Aime Giral",
+            "address": {
+              "city": "Perpignan",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25920",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25920",
+                "name": "Perpignan",
+                "abbreviation": "USA",
+                "displayName": "Perpignan",
+                "shortDisplayName": "Perpignan",
+                "color": "FF6600",
+                "isActive": true,
+                "venue": {
+                  "id": "16610"
+                }
+              },
+              "score": "0",
+              "form": "LLLLW"
+            },
+            {
+              "id": "270567",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "270567",
+                "name": "Pau",
+                "abbreviation": "SEC",
+                "displayName": "Pau",
+                "shortDisplayName": "Pau",
+                "color": "FF0001",
+                "isActive": true,
+                "venue": {
+                  "id": "271945"
+                }
+              },
+              "score": "0",
+              "form": "WWLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/19 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-20T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/19 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604475",
+      "date": "2027-02-20T00:00Z",
+      "name": "Vannes vs Castres Olympique",
+      "shortName": "VAN VS CAS",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604475",
+          "date": "2027-02-20T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "158767",
+            "fullName": "Stade de la Rabine",
+            "address": {
+              "city": "Vannes",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "289337",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "289337",
+                "name": "Vannes",
+                "abbreviation": "VAN",
+                "displayName": "Vannes",
+                "shortDisplayName": "Vannes",
+                "isActive": true,
+                "venue": {
+                  "id": "158767"
+                }
+              },
+              "score": "0",
+              "form": "WLWLL"
+            },
+            {
+              "id": "25916",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25916",
+                "name": "Castres Olympique",
+                "abbreviation": "CAS",
+                "displayName": "Castres Olympique",
+                "shortDisplayName": "Castres Olympique",
+                "color": "000066",
+                "isActive": true,
+                "venue": {
+                  "id": "80052"
+                }
+              },
+              "score": "0",
+              "form": "LLWWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/19 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-20T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/19 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604476",
+      "date": "2027-02-20T00:00Z",
+      "name": "Montpellier Herault vs Racing 92",
+      "shortName": "MON VS RAC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604476",
+          "date": "2027-02-20T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "26065",
+            "fullName": "Septeo Stadium",
+            "address": {
+              "city": "Montpellier",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25918",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25918",
+                "name": "Montpellier Herault",
+                "abbreviation": "MON",
+                "displayName": "Montpellier Herault",
+                "shortDisplayName": "Montpellier Herault",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "26065"
+                }
+              },
+              "score": "0",
+              "form": "WWWWL"
+            },
+            {
+              "id": "99855",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "99855",
+                "name": "Racing 92",
+                "abbreviation": "RAC",
+                "displayName": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "color": "3399FF",
+                "isActive": true,
+                "venue": {
+                  "id": "289546"
+                }
+              },
+              "score": "0",
+              "form": "WLLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/19 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-20T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/19 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604477",
+      "date": "2027-02-20T00:00Z",
+      "name": "Stade Francais Paris vs Bordeaux Begles",
+      "shortName": "STA VS UNI",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604477",
+          "date": "2027-02-20T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "26063",
+            "fullName": "Stade Jean Bouin",
+            "address": {
+              "city": "Paris",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25921",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25921",
+                "name": "Stade Francais Paris",
+                "abbreviation": "STA",
+                "displayName": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "color": "CC0066",
+                "isActive": true,
+                "venue": {
+                  "id": "26063"
+                }
+              },
+              "score": "0",
+              "form": "LWLLW"
+            },
+            {
+              "id": "143737",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "143737",
+                "name": "Bordeaux Begles",
+                "abbreviation": "UNI",
+                "displayName": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "color": "000099",
+                "isActive": true,
+                "venue": {
+                  "id": "16681"
+                }
+              },
+              "score": "0",
+              "form": "LWWTW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/19 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-20T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/19 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604478",
+      "date": "2027-02-20T00:00Z",
+      "name": "Toulon vs Clermont Auvergne",
+      "shortName": "RC VS ASM",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604478",
+          "date": "2027-02-20T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "80047",
+            "fullName": "Stade Mayol",
+            "address": {
+              "city": "Toulon",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25986",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25986",
+                "name": "Toulon",
+                "abbreviation": "RC",
+                "displayName": "Toulon",
+                "shortDisplayName": "Toulon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "80047"
+                }
+              },
+              "score": "0",
+              "form": "WWWWW"
+            },
+            {
+              "id": "25917",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25917",
+                "name": "Clermont Auvergne",
+                "abbreviation": "ASM",
+                "displayName": "Clermont Auvergne",
+                "shortDisplayName": "Clermont Auvergne",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16262"
+                }
+              },
+              "score": "0",
+              "form": "LWLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/19 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-20T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/19 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604479",
+      "date": "2027-02-20T00:00Z",
+      "name": "Stade Toulousain vs Lyon",
+      "shortName": "STA VS LYO",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604479",
+          "date": "2027-02-20T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16510",
+            "fullName": "Stade Ernest-Wallon",
+            "address": {
+              "city": "Toulouse",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25922",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25922",
+                "name": "Stade Toulousain",
+                "abbreviation": "STA",
+                "displayName": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "color": "000000",
+                "isActive": true,
+                "venue": {
+                  "id": "16510"
+                }
+              },
+              "score": "0",
+              "form": "WLWWW"
+            },
+            {
+              "id": "143736",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "143736",
+                "name": "Lyon",
+                "abbreviation": "LYO",
+                "displayName": "Lyon",
+                "shortDisplayName": "Lyon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16220"
+                }
+              },
+              "score": "0",
+              "form": "LWWLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/19 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-20T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/19 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604480",
+      "date": "2027-02-27T00:00Z",
+      "name": "Bordeaux Begles vs Toulon",
+      "shortName": "UNI VS RC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604480",
+          "date": "2027-02-27T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16681",
+            "fullName": "Stade Chaban-Delmas",
+            "address": {
+              "city": "Bordeaux",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "143737",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "143737",
+                "name": "Bordeaux Begles",
+                "abbreviation": "UNI",
+                "displayName": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "color": "000099",
+                "isActive": true,
+                "venue": {
+                  "id": "16681"
+                }
+              },
+              "score": "0",
+              "form": "LWWTW"
+            },
+            {
+              "id": "25986",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25986",
+                "name": "Toulon",
+                "abbreviation": "RC",
+                "displayName": "Toulon",
+                "shortDisplayName": "Toulon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "80047"
+                }
+              },
+              "score": "0",
+              "form": "WWWWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/26 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-27T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/26 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604481",
+      "date": "2027-02-27T00:00Z",
+      "name": "Castres Olympique vs Perpignan",
+      "shortName": "CAS VS USA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604481",
+          "date": "2027-02-27T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "80052",
+            "fullName": "Stade Pierre Fabre",
+            "address": {
+              "city": "Castres",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25916",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25916",
+                "name": "Castres Olympique",
+                "abbreviation": "CAS",
+                "displayName": "Castres Olympique",
+                "shortDisplayName": "Castres Olympique",
+                "color": "000066",
+                "isActive": true,
+                "venue": {
+                  "id": "80052"
+                }
+              },
+              "score": "0",
+              "form": "LLWWL"
+            },
+            {
+              "id": "25920",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25920",
+                "name": "Perpignan",
+                "abbreviation": "USA",
+                "displayName": "Perpignan",
+                "shortDisplayName": "Perpignan",
+                "color": "FF6600",
+                "isActive": true,
+                "venue": {
+                  "id": "16610"
+                }
+              },
+              "score": "0",
+              "form": "LLLLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/26 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-27T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/26 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604482",
+      "date": "2027-02-27T00:00Z",
+      "name": "Clermont Auvergne vs Bayonne",
+      "shortName": "ASM VS BAY",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604482",
+          "date": "2027-02-27T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16262",
+            "fullName": "Stade Marcel Michelin",
+            "address": {
+              "city": "Clermont-Ferrand",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25917",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25917",
+                "name": "Clermont Auvergne",
+                "abbreviation": "ASM",
+                "displayName": "Clermont Auvergne",
+                "shortDisplayName": "Clermont Auvergne",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16262"
+                }
+              },
+              "score": "0",
+              "form": "LWLLL"
+            },
+            {
+              "id": "25912",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25912",
+                "name": "Bayonne",
+                "abbreviation": "BAY",
+                "displayName": "Bayonne",
+                "shortDisplayName": "Bayonne",
+                "color": "6699CC",
+                "isActive": true,
+                "venue": {
+                  "id": "88018"
+                }
+              },
+              "score": "0",
+              "form": "LLLWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/26 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-27T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/26 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604483",
+      "date": "2027-02-27T00:00Z",
+      "name": "La Rochelle vs Stade Francais Paris",
+      "shortName": "STA VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604483",
+          "date": "2027-02-27T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16394",
+            "fullName": "Stade Marcel-Deflandre",
+            "address": {
+              "city": "La Rochelle",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "119318",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "119318",
+                "name": "La Rochelle",
+                "abbreviation": "STA",
+                "displayName": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16394"
+                }
+              },
+              "score": "0",
+              "form": "WLLWW"
+            },
+            {
+              "id": "25921",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25921",
+                "name": "Stade Francais Paris",
+                "abbreviation": "STA",
+                "displayName": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "color": "CC0066",
+                "isActive": true,
+                "venue": {
+                  "id": "26063"
+                }
+              },
+              "score": "0",
+              "form": "LWLLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/26 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-27T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/26 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604484",
+      "date": "2027-02-27T00:00Z",
+      "name": "Lyon vs Montpellier Herault",
+      "shortName": "LYO VS MON",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604484",
+          "date": "2027-02-27T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16220",
+            "fullName": "Matmut Stadium de Gerland",
+            "address": {
+              "city": "Lyon",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "143736",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "143736",
+                "name": "Lyon",
+                "abbreviation": "LYO",
+                "displayName": "Lyon",
+                "shortDisplayName": "Lyon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16220"
+                }
+              },
+              "score": "0",
+              "form": "LWWLL"
+            },
+            {
+              "id": "25918",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25918",
+                "name": "Montpellier Herault",
+                "abbreviation": "MON",
+                "displayName": "Montpellier Herault",
+                "shortDisplayName": "Montpellier Herault",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "26065"
+                }
+              },
+              "score": "0",
+              "form": "WWWWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/26 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-27T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/26 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604485",
+      "date": "2027-02-27T00:00Z",
+      "name": "Pau vs Vannes",
+      "shortName": "SEC VS VAN",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604485",
+          "date": "2027-02-27T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "271945",
+            "fullName": "Stade du Hameau",
+            "address": {
+              "city": "Pau",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "270567",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "270567",
+                "name": "Pau",
+                "abbreviation": "SEC",
+                "displayName": "Pau",
+                "shortDisplayName": "Pau",
+                "color": "FF0001",
+                "isActive": true,
+                "venue": {
+                  "id": "271945"
+                }
+              },
+              "score": "0",
+              "form": "WWLWW"
+            },
+            {
+              "id": "289337",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "289337",
+                "name": "Vannes",
+                "abbreviation": "VAN",
+                "displayName": "Vannes",
+                "shortDisplayName": "Vannes",
+                "isActive": true,
+                "venue": {
+                  "id": "158767"
+                }
+              },
+              "score": "0",
+              "form": "WLWLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/26 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-27T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/26 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    },
+    {
+      "id": "604486",
+      "date": "2027-02-27T00:00Z",
+      "name": "Racing 92 vs Stade Toulousain",
+      "shortName": "RAC VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604486",
+          "date": "2027-02-27T00:00Z",
+          "attendance": 0,
+          "timeValid": false,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "289546",
+            "fullName": "Paris La Defense Arena",
+            "address": {
+              "city": "Nanterre",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "99855",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "99855",
+                "name": "Racing 92",
+                "abbreviation": "RAC",
+                "displayName": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "color": "3399FF",
+                "isActive": true,
+                "venue": {
+                  "id": "289546"
+                }
+              },
+              "score": "0",
+              "form": "WLLLL"
+            },
+            {
+              "id": "25922",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25922",
+                "name": "Stade Toulousain",
+                "abbreviation": "STA",
+                "displayName": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "color": "000000",
+                "isActive": true,
+                "venue": {
+                  "id": "16510"
+                }
+              },
+              "score": "0",
+              "form": "WLWWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "2/26 - TBD",
+              "shortDetail": "TBD"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2027-02-27T00:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "2/26 - TBD",
+          "shortDetail": "TBD"
+        }
+      }
+    }
+  ],
+  "provider": {
+    "id": "100",
+    "name": "Draft Kings",
+    "displayName": "Draft Kings",
+    "priority": 1
+  }
+}

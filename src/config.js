@@ -1,45 +1,43 @@
 // -----------------------------------------------------------------------------
-// Integration configuration.
-//
-// The configuration is filled in by the user in Gladys, from the `config_schema`
-// declared in `gladys-assistant-integration.json`. The SDK fetches it for you
-// (`gladys.getConfig()`) and notifies you of every change through
-// `gladys.onConfigUpdated()`.
-//
-// This module only provides defaults and normalizes the received object, so the
-// rest of the code never has to deal with `undefined`.
+// Configuration: DEFAULT_CONFIG mirrors the manifest defaults (tied by
+// test/manifest.test.js), and normalizeConfig() turns whatever Gladys sends
+// (a field never saved is absent) into a complete, valid object. Nothing here
+// throws.
 // -----------------------------------------------------------------------------
 
-// Defaults: they MUST stay consistent with the `default` values declared in the
-// `config_schema` of the manifest.
+import { COMPETITION_KEYS } from './competitions.js';
+
+export const LANGUAGES = ['en', 'fr', 'de', 'es'];
+
 export const DEFAULT_CONFIG = {
-  latitude: 48.8566, // Paris
-  longitude: 2.3522,
-  unit: 'celsius', // 'celsius' | 'fahrenheit'
-  // Seconds between two reads of the polled sensors. Gladys polls at most once
-  // a minute: slower intervals are applied by skipping polls (see
-  // createPoller in src/devices/index.js).
-  poll_frequency: 300,
-  // Reserved key (NOT in config_schema): because the manifest declares both
-  // 'local' and 'cloud' in its `transports` field, Gladys shows a standard
-  // "Prefer the local connection" toggle and sends the user's choice here.
-  // Read-only for the integration; defaults to true.
-  GLADYS_PREFER_LOCAL: true,
+  language: 'fr',
+  competitions: ['top14', 'champions_cup', 'six_nations', 'nations_championship'],
 };
 
 /**
- * Merge the user config with the defaults.
- * @param {Record<string, unknown>} raw config returned by the SDK
+ * @param {object} [raw] the configuration sent by Gladys
+ * @returns {object} DEFAULT_CONFIG's keys with valid values
  */
 export function normalizeConfig(raw = {}) {
+  const source = raw && typeof raw === 'object' ? raw : {};
   return {
-    ...DEFAULT_CONFIG,
-    ...raw,
-    // Force the types: config may arrive as strings from a form.
-    latitude: Number(raw.latitude ?? DEFAULT_CONFIG.latitude),
-    longitude: Number(raw.longitude ?? DEFAULT_CONFIG.longitude),
-    poll_frequency: Number(raw.poll_frequency ?? DEFAULT_CONFIG.poll_frequency),
-    // The preference is a boolean; anything but an explicit false means true.
-    GLADYS_PREFER_LOCAL: raw.GLADYS_PREFER_LOCAL !== false,
+    language: LANGUAGES.includes(source.language) ? source.language : DEFAULT_CONFIG.language,
+    competitions: competitions(source.competitions),
   };
+}
+
+/**
+ * The competitions read, in the order of the list (the first one holding a
+ * team gives its rank). A multi_select is stored as an array; a string is
+ * accepted too (comma separated). An absent field keeps the defaults, an
+ * explicitly empty one reads nothing.
+ */
+function competitions(value) {
+  if (value === undefined || value === null) {
+    return [...DEFAULT_CONFIG.competitions];
+  }
+  const chosen = new Set(
+    (Array.isArray(value) ? value : String(value).split(',')).map((key) => String(key).trim()),
+  );
+  return COMPETITION_KEYS.filter((key) => chosen.has(key));
 }

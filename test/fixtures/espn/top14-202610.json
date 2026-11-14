@@ -1,0 +1,2372 @@
+{
+  "leagues": [
+    {
+      "id": "8005",
+      "name": "French Top 14",
+      "abbreviation": "TOP14",
+      "midsizeName": "270559",
+      "slug": "270559",
+      "season": {
+        "year": 2026,
+        "startDate": "2026-11-07T15:30Z",
+        "endDate": "2026-07-02T03:59Z",
+        "displayName": "2026",
+        "type": {
+          "id": "1",
+          "type": 1,
+          "name": "Top 14",
+          "abbreviation": "Top 14"
+        }
+      },
+      "isClubCompetition": false,
+      "calendarType": "day",
+      "calendarIsWhitelist": true,
+      "calendarStartDate": "2026-11-07T15:30Z",
+      "calendarEndDate": "2026-07-02T03:59Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "604855",
+      "date": "2026-10-03T12:20Z",
+      "name": "LOU Rugby vs Bordeaux",
+      "shortName": "LOU R VS BORDE",
+      "season": {
+        "year": 2026,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604855",
+          "date": "2026-10-03T12:20Z",
+          "attendance": 0,
+          "type": {
+            "id": "0",
+            "abbreviation": "N/A"
+          },
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": true,
+          "competitors": [
+            {
+              "id": "289852",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "289852",
+                "name": "LOU Rugby",
+                "abbreviation": "LOU R",
+                "displayName": "LOU Rugby",
+                "shortDisplayName": "LOU Rugby",
+                "isActive": true
+              },
+              "score": "0",
+              "form": ""
+            },
+            {
+              "id": "126831",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "126831",
+                "name": "Bordeaux",
+                "abbreviation": "BORDE",
+                "displayName": "Bordeaux",
+                "shortDisplayName": "Bordeaux",
+                "isActive": true
+              },
+              "score": "0",
+              "form": ""
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, October 3rd at 8:20 AM EDT",
+              "shortDetail": "10/3 - 8:20 AM EDT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-03T12:20Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, October 3rd at 8:20 AM EDT",
+          "shortDetail": "10/3 - 8:20 AM EDT"
+        }
+      }
+    },
+    {
+      "id": "604388",
+      "date": "2026-10-03T12:30Z",
+      "name": "Bordeaux Begles vs Lyon",
+      "shortName": "UNI VS LYO",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604388",
+          "date": "2026-10-03T12:30Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16681",
+            "fullName": "Stade Chaban-Delmas",
+            "address": {
+              "city": "Bordeaux",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "143737",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "143737",
+                "name": "Bordeaux Begles",
+                "abbreviation": "UNI",
+                "displayName": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "color": "000099",
+                "isActive": true,
+                "venue": {
+                  "id": "16681"
+                }
+              },
+              "score": "51",
+              "form": "LWWTW"
+            },
+            {
+              "id": "143736",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "143736",
+                "name": "Lyon",
+                "abbreviation": "LYO",
+                "displayName": "Lyon",
+                "shortDisplayName": "Lyon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16220"
+                }
+              },
+              "score": "28",
+              "form": "LWWLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-03T12:30Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604389",
+      "date": "2026-10-03T14:35Z",
+      "name": "Bayonne vs Stade Francais Paris",
+      "shortName": "BAY VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604389",
+          "date": "2026-10-03T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "88018",
+            "fullName": "Stade Jean Dauger",
+            "address": {
+              "city": "Bayonne",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25912",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "25912",
+                "name": "Bayonne",
+                "abbreviation": "BAY",
+                "displayName": "Bayonne",
+                "shortDisplayName": "Bayonne",
+                "color": "6699CC",
+                "isActive": true,
+                "venue": {
+                  "id": "88018"
+                }
+              },
+              "score": "35",
+              "form": "LLLWL"
+            },
+            {
+              "id": "25921",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "25921",
+                "name": "Stade Francais Paris",
+                "abbreviation": "STA",
+                "displayName": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "color": "CC0066",
+                "isActive": true,
+                "venue": {
+                  "id": "26063"
+                }
+              },
+              "score": "32",
+              "form": "LWLLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-03T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604390",
+      "date": "2026-10-03T14:35Z",
+      "name": "Vannes vs Pau",
+      "shortName": "VAN VS SEC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604390",
+          "date": "2026-10-03T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "158767",
+            "fullName": "Stade de la Rabine",
+            "address": {
+              "city": "Vannes",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "289337",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "team": {
+                "id": "289337",
+                "name": "Vannes",
+                "abbreviation": "VAN",
+                "displayName": "Vannes",
+                "shortDisplayName": "Vannes",
+                "isActive": true,
+                "venue": {
+                  "id": "158767"
+                }
+              },
+              "score": "40",
+              "form": "WLWLL"
+            },
+            {
+              "id": "270567",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": true,
+              "team": {
+                "id": "270567",
+                "name": "Pau",
+                "abbreviation": "SEC",
+                "displayName": "Pau",
+                "shortDisplayName": "Pau",
+                "color": "FF0001",
+                "isActive": true,
+                "venue": {
+                  "id": "271945"
+                }
+              },
+              "score": "43",
+              "form": "WWLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-03T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604391",
+      "date": "2026-10-03T14:35Z",
+      "name": "La Rochelle vs Clermont Auvergne",
+      "shortName": "STA VS ASM",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604391",
+          "date": "2026-10-03T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16394",
+            "fullName": "Stade Marcel-Deflandre",
+            "address": {
+              "city": "La Rochelle",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "119318",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "119318",
+                "name": "La Rochelle",
+                "abbreviation": "STA",
+                "displayName": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16394"
+                }
+              },
+              "score": "38",
+              "form": "WLLWW"
+            },
+            {
+              "id": "25917",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "25917",
+                "name": "Clermont Auvergne",
+                "abbreviation": "ASM",
+                "displayName": "Clermont Auvergne",
+                "shortDisplayName": "Clermont Auvergne",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16262"
+                }
+              },
+              "score": "13",
+              "form": "LWLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-03T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604392",
+      "date": "2026-10-03T14:35Z",
+      "name": "Racing 92 vs Perpignan",
+      "shortName": "RAC VS USA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604392",
+          "date": "2026-10-03T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "308716",
+            "fullName": "Stade Dominique Duvauchelle",
+            "address": {
+              "city": "Creteil",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "99855",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "99855",
+                "name": "Racing 92",
+                "abbreviation": "RAC",
+                "displayName": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "color": "3399FF",
+                "isActive": true,
+                "venue": {
+                  "id": "289546"
+                }
+              },
+              "score": "55",
+              "form": "WLLLL"
+            },
+            {
+              "id": "25920",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "25920",
+                "name": "Perpignan",
+                "abbreviation": "USA",
+                "displayName": "Perpignan",
+                "shortDisplayName": "Perpignan",
+                "color": "FF6600",
+                "isActive": true,
+                "venue": {
+                  "id": "16610"
+                }
+              },
+              "score": "25",
+              "form": "LLLLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-03T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604394",
+      "date": "2026-10-03T19:00Z",
+      "name": "Castres Olympique vs Stade Toulousain",
+      "shortName": "CAS VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604394",
+          "date": "2026-10-03T19:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "80052",
+            "fullName": "Stade Pierre Fabre",
+            "address": {
+              "city": "Castres",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25916",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "team": {
+                "id": "25916",
+                "name": "Castres Olympique",
+                "abbreviation": "CAS",
+                "displayName": "Castres Olympique",
+                "shortDisplayName": "Castres Olympique",
+                "color": "000066",
+                "isActive": true,
+                "venue": {
+                  "id": "80052"
+                }
+              },
+              "score": "7",
+              "form": "LLWWL"
+            },
+            {
+              "id": "25922",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": true,
+              "team": {
+                "id": "25922",
+                "name": "Stade Toulousain",
+                "abbreviation": "STA",
+                "displayName": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "color": "000000",
+                "isActive": true,
+                "venue": {
+                  "id": "16510"
+                }
+              },
+              "score": "8",
+              "form": "WLWWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-03T19:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604395",
+      "date": "2026-10-04T19:05Z",
+      "name": "Montpellier Herault vs Toulon",
+      "shortName": "MON VS RC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604395",
+          "date": "2026-10-04T19:05Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16901",
+            "fullName": "Stade de la Mosson",
+            "address": {
+              "city": "Montpellier",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25918",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "25918",
+                "name": "Montpellier Herault",
+                "abbreviation": "MON",
+                "displayName": "Montpellier Herault",
+                "shortDisplayName": "Montpellier Herault",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "26065"
+                }
+              },
+              "score": "28",
+              "form": "WWWWL"
+            },
+            {
+              "id": "25986",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "25986",
+                "name": "Toulon",
+                "abbreviation": "RC",
+                "displayName": "Toulon",
+                "shortDisplayName": "Toulon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "80047"
+                }
+              },
+              "score": "0",
+              "form": "WWWWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-04T19:05Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604399",
+      "date": "2026-10-10T12:30Z",
+      "name": "Stade Francais Paris vs Montpellier Herault",
+      "shortName": "STA VS MON",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604399",
+          "date": "2026-10-10T12:30Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "26063",
+            "fullName": "Stade Jean Bouin",
+            "address": {
+              "city": "Paris",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25921",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "25921",
+                "name": "Stade Francais Paris",
+                "abbreviation": "STA",
+                "displayName": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "color": "CC0066",
+                "isActive": true,
+                "venue": {
+                  "id": "26063"
+                }
+              },
+              "score": "30",
+              "form": "LWLLW"
+            },
+            {
+              "id": "25918",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "25918",
+                "name": "Montpellier Herault",
+                "abbreviation": "MON",
+                "displayName": "Montpellier Herault",
+                "shortDisplayName": "Montpellier Herault",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "26065"
+                }
+              },
+              "score": "22",
+              "form": "WWWWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-10T12:30Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604396",
+      "date": "2026-10-10T14:35Z",
+      "name": "Perpignan vs Vannes",
+      "shortName": "USA VS VAN",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604396",
+          "date": "2026-10-10T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16610",
+            "fullName": "Stade Aime Giral",
+            "address": {
+              "city": "Perpignan",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25920",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "25920",
+                "name": "Perpignan",
+                "abbreviation": "USA",
+                "displayName": "Perpignan",
+                "shortDisplayName": "Perpignan",
+                "color": "FF6600",
+                "isActive": true,
+                "venue": {
+                  "id": "16610"
+                }
+              },
+              "score": "21",
+              "form": "LLLLW"
+            },
+            {
+              "id": "289337",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "289337",
+                "name": "Vannes",
+                "abbreviation": "VAN",
+                "displayName": "Vannes",
+                "shortDisplayName": "Vannes",
+                "isActive": true,
+                "venue": {
+                  "id": "158767"
+                }
+              },
+              "score": "12",
+              "form": "WLWLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-10T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604398",
+      "date": "2026-10-10T14:35Z",
+      "name": "Lyon vs La Rochelle",
+      "shortName": "LYO VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604398",
+          "date": "2026-10-10T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16220",
+            "fullName": "Matmut Stadium de Gerland",
+            "address": {
+              "city": "Lyon",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "143736",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "team": {
+                "id": "143736",
+                "name": "Lyon",
+                "abbreviation": "LYO",
+                "displayName": "Lyon",
+                "shortDisplayName": "Lyon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16220"
+                }
+              },
+              "score": "16",
+              "form": "LWWLL"
+            },
+            {
+              "id": "119318",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": true,
+              "team": {
+                "id": "119318",
+                "name": "La Rochelle",
+                "abbreviation": "STA",
+                "displayName": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16394"
+                }
+              },
+              "score": "28",
+              "form": "WLLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-10T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604400",
+      "date": "2026-10-10T14:35Z",
+      "name": "Pau vs Castres Olympique",
+      "shortName": "SEC VS CAS",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604400",
+          "date": "2026-10-10T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "271945",
+            "fullName": "Stade du Hameau",
+            "address": {
+              "city": "Pau",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "270567",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "270567",
+                "name": "Pau",
+                "abbreviation": "SEC",
+                "displayName": "Pau",
+                "shortDisplayName": "Pau",
+                "color": "FF0001",
+                "isActive": true,
+                "venue": {
+                  "id": "271945"
+                }
+              },
+              "score": "35",
+              "form": "WWLWW"
+            },
+            {
+              "id": "25916",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "25916",
+                "name": "Castres Olympique",
+                "abbreviation": "CAS",
+                "displayName": "Castres Olympique",
+                "shortDisplayName": "Castres Olympique",
+                "color": "000066",
+                "isActive": true,
+                "venue": {
+                  "id": "80052"
+                }
+              },
+              "score": "26",
+              "form": "LLWWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-10T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604401",
+      "date": "2026-10-10T14:35Z",
+      "name": "Toulon vs Racing 92",
+      "shortName": "RC VS RAC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604401",
+          "date": "2026-10-10T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "80047",
+            "fullName": "Stade Mayol",
+            "address": {
+              "city": "Toulon",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25986",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "25986",
+                "name": "Toulon",
+                "abbreviation": "RC",
+                "displayName": "Toulon",
+                "shortDisplayName": "Toulon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "80047"
+                }
+              },
+              "score": "29",
+              "form": "WWWWW"
+            },
+            {
+              "id": "99855",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "99855",
+                "name": "Racing 92",
+                "abbreviation": "RAC",
+                "displayName": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "color": "3399FF",
+                "isActive": true,
+                "venue": {
+                  "id": "289546"
+                }
+              },
+              "score": "15",
+              "form": "WLLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-10T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604397",
+      "date": "2026-10-10T19:00Z",
+      "name": "Clermont Auvergne vs Bordeaux Begles",
+      "shortName": "ASM VS UNI",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604397",
+          "date": "2026-10-10T19:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16262",
+            "fullName": "Stade Marcel Michelin",
+            "address": {
+              "city": "Clermont-Ferrand",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25917",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "team": {
+                "id": "25917",
+                "name": "Clermont Auvergne",
+                "abbreviation": "ASM",
+                "displayName": "Clermont Auvergne",
+                "shortDisplayName": "Clermont Auvergne",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16262"
+                }
+              },
+              "score": "22",
+              "form": "LWLLL"
+            },
+            {
+              "id": "143737",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": true,
+              "team": {
+                "id": "143737",
+                "name": "Bordeaux Begles",
+                "abbreviation": "UNI",
+                "displayName": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "color": "000099",
+                "isActive": true,
+                "venue": {
+                  "id": "16681"
+                }
+              },
+              "score": "23",
+              "form": "LWWTW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-10T19:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604402",
+      "date": "2026-10-11T19:05Z",
+      "name": "Stade Toulousain vs Bayonne",
+      "shortName": "STA VS BAY",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604402",
+          "date": "2026-10-11T19:05Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16510",
+            "fullName": "Stade Ernest-Wallon",
+            "address": {
+              "city": "Toulouse",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25922",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "25922",
+                "name": "Stade Toulousain",
+                "abbreviation": "STA",
+                "displayName": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "color": "000000",
+                "isActive": true,
+                "venue": {
+                  "id": "16510"
+                }
+              },
+              "score": "45",
+              "form": "WLWWW"
+            },
+            {
+              "id": "25912",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "25912",
+                "name": "Bayonne",
+                "abbreviation": "BAY",
+                "displayName": "Bayonne",
+                "shortDisplayName": "Bayonne",
+                "color": "6699CC",
+                "isActive": true,
+                "venue": {
+                  "id": "88018"
+                }
+              },
+              "score": "34",
+              "form": "LLLWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-11T19:05Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604404",
+      "date": "2026-10-24T12:30Z",
+      "name": "Vannes vs Clermont Auvergne",
+      "shortName": "VAN VS ASM",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604404",
+          "date": "2026-10-24T12:30Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "158767",
+            "fullName": "Stade de la Rabine",
+            "address": {
+              "city": "Vannes",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "289337",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "289337",
+                "name": "Vannes",
+                "abbreviation": "VAN",
+                "displayName": "Vannes",
+                "shortDisplayName": "Vannes",
+                "isActive": true,
+                "venue": {
+                  "id": "158767"
+                }
+              },
+              "score": "27",
+              "form": "WLWLL"
+            },
+            {
+              "id": "25917",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "25917",
+                "name": "Clermont Auvergne",
+                "abbreviation": "ASM",
+                "displayName": "Clermont Auvergne",
+                "shortDisplayName": "Clermont Auvergne",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16262"
+                }
+              },
+              "score": "26",
+              "form": "LWLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-24T12:30Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604403",
+      "date": "2026-10-24T14:35Z",
+      "name": "Bayonne vs Lyon",
+      "shortName": "BAY VS LYO",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604403",
+          "date": "2026-10-24T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "88018",
+            "fullName": "Stade Jean Dauger",
+            "address": {
+              "city": "Bayonne",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25912",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "team": {
+                "id": "25912",
+                "name": "Bayonne",
+                "abbreviation": "BAY",
+                "displayName": "Bayonne",
+                "shortDisplayName": "Bayonne",
+                "color": "6699CC",
+                "isActive": true,
+                "venue": {
+                  "id": "88018"
+                }
+              },
+              "score": "27",
+              "form": "LLLWL"
+            },
+            {
+              "id": "143736",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": true,
+              "team": {
+                "id": "143736",
+                "name": "Lyon",
+                "abbreviation": "LYO",
+                "displayName": "Lyon",
+                "shortDisplayName": "Lyon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16220"
+                }
+              },
+              "score": "31",
+              "form": "LWWLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-24T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604405",
+      "date": "2026-10-24T14:35Z",
+      "name": "Castres Olympique vs Stade Francais Paris",
+      "shortName": "CAS VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604405",
+          "date": "2026-10-24T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "80052",
+            "fullName": "Stade Pierre Fabre",
+            "address": {
+              "city": "Castres",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25916",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "25916",
+                "name": "Castres Olympique",
+                "abbreviation": "CAS",
+                "displayName": "Castres Olympique",
+                "shortDisplayName": "Castres Olympique",
+                "color": "000066",
+                "isActive": true,
+                "venue": {
+                  "id": "80052"
+                }
+              },
+              "score": "16",
+              "form": "LLWWL"
+            },
+            {
+              "id": "25921",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "25921",
+                "name": "Stade Francais Paris",
+                "abbreviation": "STA",
+                "displayName": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "color": "CC0066",
+                "isActive": true,
+                "venue": {
+                  "id": "26063"
+                }
+              },
+              "score": "8",
+              "form": "LWLLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-24T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604407",
+      "date": "2026-10-24T14:35Z",
+      "name": "Racing 92 vs Montpellier Herault",
+      "shortName": "RAC VS MON",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604407",
+          "date": "2026-10-24T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "163217",
+            "fullName": "MMArena",
+            "address": {
+              "city": "Le Mans",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "99855",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "team": {
+                "id": "99855",
+                "name": "Racing 92",
+                "abbreviation": "RAC",
+                "displayName": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "color": "3399FF",
+                "isActive": true,
+                "venue": {
+                  "id": "289546"
+                }
+              },
+              "score": "17",
+              "form": "WLLLL"
+            },
+            {
+              "id": "25918",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": true,
+              "team": {
+                "id": "25918",
+                "name": "Montpellier Herault",
+                "abbreviation": "MON",
+                "displayName": "Montpellier Herault",
+                "shortDisplayName": "Montpellier Herault",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "26065"
+                }
+              },
+              "score": "20",
+              "form": "WWWWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-24T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604409",
+      "date": "2026-10-24T14:35Z",
+      "name": "Stade Toulousain vs Perpignan",
+      "shortName": "STA VS USA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604409",
+          "date": "2026-10-24T14:35Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16510",
+            "fullName": "Stade Ernest-Wallon",
+            "address": {
+              "city": "Toulouse",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25922",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "25922",
+                "name": "Stade Toulousain",
+                "abbreviation": "STA",
+                "displayName": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "color": "000000",
+                "isActive": true,
+                "venue": {
+                  "id": "16510"
+                }
+              },
+              "score": "38",
+              "form": "WLWWW"
+            },
+            {
+              "id": "25920",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "25920",
+                "name": "Perpignan",
+                "abbreviation": "USA",
+                "displayName": "Perpignan",
+                "shortDisplayName": "Perpignan",
+                "color": "FF6600",
+                "isActive": true,
+                "venue": {
+                  "id": "16610"
+                }
+              },
+              "score": "33",
+              "form": "LLLLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-24T14:35Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604408",
+      "date": "2026-10-24T19:00Z",
+      "name": "Toulon vs Pau",
+      "shortName": "RC VS SEC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604408",
+          "date": "2026-10-24T19:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "80047",
+            "fullName": "Stade Mayol",
+            "address": {
+              "city": "Toulon",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25986",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "25986",
+                "name": "Toulon",
+                "abbreviation": "RC",
+                "displayName": "Toulon",
+                "shortDisplayName": "Toulon",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "80047"
+                }
+              },
+              "score": "41",
+              "form": "WWWWW"
+            },
+            {
+              "id": "270567",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "270567",
+                "name": "Pau",
+                "abbreviation": "SEC",
+                "displayName": "Pau",
+                "shortDisplayName": "Pau",
+                "color": "FF0001",
+                "isActive": true,
+                "venue": {
+                  "id": "271945"
+                }
+              },
+              "score": "20",
+              "form": "WWLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-24T19:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "604406",
+      "date": "2026-10-25T20:05Z",
+      "name": "La Rochelle vs Bordeaux Begles",
+      "shortName": "STA VS UNI",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "top-14"
+      },
+      "competitions": [
+        {
+          "id": "604406",
+          "date": "2026-10-25T20:05Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16394",
+            "fullName": "Stade Marcel-Deflandre",
+            "address": {
+              "city": "La Rochelle",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "119318",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "team": {
+                "id": "119318",
+                "name": "La Rochelle",
+                "abbreviation": "STA",
+                "displayName": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16394"
+                }
+              },
+              "score": "19",
+              "form": "WLLWW"
+            },
+            {
+              "id": "143737",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": true,
+              "team": {
+                "id": "143737",
+                "name": "Bordeaux Begles",
+                "abbreviation": "UNI",
+                "displayName": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "color": "000099",
+                "isActive": true,
+                "venue": {
+                  "id": "16681"
+                }
+              },
+              "score": "25",
+              "form": "LWWTW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-10-25T20:05Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    }
+  ],
+  "provider": {
+    "id": "100",
+    "name": "Draft Kings",
+    "displayName": "Draft Kings",
+    "priority": 1
+  }
+}

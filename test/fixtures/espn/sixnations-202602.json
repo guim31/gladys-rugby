@@ -1,0 +1,999 @@
+{
+  "leagues": [
+    {
+      "id": "8323",
+      "name": "Six Nations",
+      "abbreviation": "Six Nations",
+      "midsizeName": "180659",
+      "slug": "180659",
+      "season": {
+        "year": 2026,
+        "startDate": "2026-01-31T05:00Z",
+        "endDate": "2026-03-17T03:59Z",
+        "displayName": "2026",
+        "type": {
+          "id": "1",
+          "type": 1,
+          "name": "2026 Six Nations",
+          "abbreviation": "2026 Six Nations"
+        }
+      },
+      "isClubCompetition": true,
+      "calendarType": "day",
+      "calendarIsWhitelist": true,
+      "calendarStartDate": "2026-01-31T05:00Z",
+      "calendarEndDate": "2026-03-17T03:59Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "602502",
+      "date": "2026-02-05T20:10Z",
+      "name": "France vs Ireland",
+      "shortName": "FRA VS IRE",
+      "season": {
+        "year": 2026,
+        "type": 1,
+        "slug": "2026-six-nations"
+      },
+      "competitions": [
+        {
+          "id": "602502",
+          "date": "2026-02-05T20:10Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16701",
+            "fullName": "Stade de France",
+            "address": {
+              "city": "Saint-Denis",
+              "state": "Reunion"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "9",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "9",
+                "name": "France",
+                "abbreviation": "FRA",
+                "displayName": "France",
+                "shortDisplayName": "France",
+                "color": "0000CC",
+                "isActive": true,
+                "venue": {
+                  "id": "16701"
+                }
+              },
+              "score": "36",
+              "form": "WWWWL"
+            },
+            {
+              "id": "3",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "3",
+                "name": "Ireland",
+                "abbreviation": "IRE",
+                "displayName": "Ireland",
+                "shortDisplayName": "Ireland",
+                "color": "009900",
+                "isActive": true,
+                "venue": {
+                  "id": "16102"
+                }
+              },
+              "score": "14",
+              "form": "WLWWW"
+            }
+          ],
+          "status": {
+            "clock": 4859.0,
+            "displayClock": "81'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-02-05T20:10Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 4859.0,
+        "displayClock": "81'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "602503",
+      "date": "2026-02-07T14:10Z",
+      "name": "Italy vs Scotland",
+      "shortName": "ITA VS SCO",
+      "season": {
+        "year": 2026,
+        "type": 1,
+        "slug": "2026-six-nations"
+      },
+      "competitions": [
+        {
+          "id": "602503",
+          "date": "2026-02-07T14:10Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16225",
+            "fullName": "Stadio Olimpico",
+            "address": {
+              "city": "Rome",
+              "state": "Italy"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "20",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "20",
+                "name": "Italy",
+                "abbreviation": "ITA",
+                "displayName": "Italy",
+                "shortDisplayName": "Italy",
+                "color": "3366FF",
+                "isActive": true,
+                "venue": {
+                  "id": "16225"
+                }
+              },
+              "score": "18",
+              "form": "LLLLL"
+            },
+            {
+              "id": "2",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "2",
+                "name": "Scotland",
+                "abbreviation": "SCO",
+                "displayName": "Scotland",
+                "shortDisplayName": "Scotland",
+                "color": "003366",
+                "isActive": true,
+                "venue": {
+                  "id": "16162"
+                }
+              },
+              "score": "15",
+              "form": "LWLWL"
+            }
+          ],
+          "status": {
+            "clock": 5079.0,
+            "displayClock": "85'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-02-07T14:10Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 5079.0,
+        "displayClock": "85'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "602504",
+      "date": "2026-02-07T16:40Z",
+      "name": "England vs Wales",
+      "shortName": "ENG VS WAL",
+      "season": {
+        "year": 2026,
+        "type": 1,
+        "slug": "2026-six-nations"
+      },
+      "competitions": [
+        {
+          "id": "602504",
+          "date": "2026-02-07T16:40Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16145",
+            "fullName": "Allianz Stadium",
+            "address": {
+              "city": "London",
+              "state": "England"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "1",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "1",
+                "name": "England",
+                "abbreviation": "ENG",
+                "displayName": "England",
+                "shortDisplayName": "England",
+                "color": "FF0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16145"
+                }
+              },
+              "score": "48",
+              "form": "WWWLL"
+            },
+            {
+              "id": "4",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "4",
+                "name": "Wales",
+                "abbreviation": "WAL",
+                "displayName": "Wales",
+                "shortDisplayName": "Wales",
+                "color": "FF0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16727"
+                }
+              },
+              "score": "7",
+              "form": "WLLWW"
+            }
+          ],
+          "status": {
+            "clock": 4810.0,
+            "displayClock": "81'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-02-07T16:40Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 4810.0,
+        "displayClock": "81'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "602505",
+      "date": "2026-02-14T14:10Z",
+      "name": "Ireland vs Italy",
+      "shortName": "IRE VS ITA",
+      "season": {
+        "year": 2026,
+        "type": 1,
+        "slug": "2026-six-nations"
+      },
+      "competitions": [
+        {
+          "id": "602505",
+          "date": "2026-02-14T14:10Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16102",
+            "fullName": "Aviva Stadium",
+            "address": {
+              "city": "Dublin",
+              "state": "Ireland"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "3",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "3",
+                "name": "Ireland",
+                "abbreviation": "IRE",
+                "displayName": "Ireland",
+                "shortDisplayName": "Ireland",
+                "color": "009900",
+                "isActive": true,
+                "venue": {
+                  "id": "16102"
+                }
+              },
+              "score": "20",
+              "form": "WLWWW"
+            },
+            {
+              "id": "20",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "20",
+                "name": "Italy",
+                "abbreviation": "ITA",
+                "displayName": "Italy",
+                "shortDisplayName": "Italy",
+                "color": "3366FF",
+                "isActive": true,
+                "venue": {
+                  "id": "16225"
+                }
+              },
+              "score": "13",
+              "form": "LLLLL"
+            }
+          ],
+          "status": {
+            "clock": 5015.0,
+            "displayClock": "84'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-02-14T14:10Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 5015.0,
+        "displayClock": "84'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "602506",
+      "date": "2026-02-14T16:40Z",
+      "name": "Scotland vs England",
+      "shortName": "SCO VS ENG",
+      "season": {
+        "year": 2026,
+        "type": 1,
+        "slug": "2026-six-nations"
+      },
+      "competitions": [
+        {
+          "id": "602506",
+          "date": "2026-02-14T16:40Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16162",
+            "fullName": "Scottish Gas Murrayfield",
+            "address": {
+              "city": "Edinburgh",
+              "state": "Scotland"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "2",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "2",
+                "name": "Scotland",
+                "abbreviation": "SCO",
+                "displayName": "Scotland",
+                "shortDisplayName": "Scotland",
+                "color": "003366",
+                "isActive": true,
+                "venue": {
+                  "id": "16162"
+                }
+              },
+              "score": "31",
+              "form": "LWLWL"
+            },
+            {
+              "id": "1",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "1",
+                "name": "England",
+                "abbreviation": "ENG",
+                "displayName": "England",
+                "shortDisplayName": "England",
+                "color": "FF0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16145"
+                }
+              },
+              "score": "20",
+              "form": "WWWLL"
+            }
+          ],
+          "status": {
+            "clock": 4816.0,
+            "displayClock": "81'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-02-14T16:40Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 4816.0,
+        "displayClock": "81'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "602507",
+      "date": "2026-02-15T15:10Z",
+      "name": "Wales vs France",
+      "shortName": "WAL VS FRA",
+      "season": {
+        "year": 2026,
+        "type": 1,
+        "slug": "2026-six-nations"
+      },
+      "competitions": [
+        {
+          "id": "602507",
+          "date": "2026-02-15T15:10Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16727",
+            "fullName": "Principality Stadium",
+            "address": {
+              "city": "Cardiff",
+              "state": "Wales"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "4",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "team": {
+                "id": "4",
+                "name": "Wales",
+                "abbreviation": "WAL",
+                "displayName": "Wales",
+                "shortDisplayName": "Wales",
+                "color": "FF0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16727"
+                }
+              },
+              "score": "12",
+              "form": "WLLWW"
+            },
+            {
+              "id": "9",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": true,
+              "team": {
+                "id": "9",
+                "name": "France",
+                "abbreviation": "FRA",
+                "displayName": "France",
+                "shortDisplayName": "France",
+                "color": "0000CC",
+                "isActive": true,
+                "venue": {
+                  "id": "16701"
+                }
+              },
+              "score": "54",
+              "form": "WWWWL"
+            }
+          ],
+          "status": {
+            "clock": 4806.0,
+            "displayClock": "81'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-02-15T15:10Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 4806.0,
+        "displayClock": "81'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "602508",
+      "date": "2026-02-21T14:10Z",
+      "name": "England vs Ireland",
+      "shortName": "ENG VS IRE",
+      "season": {
+        "year": 2026,
+        "type": 1,
+        "slug": "2026-six-nations"
+      },
+      "competitions": [
+        {
+          "id": "602508",
+          "date": "2026-02-21T14:10Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16145",
+            "fullName": "Allianz Stadium",
+            "address": {
+              "city": "London",
+              "state": "England"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "1",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "team": {
+                "id": "1",
+                "name": "England",
+                "abbreviation": "ENG",
+                "displayName": "England",
+                "shortDisplayName": "England",
+                "color": "FF0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16145"
+                }
+              },
+              "score": "21",
+              "form": "WWWLL"
+            },
+            {
+              "id": "3",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": true,
+              "team": {
+                "id": "3",
+                "name": "Ireland",
+                "abbreviation": "IRE",
+                "displayName": "Ireland",
+                "shortDisplayName": "Ireland",
+                "color": "009900",
+                "isActive": true,
+                "venue": {
+                  "id": "16102"
+                }
+              },
+              "score": "42",
+              "form": "WLWWW"
+            }
+          ],
+          "status": {
+            "clock": 4818.0,
+            "displayClock": "81'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-02-21T14:10Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 4818.0,
+        "displayClock": "81'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "602509",
+      "date": "2026-02-21T16:40Z",
+      "name": "Wales vs Scotland",
+      "shortName": "WAL VS SCO",
+      "season": {
+        "year": 2026,
+        "type": 1,
+        "slug": "2026-six-nations"
+      },
+      "competitions": [
+        {
+          "id": "602509",
+          "date": "2026-02-21T16:40Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "16727",
+            "fullName": "Principality Stadium",
+            "address": {
+              "city": "Cardiff",
+              "state": "Wales"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "4",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": false,
+              "team": {
+                "id": "4",
+                "name": "Wales",
+                "abbreviation": "WAL",
+                "displayName": "Wales",
+                "shortDisplayName": "Wales",
+                "color": "FF0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16727"
+                }
+              },
+              "score": "23",
+              "form": "WLLWW"
+            },
+            {
+              "id": "2",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": true,
+              "team": {
+                "id": "2",
+                "name": "Scotland",
+                "abbreviation": "SCO",
+                "displayName": "Scotland",
+                "shortDisplayName": "Scotland",
+                "color": "003366",
+                "isActive": true,
+                "venue": {
+                  "id": "16162"
+                }
+              },
+              "score": "26",
+              "form": "LWLWL"
+            }
+          ],
+          "status": {
+            "clock": 4805.0,
+            "displayClock": "81'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-02-21T16:40Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 4805.0,
+        "displayClock": "81'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    },
+    {
+      "id": "602510",
+      "date": "2026-02-22T15:10Z",
+      "name": "France vs Italy",
+      "shortName": "FRA VS ITA",
+      "season": {
+        "year": 2026,
+        "type": 1,
+        "slug": "2026-six-nations"
+      },
+      "competitions": [
+        {
+          "id": "602510",
+          "date": "2026-02-22T15:10Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": true,
+          "recent": false,
+          "venue": {
+            "id": "209665",
+            "fullName": "Stade Pierre Mauroy",
+            "address": {
+              "city": "Lille",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "9",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "winner": true,
+              "team": {
+                "id": "9",
+                "name": "France",
+                "abbreviation": "FRA",
+                "displayName": "France",
+                "shortDisplayName": "France",
+                "color": "0000CC",
+                "isActive": true,
+                "venue": {
+                  "id": "16701"
+                }
+              },
+              "score": "33",
+              "form": "WWWWL"
+            },
+            {
+              "id": "20",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "winner": false,
+              "team": {
+                "id": "20",
+                "name": "Italy",
+                "abbreviation": "ITA",
+                "displayName": "Italy",
+                "shortDisplayName": "Italy",
+                "color": "3366FF",
+                "isActive": true,
+                "venue": {
+                  "id": "16225"
+                }
+              },
+              "score": "8",
+              "form": "LLLLL"
+            }
+          ],
+          "status": {
+            "clock": 4877.0,
+            "displayClock": "82'",
+            "period": 2,
+            "type": {
+              "id": "3",
+              "name": "STATUS_FINAL",
+              "state": "post",
+              "completed": true,
+              "description": "FT",
+              "detail": "FT",
+              "shortDetail": "FT"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-02-22T15:10Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 4877.0,
+        "displayClock": "82'",
+        "period": 2,
+        "type": {
+          "id": "3",
+          "name": "STATUS_FINAL",
+          "state": "post",
+          "completed": true,
+          "description": "FT",
+          "detail": "FT",
+          "shortDetail": "FT"
+        }
+      }
+    }
+  ],
+  "provider": {
+    "id": "100",
+    "name": "Draft Kings",
+    "displayName": "Draft Kings",
+    "priority": 1
+  }
+}

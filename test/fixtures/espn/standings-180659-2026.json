@@ -1,0 +1,869 @@
+{
+  "id": "8675309",
+  "name": "Six Nations",
+  "abbreviation": "Six Nations",
+  "children": [
+    {
+      "id": "1",
+      "name": "Six Nations",
+      "abbreviation": "2024",
+      "shortName": "Six Nations",
+      "standings": {
+        "id": "0",
+        "name": "overall",
+        "displayName": "Standings",
+        "season": 2026,
+        "seasonType": 1,
+        "seasonDisplayName": "2026",
+        "entries": [
+          {
+            "team": {
+              "id": "9",
+              "name": "France",
+              "abbreviation": "FRA",
+              "displayName": "France",
+              "shortDisplayName": "France",
+              "isActive": true,
+              "isNational": true
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 1.0,
+                "displayValue": "1"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": 81.0,
+                "displayValue": "+81"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 21.0,
+                "displayValue": "21"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 4.0,
+                "displayValue": "4"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 1.0,
+                "displayValue": "1"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "3",
+              "name": "Ireland",
+              "abbreviation": "IRE",
+              "displayName": "Ireland",
+              "shortDisplayName": "Ireland",
+              "isActive": true,
+              "isNational": true
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 1.0,
+                "displayValue": "1"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": 38.0,
+                "displayValue": "+38"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 19.0,
+                "displayValue": "19"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 4.0,
+                "displayValue": "4"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 2.0,
+                "displayValue": "2"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "2",
+              "name": "Scotland",
+              "abbreviation": "SCO",
+              "displayName": "Scotland",
+              "shortDisplayName": "Scotland",
+              "isActive": true,
+              "isNational": true
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 2.0,
+                "displayValue": "2"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -1.0,
+                "displayValue": "-1"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 16.0,
+                "displayValue": "16"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 3.0,
+                "displayValue": "3"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 3.0,
+                "displayValue": "3"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "20",
+              "name": "Italy",
+              "abbreviation": "ITA",
+              "displayName": "Italy",
+              "shortDisplayName": "Italy",
+              "isActive": true,
+              "isNational": true
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 3.0,
+                "displayValue": "3"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -38.0,
+                "displayValue": "-38"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 9.0,
+                "displayValue": "9"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 2.0,
+                "displayValue": "2"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 4.0,
+                "displayValue": "4"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "1",
+              "name": "England",
+              "abbreviation": "ENG",
+              "displayName": "England",
+              "shortDisplayName": "England",
+              "isActive": true,
+              "isNational": true
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 4.0,
+                "displayValue": "4"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": 2.0,
+                "displayValue": "+2"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 8.0,
+                "displayValue": "8"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 1.0,
+                "displayValue": "1"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 5.0,
+                "displayValue": "5"
+              }
+            ]
+          },
+          {
+            "team": {
+              "id": "4",
+              "name": "Wales",
+              "abbreviation": "WAL",
+              "displayName": "Wales",
+              "shortDisplayName": "Wales",
+              "isActive": true,
+              "isNational": true
+            },
+            "stats": [
+              {
+                "name": "gamesPlayed",
+                "displayName": "Games Played",
+                "shortDisplayName": "GP",
+                "description": "Games Played",
+                "abbreviation": "GP",
+                "type": "gamesplayed",
+                "value": 5.0,
+                "displayValue": "5"
+              },
+              {
+                "name": "gamesLost",
+                "displayName": "Games Lost",
+                "shortDisplayName": "L",
+                "description": "Games Lost",
+                "abbreviation": "L",
+                "type": "gameslost",
+                "value": 4.0,
+                "displayValue": "4"
+              },
+              {
+                "name": "pointsDifference",
+                "displayName": "Points Difference",
+                "shortDisplayName": "PD",
+                "description": "Points Difference",
+                "abbreviation": "PD",
+                "type": "pointsdifference",
+                "value": -82.0,
+                "displayValue": "-82"
+              },
+              {
+                "name": "points",
+                "displayName": "Points",
+                "shortDisplayName": "P",
+                "description": "Points",
+                "abbreviation": "P",
+                "type": "points",
+                "value": 6.0,
+                "displayValue": "6"
+              },
+              {
+                "name": "gamesDrawn",
+                "displayName": "Games Drawn",
+                "shortDisplayName": "D",
+                "description": "Games Drawn",
+                "abbreviation": "D",
+                "type": "gamesdrawn",
+                "value": 0.0,
+                "displayValue": "0"
+              },
+              {
+                "name": "gamesWon",
+                "displayName": "Games Won",
+                "shortDisplayName": "W",
+                "description": "Games Won",
+                "abbreviation": "W",
+                "type": "gameswon",
+                "value": 1.0,
+                "displayValue": "1"
+              },
+              {
+                "name": "rank",
+                "displayName": "Rank",
+                "shortDisplayName": "Rank",
+                "description": "Rank",
+                "abbreviation": "R",
+                "type": "rank",
+                "value": 6.0,
+                "displayValue": "6"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "season": {
+    "year": 2026,
+    "startDate": "2026-01-31T05:00Z",
+    "endDate": "2026-03-17T03:59Z",
+    "displayName": "2026"
+  },
+  "seasons": [
+    {
+      "year": 2027,
+      "startDate": "2027-01-31T05:00Z",
+      "endDate": "2027-03-17T03:59Z",
+      "displayName": "2027",
+      "types": [
+        {
+          "id": "1",
+          "name": "2027 Six Nations",
+          "abbreviation": "2027 Six Nations",
+          "startDate": "2027-01-31T05:00Z",
+          "endDate": "2027-03-17T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2027"
+    },
+    {
+      "year": 2026,
+      "startDate": "2026-01-31T05:00Z",
+      "endDate": "2026-03-17T03:59Z",
+      "displayName": "2026",
+      "types": [
+        {
+          "id": "1",
+          "name": "2026 Six Nations",
+          "abbreviation": "2026 Six Nations",
+          "startDate": "2026-01-31T05:00Z",
+          "endDate": "2026-03-17T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2026"
+    },
+    {
+      "year": 2025,
+      "startDate": "2025-01-31T05:00Z",
+      "endDate": "2025-03-17T03:59Z",
+      "displayName": "2025",
+      "types": [
+        {
+          "id": "1",
+          "name": "2025 Six Nations",
+          "abbreviation": "2025 Six Nations",
+          "startDate": "2025-01-31T05:00Z",
+          "endDate": "2025-03-17T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2025"
+    },
+    {
+      "year": 2024,
+      "startDate": "2024-02-02T05:00Z",
+      "endDate": "2024-03-17T03:59Z",
+      "displayName": "2024",
+      "types": [
+        {
+          "id": "1",
+          "name": "2024 Six Nations",
+          "abbreviation": "2024 Six Nations",
+          "startDate": "2024-02-02T05:00Z",
+          "endDate": "2024-03-17T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2024"
+    },
+    {
+      "year": 2023,
+      "startDate": "2023-02-04T05:00Z",
+      "endDate": "2023-03-20T03:59Z",
+      "displayName": "2023",
+      "types": [
+        {
+          "id": "1",
+          "name": "2023 Six Nations",
+          "abbreviation": "2023 Six Nations",
+          "startDate": "2023-02-04T05:00Z",
+          "endDate": "2023-03-20T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2023"
+    },
+    {
+      "year": 2022,
+      "startDate": "2022-02-04T05:00Z",
+      "endDate": "2022-03-22T03:59Z",
+      "displayName": "2022",
+      "types": [
+        {
+          "id": "1",
+          "name": "2022 Six Nations",
+          "abbreviation": "2022 Six Nations",
+          "startDate": "2022-02-04T05:00Z",
+          "endDate": "2022-03-22T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2022"
+    },
+    {
+      "year": 2021,
+      "startDate": "2021-02-06T05:00Z",
+      "endDate": "2021-03-22T03:59Z",
+      "displayName": "2021",
+      "types": [
+        {
+          "id": "1",
+          "name": "2021 Six Nations",
+          "abbreviation": "2021 Six Nations",
+          "startDate": "2021-02-06T05:00Z",
+          "endDate": "2021-03-22T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2021"
+    },
+    {
+      "year": 2020,
+      "startDate": "2019-08-01T04:00Z",
+      "endDate": "2020-05-02T03:59Z",
+      "displayName": "2019-20",
+      "types": [
+        {
+          "id": "1",
+          "name": "2020 Six Nations",
+          "abbreviation": "2020 Six Nations",
+          "startDate": "2019-08-01T04:00Z",
+          "endDate": "2020-05-02T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2019-20"
+    },
+    {
+      "year": 2019,
+      "startDate": "2018-08-01T04:00Z",
+      "endDate": "2019-05-02T03:59Z",
+      "displayName": "2018-19",
+      "types": [
+        {
+          "id": "1",
+          "name": "2019 Six Nations",
+          "abbreviation": "2019 Six Nations",
+          "startDate": "2018-08-01T04:00Z",
+          "endDate": "2019-05-02T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2018-19"
+    },
+    {
+      "year": 2018,
+      "startDate": "2017-08-01T04:00Z",
+      "endDate": "2018-05-02T03:59Z",
+      "displayName": "2017-18",
+      "types": [
+        {
+          "id": "1",
+          "name": "2018 Six Nations",
+          "abbreviation": "2018 Six Nations",
+          "startDate": "2017-08-01T04:00Z",
+          "endDate": "2018-05-02T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2017-18"
+    },
+    {
+      "year": 2017,
+      "startDate": "2017-01-01T05:00Z",
+      "endDate": "2017-05-02T03:59Z",
+      "displayName": "2017",
+      "types": [
+        {
+          "id": "1",
+          "name": "2017 Six Nations",
+          "abbreviation": "2017 Six Nations",
+          "startDate": "2017-01-01T05:00Z",
+          "endDate": "2017-05-02T03:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2017"
+    },
+    {
+      "year": 2016,
+      "startDate": "2016-02-06T05:00Z",
+      "endDate": "2016-12-14T04:59Z",
+      "displayName": "2016",
+      "types": [
+        {
+          "id": "1",
+          "name": "2016 Six Nations",
+          "abbreviation": "2016 Six Nations",
+          "startDate": "2016-02-06T05:00Z",
+          "endDate": "2016-12-14T04:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2016"
+    },
+    {
+      "year": 2015,
+      "startDate": "2015-02-06T05:00Z",
+      "endDate": "2016-02-06T04:59Z",
+      "displayName": "2015",
+      "types": [
+        {
+          "id": "1",
+          "name": "2015 Six Nations",
+          "abbreviation": "2015 Six Nations",
+          "startDate": "2015-02-06T05:00Z",
+          "endDate": "2016-02-06T04:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2015-16"
+    },
+    {
+      "year": 2014,
+      "startDate": "2014-02-01T05:00Z",
+      "endDate": "2015-02-06T04:59Z",
+      "displayName": "2014",
+      "types": [
+        {
+          "id": "1",
+          "name": "2014 Six Nations",
+          "abbreviation": "2014 Six Nations",
+          "startDate": "2014-02-01T05:00Z",
+          "endDate": "2015-02-06T04:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2014-15"
+    },
+    {
+      "year": 2013,
+      "startDate": "2013-02-02T05:00Z",
+      "endDate": "2014-02-01T04:59Z",
+      "displayName": "2013",
+      "types": [
+        {
+          "id": "1",
+          "name": "2013 Six Nations",
+          "abbreviation": "2013 Six Nations",
+          "startDate": "2013-02-02T05:00Z",
+          "endDate": "2014-02-01T04:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2013-14"
+    },
+    {
+      "year": 2012,
+      "startDate": "2012-02-04T05:00Z",
+      "endDate": "2013-02-02T04:59Z",
+      "displayName": "2012",
+      "types": [
+        {
+          "id": "1",
+          "name": "2012 Six Nations",
+          "abbreviation": "2012 Six Nations",
+          "startDate": "2012-02-04T05:00Z",
+          "endDate": "2013-02-02T04:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2012-13"
+    },
+    {
+      "year": 2011,
+      "startDate": "2011-02-04T05:00Z",
+      "endDate": "2012-02-04T04:59Z",
+      "displayName": "2011",
+      "types": [
+        {
+          "id": "1",
+          "name": "2011 Six Nations",
+          "abbreviation": "2011 Six Nations",
+          "startDate": "2011-02-04T05:00Z",
+          "endDate": "2012-02-04T04:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2011-12"
+    },
+    {
+      "year": 2010,
+      "startDate": "2010-02-06T05:00Z",
+      "endDate": "2011-02-04T04:59Z",
+      "displayName": "2010",
+      "types": [
+        {
+          "id": "1",
+          "name": "2010 Six Nations",
+          "abbreviation": "2010 Six Nations",
+          "startDate": "2010-02-06T05:00Z",
+          "endDate": "2011-02-04T04:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2010-11"
+    },
+    {
+      "year": 2009,
+      "startDate": "2009-02-07T05:00Z",
+      "endDate": "2010-02-06T04:59Z",
+      "displayName": "2009",
+      "types": [
+        {
+          "id": "1",
+          "name": "2009 Six Nations",
+          "abbreviation": "2009 Six Nations",
+          "startDate": "2009-02-07T05:00Z",
+          "endDate": "2010-02-06T04:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2009-10"
+    },
+    {
+      "year": 2008,
+      "startDate": "2008-02-02T05:00Z",
+      "endDate": "2009-02-07T04:59Z",
+      "displayName": "2008",
+      "types": [
+        {
+          "id": "1",
+          "name": "2008 Six Nations",
+          "abbreviation": "2008 Six Nations",
+          "startDate": "2008-02-02T05:00Z",
+          "endDate": "2009-02-07T04:59Z",
+          "hasStandings": true
+        }
+      ],
+      "seasonYears": "2008-09"
+    }
+  ]
+}

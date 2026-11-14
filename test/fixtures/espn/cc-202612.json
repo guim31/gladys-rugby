@@ -1,0 +1,1296 @@
+{
+  "leagues": [
+    {
+      "id": "8329",
+      "name": "European Rugby Champions Cup",
+      "abbreviation": "European Rugby Champions Cup",
+      "midsizeName": "271937",
+      "slug": "271937",
+      "season": {
+        "year": 2027,
+        "startDate": "2026-12-06T05:00Z",
+        "endDate": "2027-05-26T03:59Z",
+        "displayName": "2026-27",
+        "type": {
+          "id": "1",
+          "type": 1,
+          "name": "2023/24 European Rugby Champions Cup",
+          "abbreviation": "2023/24 European Rugby Champions Cup"
+        }
+      },
+      "isClubCompetition": false,
+      "calendarType": "day",
+      "calendarIsWhitelist": true,
+      "calendarStartDate": "2026-12-06T05:00Z",
+      "calendarEndDate": "2027-05-26T03:59Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "604258",
+      "date": "2026-12-11T20:00Z",
+      "name": "Glasgow Warriors vs Pau",
+      "shortName": "GLA VS SEC",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604258",
+          "date": "2026-12-11T20:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "167125",
+            "fullName": "Scotstoun Stadium",
+            "address": {
+              "city": "Glasgow",
+              "state": "Scotland"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25952",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25952",
+                "name": "Glasgow Warriors",
+                "abbreviation": "GLA",
+                "displayName": "Glasgow Warriors",
+                "shortDisplayName": "Glasgow Warriors",
+                "color": "000033",
+                "isActive": true,
+                "venue": {
+                  "id": "167125"
+                }
+              },
+              "score": "0",
+              "form": "WWWWT"
+            },
+            {
+              "id": "270567",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "270567",
+                "name": "Pau",
+                "abbreviation": "SEC",
+                "displayName": "Pau",
+                "shortDisplayName": "Pau",
+                "color": "FF0001",
+                "isActive": true,
+                "venue": {
+                  "id": "271945"
+                }
+              },
+              "score": "0",
+              "form": "WWLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Fri, December 11th at 3:00 PM EST",
+              "shortDetail": "12/11 - 3:00 PM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-11T20:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Fri, December 11th at 3:00 PM EST",
+          "shortDetail": "12/11 - 3:00 PM EST"
+        }
+      }
+    },
+    {
+      "id": "604259",
+      "date": "2026-12-11T20:00Z",
+      "name": "Stade Francais Paris vs Northampton Saints",
+      "shortName": "STA VS NOR",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604259",
+          "date": "2026-12-11T20:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "26063",
+            "fullName": "Stade Jean Bouin",
+            "address": {
+              "city": "Paris",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25921",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25921",
+                "name": "Stade Francais Paris",
+                "abbreviation": "STA",
+                "displayName": "Stade Francais Paris",
+                "shortDisplayName": "Stade Francais Paris",
+                "color": "CC0066",
+                "isActive": true,
+                "venue": {
+                  "id": "26063"
+                }
+              },
+              "score": "0",
+              "form": "LWLLW"
+            },
+            {
+              "id": "25907",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25907",
+                "name": "Northampton Saints",
+                "abbreviation": "NOR",
+                "displayName": "Northampton Saints",
+                "shortDisplayName": "Northampton Saints",
+                "color": "006633",
+                "isActive": true,
+                "venue": {
+                  "id": "26070"
+                }
+              },
+              "score": "0",
+              "form": "WWLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Fri, December 11th at 3:00 PM EST",
+              "shortDetail": "12/11 - 3:00 PM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-11T20:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Fri, December 11th at 3:00 PM EST",
+          "shortDetail": "12/11 - 3:00 PM EST"
+        }
+      }
+    },
+    {
+      "id": "604260",
+      "date": "2026-12-12T13:00Z",
+      "name": "Lions vs Stade Toulousain",
+      "shortName": "LIO VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604260",
+          "date": "2026-12-12T13:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16173",
+            "fullName": "Ellis Park",
+            "address": {
+              "city": "Johannesburg",
+              "state": "South Africa"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25958",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25958",
+                "name": "Lions",
+                "abbreviation": "LIO",
+                "displayName": "Lions",
+                "shortDisplayName": "Lions",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16173"
+                }
+              },
+              "score": "0",
+              "form": "LLLLW"
+            },
+            {
+              "id": "25922",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25922",
+                "name": "Stade Toulousain",
+                "abbreviation": "STA",
+                "displayName": "Stade Toulousain",
+                "shortDisplayName": "Stade Toulousain",
+                "color": "000000",
+                "isActive": true,
+                "venue": {
+                  "id": "16510"
+                }
+              },
+              "score": "0",
+              "form": "WLWWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 12th at 8:00 AM EST",
+              "shortDetail": "12/12 - 8:00 AM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-12T13:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 12th at 8:00 AM EST",
+          "shortDetail": "12/12 - 8:00 AM EST"
+        }
+      }
+    },
+    {
+      "id": "604261",
+      "date": "2026-12-12T15:15Z",
+      "name": "Leicester Tigers vs Clermont Auvergne",
+      "shortName": "LEI VS ASM",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604261",
+          "date": "2026-12-12T15:15Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16133",
+            "fullName": "Mattioli Woods Welford Road Stadium",
+            "address": {
+              "city": "Leicester",
+              "state": "England"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25903",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25903",
+                "name": "Leicester Tigers",
+                "abbreviation": "LEI",
+                "displayName": "Leicester Tigers",
+                "shortDisplayName": "Leicester Tigers",
+                "color": "006633",
+                "isActive": true,
+                "venue": {
+                  "id": "16133"
+                }
+              },
+              "score": "0",
+              "form": "LWWLW"
+            },
+            {
+              "id": "25917",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25917",
+                "name": "Clermont Auvergne",
+                "abbreviation": "ASM",
+                "displayName": "Clermont Auvergne",
+                "shortDisplayName": "Clermont Auvergne",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16262"
+                }
+              },
+              "score": "0",
+              "form": "LWLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 12th at 10:15 AM EST",
+              "shortDetail": "12/12 - 10:15 AM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-12T15:15Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 12th at 10:15 AM EST",
+          "shortDetail": "12/12 - 10:15 AM EST"
+        }
+      }
+    },
+    {
+      "id": "604262",
+      "date": "2026-12-12T15:15Z",
+      "name": "Montpellier Herault vs Bulls",
+      "shortName": "MON VS BUL",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604262",
+          "date": "2026-12-12T15:15Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "26065",
+            "fullName": "Septeo Stadium",
+            "address": {
+              "city": "Montpellier",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25918",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25918",
+                "name": "Montpellier Herault",
+                "abbreviation": "MON",
+                "displayName": "Montpellier Herault",
+                "shortDisplayName": "Montpellier Herault",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "26065"
+                }
+              },
+              "score": "0",
+              "form": "WWWWL"
+            },
+            {
+              "id": "25953",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25953",
+                "name": "Bulls",
+                "abbreviation": "BUL",
+                "displayName": "Bulls",
+                "shortDisplayName": "Bulls",
+                "color": "003366",
+                "isActive": true,
+                "venue": {
+                  "id": "16234"
+                }
+              },
+              "score": "0",
+              "form": "WWWWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 12th at 10:15 AM EST",
+              "shortDetail": "12/12 - 10:15 AM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-12T15:15Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 12th at 10:15 AM EST",
+          "shortDetail": "12/12 - 10:15 AM EST"
+        }
+      }
+    },
+    {
+      "id": "604263",
+      "date": "2026-12-12T17:30Z",
+      "name": "Leinster vs Sale Sharks",
+      "shortName": "LEI VS SAL",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604263",
+          "date": "2026-12-12T17:30Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "26074",
+            "fullName": "Laya Arena",
+            "address": {
+              "city": "Dublin",
+              "state": "Ireland"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25924",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25924",
+                "name": "Leinster",
+                "abbreviation": "LEI",
+                "displayName": "Leinster",
+                "shortDisplayName": "Leinster",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "26074"
+                }
+              },
+              "score": "0",
+              "form": "WWWWL"
+            },
+            {
+              "id": "25908",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25908",
+                "name": "Sale Sharks",
+                "abbreviation": "SAL",
+                "displayName": "Sale Sharks",
+                "shortDisplayName": "Sale Sharks",
+                "color": "003366",
+                "isActive": true,
+                "venue": {
+                  "id": "166602"
+                }
+              },
+              "score": "0",
+              "form": "WWLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 12th at 12:30 PM EST",
+              "shortDetail": "12/12 - 12:30 PM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-12T17:30Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 12th at 12:30 PM EST",
+          "shortDetail": "12/12 - 12:30 PM EST"
+        }
+      }
+    },
+    {
+      "id": "604264",
+      "date": "2026-12-12T17:30Z",
+      "name": "Saracens vs La Rochelle",
+      "shortName": "SAR VS STA",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604264",
+          "date": "2026-12-12T17:30Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "167186",
+            "fullName": "StoneX Stadium",
+            "address": {
+              "city": "London",
+              "state": "England"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25909",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25909",
+                "name": "Saracens",
+                "abbreviation": "SAR",
+                "displayName": "Saracens",
+                "shortDisplayName": "Saracens",
+                "color": "CC0000",
+                "isActive": true,
+                "venue": {
+                  "id": "167186"
+                }
+              },
+              "score": "0",
+              "form": "WWLLW"
+            },
+            {
+              "id": "119318",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "119318",
+                "name": "La Rochelle",
+                "abbreviation": "STA",
+                "displayName": "La Rochelle",
+                "shortDisplayName": "La Rochelle",
+                "color": "FFCC00",
+                "isActive": true,
+                "venue": {
+                  "id": "16394"
+                }
+              },
+              "score": "0",
+              "form": "WLLWW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 12th at 12:30 PM EST",
+              "shortDetail": "12/12 - 12:30 PM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-12T17:30Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 12th at 12:30 PM EST",
+          "shortDetail": "12/12 - 12:30 PM EST"
+        }
+      }
+    },
+    {
+      "id": "604265",
+      "date": "2026-12-12T20:00Z",
+      "name": "Bristol Rugby vs Munster",
+      "shortName": "BRI VS MUN",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604265",
+          "date": "2026-12-12T20:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16142",
+            "fullName": "Ashton Gate",
+            "address": {
+              "city": "Bristol",
+              "state": "England"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25899",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25899",
+                "name": "Bristol Rugby",
+                "abbreviation": "BRI",
+                "displayName": "Bristol Rugby",
+                "shortDisplayName": "Bristol Rugby",
+                "color": "",
+                "isActive": true,
+                "venue": {
+                  "id": "16142"
+                }
+              },
+              "score": "0",
+              "form": "LLWLL"
+            },
+            {
+              "id": "25925",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25925",
+                "name": "Munster",
+                "abbreviation": "MUN",
+                "displayName": "Munster",
+                "shortDisplayName": "Munster",
+                "color": "FF0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16127"
+                }
+              },
+              "score": "0",
+              "form": "LLWTW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 12th at 3:00 PM EST",
+              "shortDetail": "12/12 - 3:00 PM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-12T20:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 12th at 3:00 PM EST",
+          "shortDetail": "12/12 - 3:00 PM EST"
+        }
+      }
+    },
+    {
+      "id": "604266",
+      "date": "2026-12-12T20:00Z",
+      "name": "Cardiff Blues vs Bath Rugby",
+      "shortName": "CAR VS BAT",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604266",
+          "date": "2026-12-12T20:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16776",
+            "fullName": "Cardiff Arms Park",
+            "address": {
+              "city": "Cardiff",
+              "state": "Wales"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "25965",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "25965",
+                "name": "Cardiff Blues",
+                "abbreviation": "CAR",
+                "displayName": "Cardiff Blues",
+                "shortDisplayName": "Cardiff Blues",
+                "color": "0000FF",
+                "isActive": true,
+                "venue": {
+                  "id": "16776"
+                }
+              },
+              "score": "0",
+              "form": "WLLLW"
+            },
+            {
+              "id": "25898",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25898",
+                "name": "Bath Rugby",
+                "abbreviation": "BAT",
+                "displayName": "Bath Rugby",
+                "shortDisplayName": "Bath Rugby",
+                "color": "000099",
+                "isActive": true,
+                "venue": {
+                  "id": "26060"
+                }
+              },
+              "score": "0",
+              "form": "WWLLL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sat, December 12th at 3:00 PM EST",
+              "shortDetail": "12/12 - 3:00 PM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-12T20:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sat, December 12th at 3:00 PM EST",
+          "shortDetail": "12/12 - 3:00 PM EST"
+        }
+      }
+    },
+    {
+      "id": "604267",
+      "date": "2026-12-13T13:00Z",
+      "name": "Exeter Chiefs vs Connacht",
+      "shortName": "EXE VS CON",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604267",
+          "date": "2026-12-13T13:00Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "118601",
+            "fullName": "Sandy Park",
+            "address": {
+              "city": "Exeter",
+              "state": "England"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "116227",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "116227",
+                "name": "Exeter Chiefs",
+                "abbreviation": "EXE",
+                "displayName": "Exeter Chiefs",
+                "shortDisplayName": "Exeter Chiefs",
+                "color": "999999",
+                "isActive": true,
+                "venue": {
+                  "id": "118601"
+                }
+              },
+              "score": "0",
+              "form": "LLLLL"
+            },
+            {
+              "id": "25923",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25923",
+                "name": "Connacht",
+                "abbreviation": "CON",
+                "displayName": "Connacht",
+                "shortDisplayName": "Connacht",
+                "color": "006633",
+                "isActive": true,
+                "venue": {
+                  "id": "26071"
+                }
+              },
+              "score": "0",
+              "form": "LWWLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sun, December 13th at 8:00 AM EST",
+              "shortDetail": "12/13 - 8:00 AM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-13T13:00Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sun, December 13th at 8:00 AM EST",
+          "shortDetail": "12/13 - 8:00 AM EST"
+        }
+      }
+    },
+    {
+      "id": "604268",
+      "date": "2026-12-13T15:15Z",
+      "name": "Bordeaux Begles vs Stormers",
+      "shortName": "UNI VS STO",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604268",
+          "date": "2026-12-13T15:15Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "16681",
+            "fullName": "Stade Chaban-Delmas",
+            "address": {
+              "city": "Bordeaux",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "143737",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "143737",
+                "name": "Bordeaux Begles",
+                "abbreviation": "UNI",
+                "displayName": "Bordeaux Begles",
+                "shortDisplayName": "Bordeaux Begles",
+                "color": "000099",
+                "isActive": true,
+                "venue": {
+                  "id": "16681"
+                }
+              },
+              "score": "0",
+              "form": "LWWTW"
+            },
+            {
+              "id": "25962",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25962",
+                "name": "Stormers",
+                "abbreviation": "STO",
+                "displayName": "Stormers",
+                "shortDisplayName": "Stormers",
+                "color": "003366",
+                "isActive": true,
+                "venue": {
+                  "id": "289723"
+                }
+              },
+              "score": "0",
+              "form": "WWWWL"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sun, December 13th at 10:15 AM EST",
+              "shortDetail": "12/13 - 10:15 AM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-13T15:15Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sun, December 13th at 10:15 AM EST",
+          "shortDetail": "12/13 - 10:15 AM EST"
+        }
+      }
+    },
+    {
+      "id": "604269",
+      "date": "2026-12-13T17:30Z",
+      "name": "Racing 92 vs Gloucester Rugby",
+      "shortName": "RAC VS GLO",
+      "season": {
+        "year": 2027,
+        "type": 1,
+        "slug": "202324-european-rugby-champions-cup"
+      },
+      "competitions": [
+        {
+          "id": "604269",
+          "date": "2026-12-13T17:30Z",
+          "attendance": 0,
+          "timeValid": true,
+          "neutralSite": false,
+          "conferenceCompetition": false,
+          "playByPlayAvailable": false,
+          "recent": false,
+          "venue": {
+            "id": "289546",
+            "fullName": "Paris La Defense Arena",
+            "address": {
+              "city": "Nanterre",
+              "state": "France"
+            },
+            "indoor": false
+          },
+          "competitors": [
+            {
+              "id": "99855",
+              "type": "team",
+              "order": 0,
+              "homeAway": "home",
+              "team": {
+                "id": "99855",
+                "name": "Racing 92",
+                "abbreviation": "RAC",
+                "displayName": "Racing 92",
+                "shortDisplayName": "Racing 92",
+                "color": "3399FF",
+                "isActive": true,
+                "venue": {
+                  "id": "289546"
+                }
+              },
+              "score": "0",
+              "form": "WLLLL"
+            },
+            {
+              "id": "25900",
+              "type": "team",
+              "order": 1,
+              "homeAway": "away",
+              "team": {
+                "id": "25900",
+                "name": "Gloucester Rugby",
+                "abbreviation": "GLO",
+                "displayName": "Gloucester Rugby",
+                "shortDisplayName": "Gloucester Rugby",
+                "color": "FF0000",
+                "isActive": true,
+                "venue": {
+                  "id": "16131"
+                }
+              },
+              "score": "0",
+              "form": "LWTLW"
+            }
+          ],
+          "status": {
+            "clock": 0.0,
+            "displayClock": "1'",
+            "period": 0,
+            "type": {
+              "id": "1",
+              "name": "STATUS_SCHEDULED",
+              "state": "pre",
+              "completed": false,
+              "description": "Scheduled",
+              "detail": "Sun, December 13th at 12:30 PM EST",
+              "shortDetail": "12/13 - 12:30 PM EST"
+            }
+          },
+          "broadcasts": [],
+          "startDate": "2026-12-13T17:30Z",
+          "broadcast": ""
+        }
+      ],
+      "status": {
+        "clock": 0.0,
+        "displayClock": "1'",
+        "period": 0,
+        "type": {
+          "id": "1",
+          "name": "STATUS_SCHEDULED",
+          "state": "pre",
+          "completed": false,
+          "description": "Scheduled",
+          "detail": "Sun, December 13th at 12:30 PM EST",
+          "shortDetail": "12/13 - 12:30 PM EST"
+        }
+      }
+    }
+  ],
+  "provider": {
+    "id": "100",
+    "name": "Draft Kings",
+    "displayName": "Draft Kings",
+    "priority": 1
+  }
+}
