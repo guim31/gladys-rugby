@@ -10,6 +10,8 @@ the notes of the version's GitHub Release.
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-11-14
+
 ### Added
 
 - One device per rugby team followed, chosen in the Discover tab among the teams of the ticked
@@ -24,4 +26,5 @@ the notes of the version's GitHub Release.
 - "Check" action: reads ESPN again and reports the competitions and the teams followed.
 - Texts in English, French, German and Spanish.
 
-[Unreleased]: https://github.com/guim31/gladys-rugby/commits/main
+[Unreleased]: https://github.com/guim31/gladys-rugby/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/guim31/gladys-rugby/releases/tag/v1.0.0
