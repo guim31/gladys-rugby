@@ -55,7 +55,7 @@ const CATCH_UP = 10 * MINUTE;
 // integration stopped for days does not fire old matches when it restarts).
 const ANNOUNCE_WITHIN = { kickoff: 2 * HOUR, finished: 12 * HOUR };
 const SEEN_KEPT = 30 * DAY;
-const STATE_ORDER = { pre: 0, in: 1, finished: 2, post: 2 };
+const STATE_ORDER = { pre: 0, in: 1, finished: 2 };
 const KEEP_RESULTS = 183 * DAY;
 // ESPN files a match under its date in US Eastern time (a 00:00Z kick-off is
 // on the previous day).
@@ -103,6 +103,7 @@ export class RugbyService {
     this.failedRefreshes = 0;
     this.lastAttempt = 0;
     this.standingsFailedAt = {};
+    this.taskFailedAt = {};
     this.seen = {};
     // "Match starting" events sent while a later one of the same minute was
     // refused: not sent twice when the interval is checked again.
@@ -351,7 +352,7 @@ export class RugbyService {
         const day = espnDay(match.start);
         const id = `${match.competition}:${day}`;
         if (now - (this.liveFetchedAt[id] ?? 0) >= LIVE_INTERVAL - 5_000) {
-          due.set(id, { key: match.competition, day, id });
+          due.set(id, { key: match.competition, day, id: `live:${id}`, liveId: id });
         }
       }
     }
@@ -404,6 +405,7 @@ export class RugbyService {
   async refresh({ force = false } = {}) {
     const now = this.now();
     const live = this.liveReadings(now);
+    // ESPN unreachable or rate-limiting: wait before trying again.
     if (
       !force &&
       this.apiError &&
@@ -411,13 +413,16 @@ export class RugbyService {
     ) {
       return false;
     }
+    // A document ESPN refuses (an HTTP error) is tried again 10 minutes
+    // later, without slowing the others down.
+    const waiting = (id) => !force && now - (this.taskFailedAt[id] ?? 0) < RETRY_AFTER;
     const tasks = [];
     for (const key of this.config.competitions) {
-      if (force || this.isDue('teams', key, now)) {
-        tasks.push({ kind: 'teams', key });
+      if ((force || this.isDue('teams', key, now)) && !waiting(`teams:${key}`)) {
+        tasks.push({ kind: 'teams', key, id: `teams:${key}` });
       }
-      if (force || this.isDue('calendar', key, now)) {
-        tasks.push({ kind: 'calendar', key });
+      if ((force || this.isDue('calendar', key, now)) && !waiting(`calendar:${key}`)) {
+        tasks.push({ kind: 'calendar', key, id: `calendar:${key}` });
       }
     }
     // A full calendar read already holds the day.
@@ -432,22 +437,30 @@ export class RugbyService {
     }
     this.lastAttempt = now;
     let read = 0;
-    let error = null;
-    // One failing document does not hold the others back; an unreachable or
+    let refused = 0;
+    let outage = null;
+    // One document refused does not hold the others back; an unreachable or
     // rate-limiting ESPN stops the round (no point in hammering it).
-    const attempt = async (fn) => {
+    const attempt = async (id, fn) => {
       try {
         await fn();
         read += 1;
+        this.failures.succeeded(`doc:${id}`, `ESPN serves ${id} again`);
         return true;
       } catch (err) {
-        error ??= err;
-        return Boolean(err.status) && err.status !== 429;
+        if (!err.status || err.status === 429) {
+          outage = err;
+          return false;
+        }
+        refused += 1;
+        this.taskFailedAt[id] = now;
+        this.failures.failed(`doc:${id}`, `ESPN refused ${id}: ${err.message}`);
+        return true;
       }
     };
     let go = true;
     for (const task of tasks) {
-      go = await attempt(() => this.read(task, now));
+      go = await attempt(task.id, () => this.read(task, now));
       if (!go) {
         break;
       }
@@ -455,16 +468,18 @@ export class RugbyService {
     // After the matches: the season and the ended matches decide.
     if (go) {
       for (const { key, season } of this.standingsDue(now, force)) {
-        if (!(await attempt(() => this.readStandings(key, season, now)))) {
+        if (!(await attempt(`standings:${key}`, () => this.readStandings(key, season, now)))) {
           break;
         }
       }
     }
+    // Unreachable, or every document refused: ESPN is down for us.
+    const error = outage?.message ?? (refused > 0 && read === 0 ? 'every request refused' : null);
     if (error) {
-      this.apiError = error.message;
+      this.apiError = error;
       this.failedRefreshes += 1;
-      this.failures.failed('api', `Could not read ESPN: ${error.message}`);
-    } else {
+      this.failures.failed('api', `Could not read ESPN: ${error}`);
+    } else if (read > 0) {
       this.apiError = null;
       this.failedRefreshes = 0;
       this.failures.succeeded('api', 'ESPN read again');
@@ -509,7 +524,7 @@ export class RugbyService {
       return;
     }
     // live: the matches of the day replace their entries of the calendar.
-    this.liveFetchedAt[task.id] = now;
+    this.liveFetchedAt[task.liveId] = now;
     const matches = parseScoreboard(
       await this.api.get(PATHS.scoreboard(league, task.day)),
       task.key,
@@ -693,8 +708,11 @@ export class RugbyService {
     for (const teamId of this.followedTeams()) {
       for (const match of teamMatches(this.data, teamId)) {
         const id = `${teamId}:${match.id}`;
-        const state = isFinished(match) ? 'finished' : match.state;
-        const before = this.seen[id];
+        // Postponed or abandoned ("over", not completed) is "to come" again:
+        // ESPN keeps the id when it reschedules, and the replay is announced.
+        const state = isFinished(match) ? 'finished' : match.state === 'in' ? 'in' : 'pre';
+        const moved = this.seen[id] && this.seen[id].start !== match.start;
+        const before = moved ? null : this.seen[id];
         const entry = before
           ? { ...before, start: match.start }
           : { state, start: match.start, sawPre: state === 'pre', sawLive: state === 'in' };

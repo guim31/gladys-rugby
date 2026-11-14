@@ -224,7 +224,14 @@ test('one competition answering 500 does not hold the others back', async (t) =>
   t.after(() => world.app.stop());
   assert.ok(world.api.calls.some((path) => path.includes('180659/scoreboard')));
   assert.equal(world.state('rank'), 1);
-  assert.equal(world.service.apiError, 'ESPN answered HTTP 500');
+  // A document refused is not an outage: tried again 10 minutes later alone.
+  assert.equal(world.service.apiError, null);
+  assert.equal(world.gladys.fake.connectionStatus.connected, true);
+  const calls = world.api.calls.length;
+  await world.runUntil('2026-11-14T10:11:00Z');
+  const again = world.api.calls.slice(calls);
+  assert.ok(again.some((path) => path.includes('271937/scoreboard')));
+  assert.ok(!again.some((path) => path.includes('270559')));
 });
 
 test('a stale "to come" after the kick-off fires nothing twice; a refused event is sent again', async (t) => {
@@ -277,4 +284,21 @@ test('the last result survives the months read; an unticked competition is dropp
   await world.gladys.fake.configUpdated({ competitions: ['six_nations'] });
   assert.equal(world.service.data.calendar.top14, undefined);
   assert.equal(world.state('next_match'), 'Aucun match prévu');
+});
+
+test('a match called off then played: its kick-off is announced', async (t) => {
+  const api = fakeEspn();
+  const world = await createWorld({ api, at: '2026-11-28T19:30:00Z' });
+  t.after(() => world.app.stop());
+  const postpone = (game) => {
+    game.status.type.state = 'post';
+    game.status.type.completed = false;
+    game.status.type.name = 'STATUS_POSTPONED';
+  };
+  api.patch(LYON_TOULOUSE, postpone);
+  await world.runUntil('2026-11-28T19:58:00Z');
+  // Played after all: the next full reading ("Check" here) says so.
+  api.patch(LYON_TOULOUSE, (game) => play(game, { state: 'in', home: 0, away: 3 }));
+  await world.service.check();
+  assert.equal(world.gladys.fake.sceneEvents.filter((e) => e.key === 'kickoff').length, 1);
 });

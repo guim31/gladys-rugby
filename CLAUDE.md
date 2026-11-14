@@ -287,7 +287,8 @@ long, et sur un « Sie »/« Ihr… » de politesse en allemand. Le store exige 
   `kickoff`/`finished` posé seulement quand Gladys l'a accepté : renvoyé à la lecture suivante sinon.
 - Résultats : les matchs terminés antérieurs aux mois lus sont gardés 6 mois (dernier résultat entre deux
   saisons). Une compétition décochée est retirée du cache (pas d'affichage périmé). Une erreur HTTP sur un
-  document n'arrête pas les autres ; réseau ou 429 arrête le tour. Le statut ne passe « injoignable » qu'après
+  document (refusé 10 min, sans freiner les autres ni la lecture en direct) n'arrête pas les autres ; réseau ou 429
+  arrête le tour. Un match reporté (`post` non `completed`) redevient « à venir » ; un coup d'envoi déplacé repart de zéro. Le statut ne passe « injoignable » qu'après
   deux tours ratés (ou sans aucune donnée). Classements en erreur : on garde les précédents, nouvel essai 10 min.
 - **Calendrier Gladys** : impossible ici, le type `calendar` est un autre type d'intégration (consentement par
   utilisateur) ; une intégration n'a qu'un type.
