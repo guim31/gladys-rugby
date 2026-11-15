@@ -277,7 +277,7 @@ long, et sur un « Sie »/« Ihr… » de politesse en allemand. Le store exige 
   JSON publique ; pas de grattage. Six Nations 2027 pas encore publié en novembre.
 - **`/teams` peut retarder d'une saison** (15/11/2026 : Top 14 avec Oyonnax sans Vannes, Champions et Challenge Cup
   de 2025-26) : `competitionTeams` prend les équipes de la dernière saison du calendrier, qui remplacent la liste
-  quand elles sont au moins aussi nombreuses, et la complètent sinon (journée avec exempt, phase finale, test-matchs).
+  quand celles qui y jouent au moins deux matchs sont au moins aussi nombreuses, et la complètent sinon (journée avec exempt, phase finale, test-matchs).
   Le scoreboard garde aussi des matchs fantômes de la saison précédente, avec d'autres identifiants (« Stade
   Toulousain » 289546 en septembre 2026) : seule la dernière saison compte.
 - Heure non fixée : `timeValid: false` ou `STATUS_TBD`, coup d'envoi à 00:00Z → `timed: false`, pas de

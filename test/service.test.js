@@ -331,8 +331,17 @@ test('the teams of a competition: the season played replaces a stale list, a par
     match(2026, '1', '9'),
     match(2027, '1', '2'),
     match(2027, '3', '5'),
+    match(2027, '2', '3'),
+    match(2027, '5', '1'),
   ];
   assert.deepEqual(ids(), ['1', '2', '3', '5']);
+  // As many teams, but one-off opponents: not a whole season, the list stays.
+  service.data.calendar.top14.matches = [
+    match(2027, '1', '6'),
+    match(2027, '2', '7'),
+    match(2027, '1', '2'),
+  ];
+  assert.deepEqual(ids(), ['1', '2', '3', '4', '6', '7']);
   // Only part of the season (knockout stage, a bye): the list stays, plus the newcomer.
   service.data.calendar.top14.matches = [match(2027, '1', '5')];
   assert.deepEqual(ids(), ['1', '2', '3', '4', '5']);

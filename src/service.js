@@ -278,7 +278,7 @@ export class RugbyService {
    * The teams of a competition this season. ESPN's /teams list may lag a
    * season behind (Top 14 in November 2026: Oyonnax, relegated, listed;
    * Vannes, promoted, missing), so the teams of the latest season of the
-   * calendar are added. When they are at least as many as the listed ones,
+   * calendar are added. When its regulars are at least as many as the listed ones,
    * the calendar covers the whole competition and replaces the list; fewer
    * (an opening round with a bye, the knockout stage, scattered test matches)
    * cannot tell a team gone from one not playing in the months read: the
@@ -294,14 +294,19 @@ export class RugbyService {
     const season = Math.max(...seasons);
     const names = new Map(listed.map((team) => [team.id, team]));
     const playing = new Map();
+    const played = new Map();
     for (const match of matches) {
       if (match.season === season) {
         for (const { id, name, abbreviation } of [match.home, match.away]) {
           playing.set(id, names.get(id) ?? { id, name, abbreviation });
+          played.set(id, (played.get(id) ?? 0) + 1);
         }
       }
     }
-    if (playing.size >= listed.length) {
+    // Only the regulars (two matches or more) vouch for a whole season: a
+    // one-off opponent or a stray entry must not push a listed team out.
+    const regulars = [...played.values()].filter((count) => count >= 2).length;
+    if (listed.length > 0 && regulars >= listed.length) {
       return [...playing.values()];
     }
     for (const team of listed) {
