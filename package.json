@@ -1,6 +1,6 @@
 {
   "name": "gladys-rugby",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Rugby for Gladys Assistant: your teams' next match, live score, results and rank, from ESPN.",
   "type": "module",

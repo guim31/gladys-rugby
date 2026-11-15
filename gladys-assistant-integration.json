@@ -8,8 +8,8 @@
     "de": "Deine Rugby-Teams: nächstes Spiel, Live-Stand, Ergebnisse und Platz (Top 14, Six Nations…).",
     "es": "Sus equipos de rugby: próximo partido, marcador en directo, resultados y clasificación (Top 14…)."
   },
-  "version": "1.0.0",
-  "docker_image": "ghcr.io/guim31/gladys-rugby:1.0.0",
+  "version": "1.0.1",
+  "docker_image": "ghcr.io/guim31/gladys-rugby:1.0.1",
   "gladys_version": ">=5.1.0",
   "cover_image": "https://raw.githubusercontent.com/guim31/gladys-rugby/main/cover.png",
   "categories": ["leisure"],
