@@ -273,7 +273,13 @@ long, et sur un « Sie »/« Ihr… » de politesse en allemand. Le store exige 
   Cup) : l'appareil `team:<id>` réunit tous les matchs ; le rang vient de la première compétition de la liste de
   config qui classe l'équipe (ordre de `COMPETITIONS` : championnats avant coupes).
 - Ids de ligue vérifiés : voir `src/competitions.js`. **Pro D2 absente** de la liste des ligues ESPN (25 ligues
-  rugby au 14/11/2026) : non proposée. Six Nations 2027 pas encore publié en novembre.
+  rugby au 14/11/2026) : non proposée. Site de la LNR (15/11/2026) : pages HTML rendues côté serveur, aucune API
+  JSON publique ; pas de grattage. Six Nations 2027 pas encore publié en novembre.
+- **`/teams` peut retarder d'une saison** (15/11/2026 : Top 14 avec Oyonnax sans Vannes, Champions et Challenge Cup
+  de 2025-26) : `competitionTeams` prend les équipes de la dernière saison du calendrier, qui remplacent la liste
+  quand elles sont au moins aussi nombreuses, et la complètent sinon (journée avec exempt, phase finale, test-matchs).
+  Le scoreboard garde aussi des matchs fantômes de la saison précédente, avec d'autres identifiants (« Stade
+  Toulousain » 289546 en septembre 2026) : seule la dernière saison compte.
 - Heure non fixée : `timeValid: false` ou `STATUS_TBD`, coup d'envoi à 00:00Z → `timed: false`, pas de
   « match qui va commencer » ni de lecture en direct. `status.type.state` : `pre` / `in` / `post` ;
   un match reporté est `post` non `completed` (ou `STATUS_POSTPONED`).

@@ -4,7 +4,8 @@
 // integration relies on:
 // - /scoreboard?dates=YYYYMM (a month) and ?dates=YYYYMMDD (a day) answer;
 //   a range of dates is a 400, and /teams/<id>/schedule a 500 for rugby;
-// - /teams lists the teams of a competition; team ids are shared by every
+// - /teams lists the teams of a competition, sometimes last season's (the
+//   service completes it from the calendar); team ids are shared by every
 //   competition (Stade Toulousain is 25922 in the Top 14 and the Champions Cup);
 // - /standings (apis/v2) needs ?season=<year of the events>: without it, an
 //   old season comes back.

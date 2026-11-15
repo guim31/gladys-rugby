@@ -258,7 +258,7 @@ export class RugbyService {
   availableTeams() {
     const byId = new Map();
     for (const key of this.config.competitions) {
-      for (const team of this.data.teams[key]?.teams ?? []) {
+      for (const team of this.competitionTeams(key)) {
         byId.set(team.id, team);
       }
     }
@@ -272,6 +272,42 @@ export class RugbyService {
       }
     }
     return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  /**
+   * The teams of a competition this season. ESPN's /teams list may lag a
+   * season behind (Top 14 in November 2026: Oyonnax, relegated, listed;
+   * Vannes, promoted, missing), so the teams of the latest season of the
+   * calendar are added. When they are at least as many as the listed ones,
+   * the calendar covers the whole competition and replaces the list; fewer
+   * (an opening round with a bye, the knockout stage, scattered test matches)
+   * cannot tell a team gone from one not playing in the months read: the
+   * list is kept. Team ids stay ESPN's: the devices already added are safe.
+   */
+  competitionTeams(key) {
+    const listed = this.data.teams[key]?.teams ?? [];
+    const matches = this.data.calendar[key]?.matches ?? [];
+    const seasons = matches.map((match) => match.season).filter(Number.isInteger);
+    if (seasons.length === 0) {
+      return listed;
+    }
+    const season = Math.max(...seasons);
+    const names = new Map(listed.map((team) => [team.id, team]));
+    const playing = new Map();
+    for (const match of matches) {
+      if (match.season === season) {
+        for (const { id, name, abbreviation } of [match.home, match.away]) {
+          playing.set(id, names.get(id) ?? { id, name, abbreviation });
+        }
+      }
+    }
+    if (playing.size >= listed.length) {
+      return [...playing.values()];
+    }
+    for (const team of listed) {
+      playing.set(team.id, team);
+    }
+    return [...playing.values()];
   }
 
   findTeam(teamId) {
@@ -295,7 +331,12 @@ export class RugbyService {
 
   teamsSignature() {
     return this.config.competitions
-      .map((key) => (this.data.teams[key]?.teams ?? []).map((team) => team.id).join(','))
+      .map((key) =>
+        this.competitionTeams(key)
+          .map((team) => team.id)
+          .sort()
+          .join(','),
+      )
       .join('|');
   }
 
@@ -837,7 +878,7 @@ export class RugbyService {
     return this.config.competitions.map((key) => ({
       key,
       matches: this.data.calendar[key]?.matches.length ?? 0,
-      teams: this.data.teams[key]?.teams.length ?? 0,
+      teams: this.competitionTeams(key).length,
     }));
   }
 
