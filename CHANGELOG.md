@@ -10,6 +10,12 @@ the notes of the version's GitHub Release.
 
 ## [Unreleased]
 
+### Fixed
+
+- The Discover tab offers the teams of the current season: ESPN's team list can lag a season behind
+  (Top 14 in November 2026: RC Vannes missing, Oyonnax listed). The teams playing this season's
+  matches now complete or replace it, in every competition. Teams already added keep working.
+
 ## [1.0.0] - 2026-11-14
 
 ### Added

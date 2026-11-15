@@ -29,6 +29,10 @@ test('the Discover tab offers every team of the chosen competitions, once', asyn
   assert.equal(toulouse.name, 'Rugby · Stade Toulousain');
   assert.equal(toulouse.should_poll, false);
   assert.ok(devices.some((device) => device.name === 'Rugby · Écosse'));
+  // ESPN's /teams still lists last season's Top 14: the calendar of this one
+  // brings Vannes (promoted) in and takes Oyonnax (relegated) out.
+  assert.ok(devices.some((device) => device.external_id === 'ext:rugby:team:289337'));
+  assert.ok(!devices.some((device) => device.external_id === 'ext:rugby:team:190153'));
   // Nothing followed: no state, no standings read.
   assert.equal(world.gladys.fake.states.length, 0);
   assert.ok(!world.api.calls.some((path) => path.includes('standings')));
@@ -305,4 +309,49 @@ test('a match called off then played: its kick-off is announced', async (t) => {
   api.patch(LYON_TOULOUSE, (game) => play(game, { state: 'in', home: 0, away: 3 }));
   await world.service.check();
   assert.equal(world.gladys.fake.sceneEvents.filter((e) => e.key === 'kickoff').length, 1);
+});
+
+test('the teams of a competition: the season played replaces a stale list, a partial one adds', async (t) => {
+  const world = await createWorld({ follow: [] });
+  t.after(() => world.app.stop());
+  const { service } = world;
+  const team = (id) => ({ id, name: `Team ${id}`, abbreviation: id });
+  const match = (season, home, away) => ({ season, home: team(home), away: team(away) });
+  service.data.teams.top14 = { fetched_at: 0, teams: ['1', '2', '3', '4'].map(team) };
+  const ids = () =>
+    service
+      .competitionTeams('top14')
+      .map((entry) => entry.id)
+      .sort();
+  // No calendar (the Six Nations in November): the list.
+  service.data.calendar.top14 = { fetched_at: 0, matches: [] };
+  assert.deepEqual(ids(), ['1', '2', '3', '4']);
+  // The whole season (4 teams, last season's leftovers ignored): it replaces the list.
+  service.data.calendar.top14.matches = [
+    match(2026, '1', '9'),
+    match(2027, '1', '2'),
+    match(2027, '3', '5'),
+    match(2027, '2', '3'),
+    match(2027, '5', '1'),
+  ];
+  assert.deepEqual(ids(), ['1', '2', '3', '5']);
+  // As many teams, but one-off opponents: not a whole season, the list stays.
+  service.data.calendar.top14.matches = [
+    match(2027, '1', '6'),
+    match(2027, '2', '7'),
+    match(2027, '1', '2'),
+  ];
+  assert.deepEqual(ids(), ['1', '2', '3', '4', '6', '7']);
+  // Only part of the season (knockout stage, a bye): the list stays, plus the newcomer.
+  service.data.calendar.top14.matches = [match(2027, '1', '5')];
+  assert.deepEqual(ids(), ['1', '2', '3', '4', '5']);
+});
+
+test('a team followed before the fix is still offered and updated', async (t) => {
+  // Oyonnax (190153) left the Top 14: added in Gladys, it stays offered.
+  const world = await createWorld({ follow: [TOULOUSE, '190153'] });
+  t.after(() => world.app.stop());
+  const devices = world.gladys.fake.discoveredDevices;
+  assert.ok(devices.some((device) => device.external_id === 'ext:rugby:team:190153'));
+  assert.ok(world.state('next_match'), 'Stade Toulousain still gets its next match');
 });
